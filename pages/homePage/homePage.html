@@ -6,17 +6,25 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Ksanのweb</title>
 		<link rel="stylesheet" type="text/css" href="homeStyle.css">
+		<script type="text/javascript">
+			var width=window.screen.width
+			console.log(width)
+		</script>
 	</head>
 	<body>
-		<header id="main-header">
-			<a href="../homePage/homePage.html" class="logo">
-			<img id="headImg" src="../../images/head-img.png" alt="headImg">
-			</a>
+		<div class="header">
+			<div class="inner">
+				<div class="logo">
+					<a href="../homePage/homePage.html" class="refresh">
+						<img src="../../images/logo.png" alt="logo here">
+					</a>
+				</div>
 
-			<!--搜索框-->
-			<div id="box">
-        		<input type="text" name="search" placeholder="请输入关键字">
-        	<div id="search">搜索</div> 
-    		</div>
-		</header>
+				<!--搜索框-->
+				<div class="box">
+        			<input type="text" name="search" placeholder="请输入关键字">
+        			<div id="search">搜索</div> 
+    			</div>
+			</div>
+		</div>	
 </html>
