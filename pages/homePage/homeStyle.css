@@ -1,39 +1,49 @@
 *{
 	margin: 0;
 	padding: 0;
+	background-color: #87CEEB;
 }
 
 .header{
-	height: 60px;
-	background-color: #333;
+	margin-top: 4px;
+	height: 80px;
+	background-color: white;
 }
 
 .header .inner{
 	height: 60px;
 	margin: 0 auto;
-	background-color: #333;
+	background-color: white;
+}
+
+.refresh{
+	background-color: white;
 }
 
 .header .inner .logo{
+	padding: 10px;
+	margin-left: 0px;
 	float: left;
 	width: 200px;
 	height: 60px;
+	background-color: white;
 }
 
 .header .inner .logo img{
 	width: 200px;
-	padding: 2px;
+	padding: 0px;
 }
 
 .header .inner .box{
-	padding: 4px;
+	padding: 13px;
 	float: right;
-	margin-right: 0px;
+	margin-right: 10px;
     margin-top: 10px;
     vertical-align: middle;
     width: 380px;
     font-family: 'Microsoft YaHei';
     font-size: 14px;
+    background-color: white;
 }
 
 input{
@@ -46,6 +56,7 @@ input{
     background-size: 25px;
     background-position:5px center;
     padding:0 0 0 40px;
+    background-color: white;
 }
 
 #search{
@@ -57,4 +68,16 @@ input{
     text-align: center;
     line-height: 32px;
     cursor: pointer;
-    }
+}
+
+.home-img_inner{
+	height: 464px;
+}
+
+.home-img_inner .home-img{
+	height: 464px;
+}
+
+.home-img_inner .home-img img{
+	height: 464px;
+}
