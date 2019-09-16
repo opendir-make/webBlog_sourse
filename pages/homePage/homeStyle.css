@@ -16,7 +16,7 @@
 	background-color: white;
 }
 
-.refresh{
+.header .inner .logo .refresh{
 	background-color: white;
 }
 
@@ -32,6 +32,41 @@
 .header .inner .logo img{
 	width: 200px;
 	padding: 0px;
+}
+
+.header .inner .nav{
+	float: left;
+	width: 900px;
+	height: 80px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.header .inner .nav ul{
+	list-style: none;
+}
+
+.header .inner .nav ul li{
+	float: left;
+	width: 225px;
+	height: 60px;
+	line-height: 60px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+.header .inner .nav ul li a{
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;
+}
+
+.header .inner .nav ul li a:hover{
+	background-color: #3e3e3e;
+	color: white;
+	border-bottom: 1px solid pink;
 }
 
 .header .inner .box{
@@ -70,8 +105,9 @@ input{
     cursor: pointer;
 }
 
-.home-img_inner{
+.header .home-img_inner{
 	height: 464px;
+	margin: 0 auto;
 }
 
 .home-img_inner .home-img{
