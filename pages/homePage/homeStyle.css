@@ -4,6 +4,10 @@
 	background-color: #87CEEB;
 }
 
+body{
+	min-width: 1536px;
+}
+
 .header{
 	margin-top: 4px;
 	height: 80px;
