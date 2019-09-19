@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	background-color: #87CEEB;
+	background-color: whitesmoke;
 }
 
 body{
@@ -9,19 +9,19 @@ body{
 }
 
 .header{
-	margin-top: 4px;
 	height: 80px;
-	background-color: white;
+	background-color: whitesmoke;
+	border-top: 3.5px solid #87CEEB;
 }
 
 .header .inner{
 	height: 60px;
 	margin: 0 auto;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .header .inner .logo .refresh{
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .header .inner .logo{
@@ -30,7 +30,7 @@ body{
 	float: left;
 	width: 200px;
 	height: 60px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .header .inner .logo img{
@@ -42,7 +42,7 @@ body{
 	float: left;
 	width: 900px;
 	height: 80px;
-	background-color: white;
+	background-color: whitesmoke;
 	margin: 0 auto;
 }
 
@@ -52,11 +52,11 @@ body{
 
 .header .inner .nav ul li{
 	float: left;
-	width: 225px;
+	width: 180px;
 	height: 60px;
 	line-height: 60px;
 	margin-top: 10px;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .header .inner .nav ul li a{
@@ -64,7 +64,7 @@ body{
 	color: black;
 	text-align: center;
 	text-decoration: none;
-	background-color: white;
+	background-color: whitesmoke;
 }
 
 .header .inner .nav ul li a:hover{
@@ -82,7 +82,7 @@ body{
     width: 380px;
     font-family: 'Microsoft YaHei';
     font-size: 14px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 input{
@@ -95,7 +95,7 @@ input{
     background-size: 25px;
     background-position:5px center;
     padding:0 0 0 40px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 #search{
