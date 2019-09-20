@@ -79,6 +79,12 @@ input{
     background-position:5px center;
     padding:0 0 0 40px;
     background-color: #373d41;
+    color:white;
+}
+
+input::-webkit-input-placeholder{
+    color:gray;
+    caret-color:rgb(99,145,247)
 }
 
 #search{
@@ -91,6 +97,7 @@ input{
     line-height: 32px;
     cursor: pointer;
 }
+
  .home-img{
 	position: relative;
 	top:0;
