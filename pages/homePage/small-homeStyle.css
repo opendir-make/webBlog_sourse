@@ -3,50 +3,45 @@
 	padding: 0;
 }
 body{
-
+	display: block;
 	overflow: hidden;
-	background-size: cover;
-	background-image: url(../../images/1.jpg);
-	background-repeat:no-repeat; 
-}
-body .image{
-	background-attachment:fixed;
 }
 .header{
-	height: 5.0rem;
+	height: 4.0rem;/*160px*/
 	background-color:rgba(0,0,0,0.4);
-}
-.header .inner{
-	float: right;
-	width: 80.0rem;
-	margin: 0 auto;
 }
 .header .logo{
 	margin-right: 1.0rem;
 	float: left;
-	width: 15.0rem;
+	width: 11rem;
 }
 .header .logo img{
-	width: 14.0rem;
-	padding-top: 0.3rem;
-	padding-left: 1.0rem;
+	width: 11rem;
+	padding-top: 0.4rem;
+	padding-left: 0.6rem;
+}
+.header .inner{
+	float: right;
+	width: 57.0rem;
+	margin: 0 auto;
 }
 .header .inner .nav{
 	float: left;
-	width: 45rem;
+	width: 30rem;
 	margin: 0 auto;
 }
 .header .inner .nav ul{
+	width: 30.0rem;
 	list-style: none;
 	display: block;
-	margin-top: 0.5rem;
-	height: 4.0rem;
+	margin-top: 0rem;
+	height: 3.125rem;
 	text-align: -webkit-match-parent;
 }
 .header .inner .nav .menu li{
 	float: left;
-	width: 7.5rem;
-	height: 5.0rem;
+	width: 5.0rem;
+	height: 3.125rem;
 	line-height: 4.0rem;
 	font-size: 1.0rem;
 }
@@ -56,8 +51,8 @@ body .image{
 	display:none;
 }
 .header .inner .nav .menu .study ul li{
-	width: 7.5rem;
-	height: 2.5rem;
+	width: 5.0rem;
+	height: 2.3rem;
 	overflow:hidden; 
 }
 .header .inner .nav .menu .study ul li:hover{
@@ -66,13 +61,8 @@ body .image{
 .header .inner .nav .menu .study ul li a{
 	text-align: center;
 	background-color: rgba(0,0,0,0.4);
-	height: 2.5rem;
-	line-height: 2.5rem;
-}
-.header .inner .nav .menu .study:hover ul{
-	display: inline;
-	z-index:1;
-	position: absolute;
+	height: 2.3rem;
+	line-height: 2.3rem;
 }
 .header .inner .nav ul li a{
 	display: block;
@@ -92,43 +82,32 @@ body .image{
     font-family: 'Microsoft YaHei';
     font-size: 0.7rem;
 }
-
 input{
     width: 17.5rem;
     border: 0.05rem solid #e2e2e2;
-	height: 2.25rem;
+	height: 1.80rem;
 	float: left;
-	margin-top: 0.25rem;
-	margin-right: 0.1rem;
+	margin-top: 0rem;
+	margin-right: 0.2rem;
     background-image: url(../../images/question-mark.png);
     background-repeat: no-repeat;
     background-size: 1.25rem;
     background-position:0.25rem center;
     padding:0 0 0 2.0rem;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
 	color: black;
 	font-size: 1.0rem;
 }
 #search{
     width: 3.9rem;
-	height: 2.0rem;
+	height: 1.8rem;
 	float:right;
     color: white;
     text-align: center;
-	line-height: 2.0rem;
-	margin-top: 0.35rem;
+	line-height: 1.75rem;
+	margin-top: 0rem;
 	cursor: pointer;
 	border-radius: 0.5rem;
 	font-size: 1.0rem;
-}
- .home-img{
-	position: relative;
-	top:0px;
-	left: 0;
-}
-.home-img ul li{
-	position: absolute;
-}
-.home-img ul li img{
-	width: 100%;
+	background-color: orange;
 }
