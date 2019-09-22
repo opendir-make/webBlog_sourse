@@ -3,14 +3,9 @@
 	padding: 0;
 }
 body{
-	
+	display: block;
 	overflow: hidden;
-	background-size: cover;
-	background-image: url(../../images/1.jpg);
-	background-repeat:no-repeat; 
-}
-body .image{
-	background-attachment:fixed;
+	width: 100%;
 }
 .header{
 	height: 5.0rem;
@@ -69,7 +64,6 @@ body .image{
 	height: 2.5rem;
 	line-height: 2.5rem;
 }
-
 .header .inner .nav ul li a{
 	display: block;
 	color: white;

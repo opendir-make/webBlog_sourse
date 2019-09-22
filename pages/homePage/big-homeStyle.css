@@ -1,0 +1,148 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
+body{
+	height: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat:no-repeat; 
+}
+.header{
+	height: 5.0rem;
+	background-color:rgba(0,0,0,0.4);
+}
+.header .inner{
+	float: right;
+	width: 80.0rem;
+	margin: 0 auto;
+}
+.header .logo{
+	margin-right: 1.0rem;
+	float: left;
+	width: 15.0rem;
+}
+.header .logo img{
+	width: 14.0rem;
+	padding-top: 0.3rem;
+	padding-left: 1.0rem;
+}
+.header .inner .nav{
+	float: left;
+	width: 45rem;
+	margin: 0 auto;
+}
+.header .inner .nav ul{
+	list-style: none;
+	display: block;
+	margin-top: 0.5rem;
+	height: 4.0rem;
+	text-align: -webkit-match-parent;
+}
+.header .inner .nav .menu li{
+	float: left;
+	width: 7.5rem;
+	height: 5.0rem;
+	line-height: 4.0rem;
+	font-size: 1.0rem;
+}
+.header .inner .nav .menu .study ul{
+	width: 5.0rem;
+	text-align: center;
+	display:none;
+}
+.header .inner .nav .menu .study ul li{
+	width: 7.5rem;
+	height: 2.5rem;
+	overflow:hidden; 
+}
+.header .inner .nav .menu .study ul li:hover{
+	background-color: hsla(0,0%,100%,0.8);
+}
+.header .inner .nav .menu .study ul li a{
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+.header .inner .nav ul li a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+.header .inner .nav ul li a:hover{
+	color: skyblue;
+}
+.header .inner .box{
+	padding:0.65rem;
+	float: right;
+	margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    vertical-align: middle;
+    font-family: 'Microsoft YaHei';
+    font-size: 0.7rem;
+}
+
+input{
+    width: 17.5rem;
+    border: 0.05rem solid #e2e2e2;
+	height: 2.25rem;
+	float: left;
+	margin-top: 0.25rem;
+	margin-right: 0.1rem;
+    background-image: url(../../images/question-mark.png);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position:0.25rem center;
+    padding:0 0 0 2.0rem;
+	border-radius: 0.25rem;
+	color: black;
+	font-size: 1.0rem;
+}
+#search{
+    width: 3.9rem;
+	height: 2.0rem;
+	float:right;
+    color: white;
+    text-align: center;
+	line-height: 2.0rem;
+	margin-top: 0.35rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	font-size: 1.0rem;
+}
+ .home-img{
+	position: relative;
+	top:0px;
+	left: 0;
+}
+.home-img ul li{
+	position: absolute;
+}
+.home-img ul li img{
+	width: 100%;
+}
+.text-motto{
+	width: 100%;
+	height: 200px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	padding-top: 140px;
+	margin: 100px auto;
+}
+.text-motto p{
+	font-size: 40px;
+	color: white;
+}
