@@ -12,7 +12,7 @@ body{
 }
 .header .inner{
 	float: right;
-	width: 80.0rem;
+	width: 56.0rem;
 	margin: 0 auto;
 }
 .header .logo{
@@ -27,7 +27,7 @@ body{
 }
 .header .inner .nav{
 	float: left;
-	width: 45rem;
+	width: 30rem;
 	margin: 0 auto;
 }
 .header .inner .nav ul{
@@ -39,7 +39,7 @@ body{
 }
 .header .inner .nav .menu li{
 	float: left;
-	width: 7.5rem;
+	width: 5.0rem;
 	height: 5.0rem;
 	line-height: 4.0rem;
 	font-size: 1.0rem;
@@ -50,7 +50,7 @@ body{
 	display:none;
 }
 .header .inner .nav .menu .study ul li{
-	width: 7.5rem;
+	width: 5rem;
 	height: 2.5rem;
 	overflow:hidden; 
 }
@@ -62,11 +62,6 @@ body{
 	background-color: rgba(0,0,0,0.4);
 	height: 2.5rem;
 	line-height: 2.5rem;
-}
-.header .inner .nav .menu .study:hover ul{
-	display: inline;
-	z-index:1;
-	position: absolute;
 }
 .header .inner .nav ul li a{
 	display: block;
@@ -90,39 +85,29 @@ body{
 input{
     width: 17.5rem;
     border: 0.05rem solid #e2e2e2;
-	height: 2.25rem;
+	height: 1.75rem;
 	float: left;
-	margin-top: 0.25rem;
-	margin-right: 0.1rem;
+	margin-top: 0.45rem;
+	margin-right: 0.2rem;
     background-image: url(../../images/question-mark.png);
     background-repeat: no-repeat;
     background-size: 1.25rem;
     background-position:0.25rem center;
     padding:0 0 0 2.0rem;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
 	color: black;
 	font-size: 1.0rem;
 }
 #search{
-    width: 3.9rem;
-	height: 2.0rem;
+     width: 3.9rem;
+	height: 1.75rem;
 	float:right;
     color: white;
     text-align: center;
-	line-height: 2.0rem;
-	margin-top: 0.35rem;
+	line-height: 1.75rem;
+	margin-top: 0.45rem;
 	cursor: pointer;
 	border-radius: 0.5rem;
 	font-size: 1.0rem;
-}
- .home-img{
-	position: relative;
-	top:0px;
-	left: 0;
-}
-.home-img ul li{
-	position: absolute;
-}
-.home-img ul li img{
-	width: 100%;
+	background-color: orange;
 }

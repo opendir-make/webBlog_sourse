@@ -7,7 +7,7 @@
 		<meta name="keywords" content="编程学习,旅游,生活记录,每天好图,软件推荐">
 		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录自己生活的美好时光">
 		<title>K.web blog</title>
-		<link rel="stylesheet" type="text/css" href="small-homeStyle.css">
+		<link rel="stylesheet" type="text/css" href="big-homeStyle.css">
 		<link rel="stylesheet icon" href="../../images/k.ico"/>
 		<!-- <script onload="window['cambrian_sync_loader_success1569054668739716']()" onerror="window['cambrian_sync_loader_fail_1569054668739716']()" src="https://ae.bdstatic.com/xz/msite/static/sdk/main.833c272c.js"></script> -->
 		<script>
@@ -80,15 +80,11 @@
 				$("#img").height(liH);  
 			});
 			$(function(){
+
 				$(".inner .nav .menu .study").hover(function(){
-					$(this).find("ul").show(1000);
+					$(this).find("ul").fadeIn(600);
 				},function(){
-					$(this).find("ul").hide(1000);
-				});
-				$(".inner .nav .menu .study").hover(function(){
-					$(this).find("ul").fadeIn(1000);
-				},function(){
-					$(this).find("ul").fadeOut(1000);
+					$(this).find("ul").fadeOut(200);
 				});
 			});
 		</script>
