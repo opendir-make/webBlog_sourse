@@ -7,12 +7,18 @@
 		<meta name="keywords" content="编程学习,旅游,生活记录,每天好图,软件推荐">
 		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录自己生活的美好时光">
 		<title>K.web blog</title>
-		<link rel="stylesheet" type="text/css" href="css/small-homeStyle.css">
 		<link rel="stylesheet icon" href="images/k.ico"/>
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1200px)" href="css/small-homeStyle.css" />
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 1200px)" href="css/big-homeStyle.css" />
+		<!-- <script onload="window['cambrian_sync_loader_success1569054668739716']()" onerror="window['cambrian_sync_loader_fail_1569054668739716']()" src="https://ae.bdstatic.com/xz/msite/static/sdk/main.833c272c.js"></script> -->
+		<style>
+			body{
+				background-repeat:no-repeat; background-attachment:fixed;background-size:cover;
+			}
 		</style>
-		
 		<script>
 			var i=-1;
+		
 			function changeimg(){
 				var images=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg'];
 				if(i<images.length-1){
@@ -23,12 +29,22 @@
 				var body=document.getElementById("body");
 			    body.style.backgroundImage="url(images/"+images[i]+")";
 			}
+		</script>
+		
+		<script>
+			function randomApi(){
+				var ran=Math.floor(Math.random()*100);
+				console.log(ran);
+				var body=document.getElementById("body");
+				if(ran%2==0)
+				body.style.backgroundImage="url(http://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302)";
+				else
+				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+			}
 			
 		</script>
 	</head>
-	<body id="body" class="image" onload="changeimg()" style="background-repeat:no-repeat; 
-				background-attachment:fixed;
-				background-image: url(images/1.jpg);">
+	<body id="body" class="image" onload="randomApi()">
 		<div class="header" id="header">
 			<div class="logo">
 				<a href="index.html" class="refresh">
@@ -101,7 +117,7 @@
 						</a>
 				</div>
 
-				<div class="left-block">
+				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
 						<a href="#文章详情">
 							<img src="images/img2.jpg" alt="">
 						</a>
@@ -113,7 +129,7 @@
 						</a>
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
 						<a href="#文章详情">
 							<img src="images/img4.jpg" alt="">
 						</a>
@@ -125,7 +141,7 @@
 						</a>
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
 						<a href="#文章详情">
 							<img src="images/img6.jpg" alt="">
 						</a>
@@ -137,7 +153,7 @@
 						</a>
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
 						<a href="#文章详情">
 							<img src="images/img8.jpg" alt="">
 						</a>
@@ -152,44 +168,57 @@
 			</div>
 			<div class="right">
 				<div class="right-block">
-					<img class="right-block-header1" src="images/right-block-header.jpg">
-					<img class="avatar1" src="images/avatar1.jpg">
-					<p class="saying1">夏虫不可语冰，井蛙不可语海，曲士不可语道。</br>--庄子《庄子·外篇·秋水》</p>
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<a href=""><img class="avatar" src="images/avatar1.jpg"></a>
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 
 				<div class="right-block" style="background-color: #CCFFFF">
-					<img class="right-block-header2" src="images/right-block-header.jpg">
-					<img class="avatar2" src="images/avatar2.jpg">
-					<p class="saying2">吃屎</br>--聂卫东《我的自传》</p>
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<a href=""><img class="avatar" src="images/avatar2.jpg"></a>
+					<p>孔子曰：三人行，则必有我师。是故弟子不必不如师，师不必贤于弟子，闻道有先后，术业有专攻，如是而已。</p><sub>--韩愈《师说》</sub>
 				</div>
 				
 				<div class="right-block">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 				
 				<div class="right-block" style="background-color: #CCFFFF">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 				
 				<div class="right-block">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 				
 				<div class="right-block" style="background-color: #CCFFFF">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 				
 				<div class="right-block">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 				
 				<div class="right-block" style="background-color: #CCFFFF">
-					
+					<img class="right-block-header" src="images/right-block-header.jpg">
+					<img class="avatar" src="images/avatar1.jpg">
+					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 			</div>
 		</div>
 		<div class="bottom">
-			
+			<p>COPYRIGHT ©2019 . ALL RIGHTS RESERVED.</p><br/>
+			<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE.</p>
 		</div>
 	</body>
 </html>
