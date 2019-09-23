@@ -121,19 +121,17 @@ input{
 	font-size: 40px;
 	color: white;
 	margin-right: 300px;
-	-webkit-animation-name: fadeIn; /*动画名称*/
-	-webkit-animation-duration: 2s; /*动画持续时间*/
-	-webkit-animation-iteration-count: 1; /*动画次数*/
-	-webkit-animation-delay: 0s; /*延迟时间*/
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
 }
 .text-motto sub{
 	font-size: 25px;
 	color: white;
 	padding-left: 80px;
-	-webkit-animation-name: fadeIn; /*动画名称*/
-	-webkit-animation-duration: 2s; /*动画持续时间*/
-	-webkit-animation-iteration-count: 1; /*动画次数*/
-	-webkit-animation-delay: 0s; /*延迟时间*/
+	animation: fade-in-delay;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
 }
 .home_article{
 	width: 80%;
@@ -214,14 +212,23 @@ input{
 	font-size: 16px;
 }
 
-@-webkit-keyframes fadeIn {
-0% {
-opacity: 0; /*初始状态 透明度为0*/
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
 }
-50% {
-opacity: 0; /*中间状态 透明度为0*/
-}
-100% {
-opacity: 1; /*结尾状态 透明度为1*/
-}
+@keyframes fade-in-delay {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    48% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in-delay {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    48% {opacity: 0;}  
+    100% {opacity: 1;}  
 }
