@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
+ .image{
+	animation: fade-in;/*动画名称*/  
+	animation-duration: 1s;/*动画持续时间*/  
+	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
+}
 .header{
 	height: 5.0rem;
 	background-color:rgba(0,0,0,0.4) ;
@@ -14,6 +19,7 @@
 	width: 56.0rem;
 	margin: 0 auto;
 }
+
 .header .logo{
 	margin-right: 1.0rem;
 	float: left;
@@ -118,9 +124,10 @@ input{
 	text-align: center;
 }
 .text-motto p{
-	font-size: 40px;
+	font-size: 45px;
 	color: white;
 	margin-right: 300px;
+	font-family: "楷体";
 	animation: fade-in;/*动画名称*/  
     animation-duration: 2s;/*动画持续时间*/  
     -webkit-animation:fade-in 2s;/*针对webkit内核*/  
@@ -129,6 +136,7 @@ input{
 	font-size: 25px;
 	color: white;
 	padding-left: 80px;
+	font-family: "楷体";
 	animation: fade-in-delay;/*动画名称*/  
     animation-duration: 2s;/*动画持续时间*/  
     -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
@@ -151,7 +159,16 @@ input{
 	margin: 0 auto;
 	border-radius: 5px;
 	margin-bottom: 20px;
-
+}
+.home_article .left .left-block .text{
+	float: right;
+	height: 60%;
+	width: 55%;
+	margin: 25px 10px 20px 0px;
+}
+.home_article .left .left-block .text a{
+	text-decoration: none;
+	color: black;
 }
 .home_article .left .left-block a img{
 	width: 35%;
