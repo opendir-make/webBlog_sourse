@@ -2,12 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	overflow:auto; 
-}
 .header{
 	height: 5.0rem;
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0,0,0,0.4) ;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 1px; 
@@ -91,7 +88,7 @@ input{
 	float: left;
 	margin-top: 0.45rem;
 	margin-right: 0.2rem;
-    background-image: url(../../images/question-mark.png);
+    background-image: url(../images/question-mark.png);
     background-repeat: no-repeat;
     background-size: 1.25rem;
     background-position:0.25rem center;
@@ -101,7 +98,7 @@ input{
 	font-size: 1.0rem;
 }
 #search{
-     width: 3.9rem;
+    width: 3.9rem;
 	height: 1.75rem;
 	float:right;
     color: white;
@@ -111,8 +108,8 @@ input{
 	cursor: pointer;
 	border-radius: 0.5rem;
 	font-size: 1.0rem;
-	background-color: orange;
-}
+	background-color: hsla(0,0%,100%,.4);
+} 
 .text-motto{
 	width: 80%;
 	height: 80px;
@@ -123,12 +120,18 @@ input{
 .text-motto p{
 	font-size: 40px;
 	color: white;
-	margin-right: 400px;
+	margin-right: 300px;
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
 }
 .text-motto sub{
+	font-size: 25px;
 	color: white;
-	font-size: 20px;
 	padding-left: 80px;
+	animation: fade-in-delay;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
 }
 .home_article{
 	width: 80%;
@@ -140,34 +143,92 @@ input{
 	float: left;
 	height: 2700px;
 }
-.home_article .left p{
-	color: white;
-}
-.home_article .left .block{
+.home_article .left .left-block{
 	width: 90%;
 	height: 280px;
-	background-color: white;
+	background-color: hsla(0,0%,100%,.9);
+	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
 	margin: 0 auto;
 	border-radius: 5px;
 	margin-bottom: 20px;
 
 }
-.home_article .left .block img{
-	width: 45%;
-	height: 270px;
-	margin-top:5px;
-	margin-left: 4px;
+.home_article .left .left-block a img{
+	width: 35%;
+	height: 60%;
 	border-radius: 5px;
+    margin: 30px;
+	border:2px solid gray;
 }
 .home_article .right{
 	width: 30%;
 	float: right;
-	background-color: #fff;
 	height: 2680px;
+}
+.home_article .right .right-block{
+	width: 100%;
+	height: 315px;
+	margin:0 auto;
+	background-color: #FFFFCC;
+	margin-bottom: 20px;
 	border-radius: 5px;
+}
+.home_article .right .right-block .right-block-header{
+	height: 157px;
+	width: 100%; 
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px;
+}
+.home_article .right .right-block .avatar{
+	margin: -50px 37% 0;
+    max-height: 90px;
+    border: rgba(255,255,255,.4) 4px solid;
+    border-radius: 50%;
+    width: 82px;
+    height: 82px;
+}
+ .home_article .right .right-block p{
+	margin: 5px 10px;
+    font-family: 'Microsoft YaHei';
+	font-size: 16px;
+	color: #363636;
+    line-height:27px;
+}
+ .home_article .right .right-block sub{
+	margin: 2px auto;
+	float: right;
+	color: #555555;
+    font-family: 'Microsoft YaHei';
 }
 .bottom{
 	width: 100%;
-	height: 300px;
+	height: 180px;
 	background-color: rgba(0,0,0,0.4);
+	padding-top: 80px;
+}
+.bottom p{
+	text-align: center;
+	color: #ABABAB;
+	font-size: 16px;
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}
+@keyframes fade-in-delay {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    48% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in-delay {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    48% {opacity: 0;}  
+    100% {opacity: 1;}  
 }
