@@ -138,6 +138,8 @@ input{
 .text-motto p{
 	font-size: 45px;
 	color: white;
+	text-shadow:2px 2px 8px black;
+	margin-right: 300px;
 	font-family: "楷体";
 	text-shadow: 2px 2px 8px black;
 	animation: fade-in;/*动画名称*/  
