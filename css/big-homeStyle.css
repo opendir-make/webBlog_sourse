@@ -71,8 +71,11 @@ body{
 	height: 2.5rem;
 	overflow:hidden; 
 }
-.header .inner .nav .menu .study ul li:hover{
-	background-color: hsla(0,0%,100%,0.8);
+.header .inner .nav .menu .study:hover ul{
+	display: block;
+	animation: fade-in; 
+	animation-duration: 1s;
+	-webkit-animation:fade-in 1s;
 }
 .header .inner .nav .menu .study ul li a{
 	text-align: center;
@@ -139,7 +142,7 @@ input{
 	font-size: 45px;
 	color: white;
 	text-shadow:2px 2px 8px black;
-	margin-right: 300px;
+	margin:0 auto;
 	font-family: "楷体";
 	text-shadow: 2px 2px 8px black;
 	animation: fade-in;/*动画名称*/  
