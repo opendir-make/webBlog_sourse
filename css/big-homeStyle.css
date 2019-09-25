@@ -8,27 +8,30 @@
 	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
 }
 body{
-	margin:0px;
-	width:1520px;
-	min-width:300px;
-	max-width:100%;
+	margin:0 auto;
+	min-width:1024px;
+	width: 100%;
+	max-width: width auto!important;
 	height:100%;
 }
 .header{
 	height: 5.0rem;
-	background-color:rgba(0,0,0,0.4) ;
+	background-color:rgba(0,0,0,0.4);
 	position: sticky;
 	position: -webkit-sticky;
 	top: 1px; 
-	min-width:300px;
-	width:1520px;
+	min-width:1024px;
+	width: 100%;
+	max-width: width auto!important;
+	margin:0 auto;
 }
 .header .inner{
 	float: right;
-	width: 900px;
+	max-width: width auto!important;
+	width: 56rem;
 	margin: 0 auto;
+	min-width: 1024px;
 }
-
 .header .logo{
 	margin-right: 1.0rem;
 	float: left;
@@ -40,9 +43,9 @@ body{
 	padding-left: 1.0rem;
 }
 .header .inner .nav{
-	float: left;
 	width: 30rem;
 	margin: 0 auto;
+	float: left;
 }
 .header .inner .nav ul{
 	list-style: none;
@@ -93,16 +96,15 @@ body{
     margin-top: 0.5rem;
     vertical-align: middle;
     font-family: 'Microsoft YaHei';
-    font-size: 0.7rem;
+	font-size: 0.7rem;
+	width: 25rem;
 }
-
 input{
     width: 17.5rem;
     border: 0.05rem solid #e2e2e2;
 	height: 1.75rem;
 	float: left;
 	margin-top: 0.45rem;
-	margin-right: 0.2rem;
     background-image: url(../images/question-mark.png);
     background-repeat: no-repeat;
     background-size: 1.25rem;
@@ -126,12 +128,12 @@ input{
 	background-color: hsla(0,0%,100%,.4);
 } 
 .text-motto{
-	width: 1350px;
+	max-width: width auto!important;
 	height: 80px;
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin:80px auto;
+	width: 1538px;
 	text-align: center;
-	min-width: 300px;
+	min-width: 1024px;
 }
 .text-motto p{
 	font-size: 45px;
@@ -139,6 +141,7 @@ input{
 	text-shadow:2px 2px 8px black;
 	margin-right: 300px;
 	font-family: "楷体";
+	text-shadow: 2px 2px 8px black;
 	animation: fade-in;/*动画名称*/  
     animation-duration: 2s;/*动画持续时间*/  
     -webkit-animation:fade-in 2s;/*针对webkit内核*/  
@@ -146,8 +149,8 @@ input{
 .text-motto sub{
 	font-size: 25px;
 	color: white;
-	text-shadow:2px 2px 8px black;
-	padding-left: 80px;
+	margin-left: 400px;
+	text-shadow: 2px 2px 8px black;
 	font-family: "楷体";
 	animation: fade-in-delay;/*动画名称*/  
     animation-duration: 2s;/*动画持续时间*/  
@@ -157,7 +160,8 @@ input{
 	width: 1350px;
 	height: 2700px;
 	margin:0 auto;
-	min-width: 300px;
+	min-width: 1024px;
+	max-width: 2000px;
 }
 .home_article .left{
 	width: 70%;
@@ -231,18 +235,17 @@ input{
     font-family: 'Microsoft YaHei';
 }
 .bottom{
-	width: 1520px;
+	max-width: auto!important;
 	height: 180px;
 	background-color: rgba(0,0,0,0.4);
 	padding-top: 80px;
-	min-width: 300px;
+	min-width: 1024px;
 }
 .bottom p{
 	text-align: center;
 	color: #ABABAB;
 	font-size: 16px;
 }
-
 @keyframes fade-in {  
     0% {opacity: 0;}/*初始状态 透明度为0*/  
     40% {opacity: 0;}/*过渡状态 透明度为0*/  
