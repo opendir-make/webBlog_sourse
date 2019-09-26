@@ -18,6 +18,13 @@
 			function randomApi(){
 				var body=document.getElementById("body");
 				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+				var screenWidth=window.screen.width;
+				var home_article=document.getElementById("home-article");
+				var left=document.getElementById("left");
+				var right=document.getElementById("right");
+				home_article.style.width=screenWidth*0.9+"px";
+				left.style.width=screenWidth*0.9*0.6+"px";
+				right.style.width=screenWidth*0.9*0.28+"px";
 			}
 			var i=-1;
 			function changeimg(){
@@ -39,7 +46,7 @@
 			}
 		</style>
 	</head>
-	<body id="body" class="image" onload="randomApi()" leftmargin=0>
+	<body id="body" class="image" onload="randomApi()">
 		<center>	 
 		<div class="header" id="header">
 				<div class="logo">
@@ -81,73 +88,73 @@
 		<div class="text-motto">
 			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
 		</div>
-		<div class="home_article">
-			<div class="left">
-				<div class="left-block">
+		<div class="home_article" id="home-article">
+			<div class="left" id="left">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img1.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 
-				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
+				<div class="left-block" id="left-s">
 						<a href="#文章详情">
 							<img src="images/img2.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img3.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img4.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img5.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img6.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img7.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block" style="background-color: hsla(0,0%,100%,.9)">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/img8.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
-				<div class="left-block">
+				<div class="left-block"  id="left-s">
 						<a href="#文章详情">
 							<img src="images/view.jpg" alt="">
 						</a>
-						<div class="text"><a href=""><h2>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</h2></a></div>	
+						<div class="text"><a href=""><p>何炫铿的旅游日记，天天只知道装逼，你还能干啥？</p></a></div>	
 				</div>
 				
 			</div>
-			<div class="right">
+			<div class="right"  id="right">
 				<div class="right-block">
 					<img class="right-block-header" src="images/right-block-header.jpg">
 					<a href=""><img class="avatar" src="images/avatar1.jpg"></a>

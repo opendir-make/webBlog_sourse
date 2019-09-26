@@ -1,29 +1,38 @@
-﻿*{
-	margin: 0;
-	padding: 0;
-}
- .image{
-	animation: fade-in;/*动画名称*/  
-	animation-duration: 1s;/*动画持续时间*/  
-	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
-}
+﻿body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
 body{
 	margin:0 auto;
 	min-width:1024px;
 	width: 100%;
 	max-width: width auto!important;
 	height:100%;
+	animation: fade-in;/*动画名称*/  
+	animation-duration: 1s;/*动画持续时间*/  
+	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
+	overflow-x: hidden;
 }
 .header{
 	height: 5.0rem;
 	background-color:rgba(0,0,0,0.4);
 	position: sticky;
 	position: -webkit-sticky;
-	top: 1px; 
+	top: 0px; 
 	min-width:1024px;
 	width: 100%;
 	max-width: width auto!important;
-	margin:0 auto;
 }
 
 .header  .logo{
@@ -100,39 +109,11 @@ body{
 	font-size: 0.7rem;
 	width: 25rem;
 }
-input{
-    width: 17.5rem;
-    border: 0.05rem solid #e2e2e2;
-	height: 1.75rem;
-	float: left;
-	margin-top: 0.45rem;
-    background-image: url(../images/question-mark.png);
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    background-position:0.25rem center;
-    padding:0 0 0 2.0rem;
-	border-radius: 0.5rem;
-	color: black;
-	font-size: 1.0rem;
-}
-#search{
-    width: 3.9rem;
-	height: 1.75rem;
-	float:right;
-    color: white;
-    text-align: center;
-	line-height: 1.75rem;
-	margin-top: 0.45rem;
-	cursor: pointer;
-	border-radius: 0.5rem;
-	font-size: 1.0rem;
-	background-color: hsla(0,0%,100%,.4);
-} 
 .text-motto{
 	max-width: width auto!important;
 	height: 80px;
 	margin:80px auto;
-	width: 1538px;
+	width: 100%;
 	text-align: center;
 	min-width: 1024px;
 }
@@ -158,52 +139,51 @@ input{
     -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
 }
 .home_article{
-	width: 1350px;
 	height: 2700px;
-	margin:0 auto;
-	min-width: 1024px;
-	max-width: 2000px;
+	margin:0px 0px 0px 65px;
+	min-width: 959px;
+	max-width: width auto!important;
 }
 .home_article .left{
-	width: 70%;
 	float: left;
 	height: 2700px;
+	margin:0px -30px 0px 0px;
 }
 .home_article .left .left-block{
-	width: 90%;
 	height: 280px;
 	background-color: hsla(0,0%,100%,.9);
 	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
-	margin: 0 auto;
+	margin: 0px 0px 30px 0px;
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
 .home_article .left .left-block .text{
 	float: right;
-	height: 60%;
-	width: 55%;
-	margin: 25px 10px 20px 0px;
+	height: 55%;
+	width: 50%;
+	margin: 25px 25px 25px 0px;
 }
 .home_article .left .left-block .text a{
 	text-decoration: none;
+	font-size: 21px;
 	color: black;
 }
 .home_article .left .left-block a img{
 	width: 35%;
 	height: 60%;
+	float: left;
 	border-radius: 5px;
     margin: 30px;
 	border:2px solid gray;
 }
 .home_article .right{
-	width: 30%;
 	float: right;
 	height: 2680px;
+	margin:0px 60px 0px 30px;
 }
 .home_article .right .right-block{
-	width: 100%;
 	height: 315px;
-	margin:0 auto;
+	margin:0px 20px 0px 0px;
 	background-color: #FFFFCC;
 	margin-bottom: 20px;
 	border-radius: 5px;
@@ -223,7 +203,7 @@ input{
     height: 82px;
 }
  .home_article .right .right-block p{
-	margin: 5px 10px;
+	margin: 5px 0px;
     font-family: 'Microsoft YaHei';
 	font-size: 16px;
 	color: #363636;
@@ -235,7 +215,6 @@ input{
 	color: #555555;
     font-family: 'Microsoft YaHei';
 }
-
 .returnTop{
 	position:fixed;
 	left:30px;
