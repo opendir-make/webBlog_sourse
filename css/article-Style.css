@@ -1,11 +1,22 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; } 
  .image{
-	animation: fade-in;
-	animation-duration: 1s;
-	-webkit-animation:fade-in 1s;
+	animation: fade-in;/*动画名称*/  
+	animation-duration: 1s;/*动画持续时间*/  
+	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
 }
 body{
 	margin:0 auto;
@@ -25,14 +36,8 @@ body{
 	max-width: width auto!important;
 	margin:0 auto;
 }
-.header .inner{
-	float: right;
-	max-width: width auto!important;
-	width: 56rem;
-	margin: 0 auto;
-	min-width: 1024px;
-}
-.header .logo{
+
+.header  .logo{
 	margin-right: 1.0rem;
 	float: left;
 	width: 15.0rem;
@@ -42,59 +47,63 @@ body{
 	padding-top: 0.3rem;
 	padding-left: 1.0rem;
 }
-.header .inner .nav{
+.header .nav{
 	width: 30rem;
-	margin: 0 auto;
-	float: left;
+	margin:0 55px;
+	float: right;
 }
-.header .inner .nav ul{
+.header .nav ul{
 	list-style: none;
 	display: block;
 	margin-top: 0.5rem;
 	height: 4.0rem;
 	text-align: -webkit-match-parent;
 }
-.header .inner .nav .menu li{
+.header  .nav .menu li{
 	float: left;
 	width: 5.0rem;
 	height: 5.0rem;
 	line-height: 4.0rem;
 	font-size: 1.0rem;
 }
-.header .inner .nav .menu .study ul{
+.header  .nav .menu .study ul{
 	width: 5.0rem;
 	text-align: center;
 	display:none;
 }
-.header .inner .nav .menu .study ul li{
+.header  .nav .menu .study ul li{
 	width: 5rem;
 	height: 2.5rem;
 	overflow:hidden; 
 }
-.header .inner .nav .menu .study:hover ul{
+.header .nav .menu .study ul li:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.header  .nav .menu .study:hover ul{
 	display: block;
 	animation: fade-in; 
-	animation-duration: 1s;
-	-webkit-animation:fade-in 1s;
+	animation-duration: 0.5s;
+	-webkit-animation:fade-in 0.5s;
 }
-.header .inner .nav .menu .study ul li a{
+.header .nav .menu .study ul li a{
 	text-align: center;
 	background-color: rgba(0,0,0,0.4);
 	height: 2.5rem;
 	line-height: 2.5rem;
 }
-.header .inner .nav ul li a{
+.header .nav ul li a{
 	display: block;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 }
-.header .inner .nav ul li a:hover{
+.header .nav ul li a:hover{
 	color: skyblue;
 }
-.header .inner .box{
+.header .box{
 	padding:0.65rem;
 	float: right;
+	max-width: width auto!important;
 	margin-right: 0.5rem;
     margin-top: 0.5rem;
     vertical-align: middle;
@@ -145,9 +154,9 @@ input{
 	margin:0 auto;
 	font-family: "楷体";
 	text-shadow: 2px 2px 8px black;
-	animation: fade-in;
-    animation-duration: 2s; 
-    -webkit-animation:fade-in 2s;
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
 }
 .text-motto sub{
 	font-size: 25px;
@@ -155,27 +164,7 @@ input{
 	margin-left: 400px;
 	text-shadow: 2px 2px 8px black;
 	font-family: "楷体";
-	animation: fade-in-delay;  
-    animation-duration: 2s; 
-    -webkit-animation:fade-in-delay 2s;
-}
-@keyframes fade-in {  
-    0% {opacity: 0;}/*初始状态 透明度为0*/  
-    40% {opacity: 0;}/*过渡状态 透明度为0*/  
-    100% {opacity: 1;}/*结束状态 透明度为1*/  
-}  
-@-webkit-keyframes fade-in {/*针对webkit内核*/  
-    0% {opacity: 0;}  
-    40% {opacity: 0;}  
-    100% {opacity: 1;}  
-}
-@keyframes fade-in-delay {  
-    0% {opacity: 0;}/*初始状态 透明度为0*/  
-    48% {opacity: 0;}/*过渡状态 透明度为0*/  
-    100% {opacity: 1;}/*结束状态 透明度为1*/  
-}  
-@-webkit-keyframes fade-in-delay {/*针对webkit内核*/  
-    0% {opacity: 0;}  
-    48% {opacity: 0;}  
-    100% {opacity: 1;}  
+	animation: fade-in-delay;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
 }
