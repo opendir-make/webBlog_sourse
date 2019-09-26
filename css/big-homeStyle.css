@@ -1,4 +1,4 @@
-﻿*{
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -71,11 +71,14 @@ body{
 	height: 2.5rem;
 	overflow:hidden; 
 }
+.header .inner .nav .menu .study ul li:hover{
+	background-color: rgba(0,0,0,0.2);
+}
 .header .inner .nav .menu .study:hover ul{
 	display: block;
 	animation: fade-in; 
-	animation-duration: 1s;
-	-webkit-animation:fade-in 1s;
+	animation-duration: 0.5s;
+	-webkit-animation:fade-in 0.5s;
 }
 .header .inner .nav .menu .study ul li a{
 	text-align: center;
