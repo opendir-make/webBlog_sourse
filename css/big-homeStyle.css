@@ -2,28 +2,26 @@
 	margin: 0;
 	padding: 0;
 }
- .image{
-	animation: fade-in;/*动画名称*/  
-	animation-duration: 1s;/*动画持续时间*/  
-	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
-}
 body{
 	margin:0 auto;
 	min-width:1024px;
 	width: 100%;
 	max-width: width auto!important;
 	height:100%;
+	overflow-x:hidden;
+	animation: fade-in;/*动画名称*/  
+	animation-duration: 1s;/*动画持续时间*/  
+	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
 }
 .header{
 	height: 5.0rem;
 	background-color:rgba(0,0,0,0.4);
 	position: sticky;
 	position: -webkit-sticky;
-	top: 1px; 
+	top: 0px; 
 	min-width:1024px;
 	width: 100%;
 	max-width: width auto!important;
-	margin:0 auto;
 }
 
 .header  .logo{
@@ -193,6 +191,7 @@ input{
 	height: 60%;
 	border-radius: 5px;
     margin: 30px;
+    float: left;
 	border:2px solid gray;
 }
 .home_article .right{
@@ -249,7 +248,8 @@ input{
 	background-color:hsla(0,0%,100%,.8);
 	animation: fade-in;/*动画名称*/  
 	animation-duration: 0.3s;/*动画持续时间*/  
-	-webkit-animation:fade-in 0.3s;/*针对webkit内核*/ }
+	-webkit-animation:fade-in 0.3s;/*针对webkit内核*/ 
+}
 .returnTop img{
 	width: 50px;
 	height: 50px;
