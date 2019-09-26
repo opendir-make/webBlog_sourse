@@ -21,12 +21,6 @@
 				background-color: black;
 			}
 		</style>
-		<script>
-			function randomApi(){
-				var body=document.getElementById("body");
-				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
-		}
-		</script>
 	</head>
 	<body id="body" class="image" onload="randomApi()" leftmargin=0>
 		<center>
@@ -69,8 +63,8 @@
 		<div class="text-motto">
 			<p>Java</p>
 		</div>
-		<div class="home_article">
-			<div class="left">
+		<div class="home_article" id="home-article">
+			<div class="left" id="left">
 				<div class="left-block">
 						<a href="#文章详情">
 							<img src="" alt="">
@@ -135,7 +129,7 @@
 				</div>
 				
 			</div>
-			<div class="right">
+			<div class="right" id="right">
 				<div class="right-block">
 					<img class="right-block-header" src="../images/right-block-header.jpg">
 					<a href=""><img class="avatar" src="../images/avatar1.jpg"></a>
