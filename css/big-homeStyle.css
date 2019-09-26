@@ -1,4 +1,5 @@
-﻿body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
 body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; }
 address, cite, dfn, em, var { font-style:normal; }
@@ -23,7 +24,6 @@ body{
 	animation-duration: 1s;/*动画持续时间*/  
 	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
 	overflow-x: hidden;
-}
 .header{
 	height: 5.0rem;
 	background-color:rgba(0,0,0,0.4);
@@ -174,6 +174,7 @@ body{
 	float: left;
 	border-radius: 5px;
     margin: 30px;
+    float: left;
 	border:2px solid gray;
 }
 .home_article .right{
@@ -228,7 +229,8 @@ body{
 	background-color:hsla(0,0%,100%,.8);
 	animation: fade-in;/*动画名称*/  
 	animation-duration: 0.3s;/*动画持续时间*/  
-	-webkit-animation:fade-in 0.3s;/*针对webkit内核*/ }
+	-webkit-animation:fade-in 0.3s;/*针对webkit内核*/ 
+}
 .returnTop img{
 	width: 50px;
 	height: 50px;
