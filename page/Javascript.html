@@ -13,6 +13,7 @@
 		<title>K.web blog | 小K同學和DDFighter的网站，编程学习无忧，旅行达人分享生活，摄影记录生活的美好时光</title>
 		<link rel="stylesheet icon" href="../images/k.ico"/>
 		<link rel="stylesheet" type="text/css" href="../css/big-homeStyle.css" />
+		<script type="text/javascript" src="js/function.js"></script>
 		<style>
 			body{
 				background-attachment:fixed;
@@ -21,17 +22,6 @@
 			}
 		</style>
 		<script>
-			var i=-1;
-			function changeimg(){
-				var images=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg'];
-				if(i<images.length-1){
-					i++;
-				}else{
-					i=0;
-				}
-				var body=document.getElementById("body");
-			    body.style.backgroundImage="url(../images/"+images[i]+")";
-			}
 			function randomApi(){
 				var body=document.getElementById("body");
 				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
@@ -49,7 +39,7 @@
 						<div class="nav">
 							<ul class="menu">
 								<li class="study">
-									<a href="program.html">编程学习</a>
+									<a href="#">编程学习</a>
 									<ul>
 										<li>
 											<a href="C.html">C</a>
@@ -195,6 +185,10 @@
 				</div>
 			</div>
 		</div>
+
+		<a class="returnTop" href="javascript:returnTop()">
+			<img src="../images/returnTop.png">
+		</a>
 		<div class="bottom">
 			<p>COPYRIGHT ©2019 . ALL RIGHTS RESERVED.</p></br>
 			<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE.</p></br>
