@@ -1,4 +1,4 @@
-*{
+﻿*{
 	margin: 0;
 	padding: 0;
 }
@@ -25,14 +25,8 @@ body{
 	max-width: width auto!important;
 	margin:0 auto;
 }
-.header .inner{
-	float: right;
-	max-width: width auto!important;
-	width: 56rem;
-	margin: 0 auto;
-	min-width: 1024px;
-}
-.header .logo{
+
+.header  .logo{
 	margin-right: 1.0rem;
 	float: left;
 	width: 15.0rem;
@@ -42,62 +36,63 @@ body{
 	padding-top: 0.3rem;
 	padding-left: 1.0rem;
 }
-.header .inner .nav{
+.header .nav{
 	width: 30rem;
-	margin: 0 auto;
-	float: left;
+	margin:0 55px;
+	float: right;
 }
-.header .inner .nav ul{
+.header .nav ul{
 	list-style: none;
 	display: block;
 	margin-top: 0.5rem;
 	height: 4.0rem;
 	text-align: -webkit-match-parent;
 }
-.header .inner .nav .menu li{
+.header  .nav .menu li{
 	float: left;
 	width: 5.0rem;
 	height: 5.0rem;
 	line-height: 4.0rem;
 	font-size: 1.0rem;
 }
-.header .inner .nav .menu .study ul{
+.header  .nav .menu .study ul{
 	width: 5.0rem;
 	text-align: center;
 	display:none;
 }
-.header .inner .nav .menu .study ul li{
+.header  .nav .menu .study ul li{
 	width: 5rem;
 	height: 2.5rem;
 	overflow:hidden; 
 }
-.header .inner .nav .menu .study ul li:hover{
+.header .nav .menu .study ul li:hover{
 	background-color: rgba(0,0,0,0.2);
 }
-.header .inner .nav .menu .study:hover ul{
+.header  .nav .menu .study:hover ul{
 	display: block;
 	animation: fade-in; 
 	animation-duration: 0.5s;
 	-webkit-animation:fade-in 0.5s;
 }
-.header .inner .nav .menu .study ul li a{
+.header .nav .menu .study ul li a{
 	text-align: center;
 	background-color: rgba(0,0,0,0.4);
 	height: 2.5rem;
 	line-height: 2.5rem;
 }
-.header .inner .nav ul li a{
+.header .nav ul li a{
 	display: block;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 }
-.header .inner .nav ul li a:hover{
+.header .nav ul li a:hover{
 	color: skyblue;
 }
-.header .inner .box{
+.header .box{
 	padding:0.65rem;
 	float: right;
+	max-width: width auto!important;
 	margin-right: 0.5rem;
     margin-top: 0.5rem;
     vertical-align: middle;
