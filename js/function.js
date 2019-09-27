@@ -35,4 +35,11 @@ function randomApi(){
 	home_article.style.width=screenWidth*0.9+"px";
 	left.style.width=screenWidth*0.9*0.6+"px";
 	right.style.width=screenWidth*0.9*0.28+"px";
+	omit_text();
 }
+function omit_text(){
+	var oBox=document.getElementById('qianyan');
+	var demoHtml = oBox.innerHTML.slice(0,66)+'......';
+	oBox.innerHTML = demoHtml;
+}
+
