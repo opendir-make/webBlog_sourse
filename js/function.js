@@ -36,6 +36,7 @@ function randomApi(){
 	home_article.style.width=screenWidth*0.9+"px";
 	left.style.width=screenWidth*0.9*0.6+"px";
 	right.style.width=screenWidth*0.9*0.28+"px";
+	omit_text();
 }
 
 function photographOnload(){
@@ -86,4 +87,9 @@ function photographOnload(){
 	pho11H.style.width=screenWidth*0.7*0.45*0.31+"px";
 	var pho12H=document.getElementById("pho12");
 	pho12H.style.width=screenWidth*0.7*0.45*0.31+"px";
+}
+function omit_text(){
+	var oBox=document.getElementById('qianyan');
+	var demoHtml = oBox.innerHTML.slice(0,66)+'......';
+	oBox.innerHTML = demoHtml;
 }
