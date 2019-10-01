@@ -93,3 +93,12 @@ function omit_text(){
 	var demoHtml = oBox.innerHTML.slice(0,66)+'......';
 	oBox.innerHTML = demoHtml;
 }
+function detailOnload(){
+	var body=document.getElementById("body");
+	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+	var screenWidth=window.screen.width;
+	var article=document.getElementById("article");
+	article.style.width=screenWidth*0.6+"px";
+ 	var article_body=document.getElementById("article-body");
+ 	article_body.style.width=screenWidth*0.6*0.85+"px";
+ }
