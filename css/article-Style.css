@@ -163,6 +163,7 @@ body{
 .article-title .author{
 	font-size: 15px;
 	color: gray;
+	margin-bottom: 20px;
 }
 .article-body p{
 	letter-spacing: 3px;
