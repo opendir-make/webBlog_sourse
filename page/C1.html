@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=5" >
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
+		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
+		<title>K.web blog | 小K同學和DD-fighter的网站，编程学习无忧，旅行达人分享生活，摄影记录生活的美好时光</title>
+		<link rel="stylesheet icon" href="../images/d.ico"/>
+		<link rel="stylesheet" href="../css/article-Style.css">
+		<script type="text/javascript" src="../js/function.js"></script>
+		<style>
+			body{
+				background-attachment:fixed;
+				background-size:cover;
+				background-color: black;
+			}
+		</style>
+		<script>
+			function randomApi(){
+				var body=document.getElementById("body");
+				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+		}
+		</script>
+	</head>
+	<body id="body" class="image" onload="detailOnload()">
+		<center>
+				<div class="header" id="header">
+						<div class="logo">
+							<a href="../index.html" class="refresh">
+								<img src="../images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="nav">
+							<ul class="menu">
+								<li class="study">
+									<a href="#">编程学习</a>
+									<ul>
+										<li>
+											<a href="C.html">C</a>
+										</li>
+										<li>
+											<a href="Java.html">Java</a>
+										</li>
+										<li>
+											<a href="404.html">Python</a>
+										</li>
+										<li>
+											<a href="Javascript.html">Javascript</a>
+										</li>
+										<li>
+											<a href="404.html">Web</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="software.html">好软推荐</a></li>
+								<li><a href="photograph.html">摄影修炼</a></li>
+								<li><a href="travel.html">旅行</a></li>
+								<li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每天一图</a></li>
+								<li><a href="javascript:changeimg()">换肤</a></li>
+							</ul>
+						</div>
+					</div>
+		<div class="text-motto">
+			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
+		</div>
+		<div class="article" id="article">
+			<div class="article-title" id="article-title">C语言概述篇--了解C语言<div class="author"></br>作者：DD_fighter    发表日期：2019.10.02</br></div>
+			</div>
+			<div class="article-body" id="article-body"><div class="innerPho" id="innerPho"><img src="../images/C/C.jpg" style="height: 400px;"></div>
+               <p>学编程语言先学C语言，为什么呢？因为C语言是所有高级语言中最容易上手的一门。一个小白来看C语言的书，很容易看懂，只有后面章节的指针会有点难度，但只要你善于思考，还是可以掌握的。</p><br>
+               <p style="color:blue">简介：</p>
+               <p>C语言是一门面向过程的计算机编程语言，与C++、Java等面向对象编程语言有所不同。C语言的设计目标是提供一种能以简易的方式编译、处理低级存储器、仅产生少量的机器码以及不需要任何运行环境支持便能运行的编程语言。C语言描述问题比汇编语言迅速、工作量小、可读性好、易于调试、修改和移植，而代码质量与汇编语言相当。C语言一般只比汇编语言代码生成的目标程序效率低10%～20%。因此，C语言可以编写系统软件。</p>
+               <p>当前阶段，在编程领域中，C语言的运用非常之多，它兼顾了高级语言的汇编语言的优点，相较于其它编程语言具有较大优势。计算机系统设计以及应用程序编写是C语言应用的两大领域。同时，C语言的普适较强，在许多计算机操作系统中都能够得到适用，且效率显著。</p>
+               <p>冯.诺依曼在1945年提出了现代计算机的若干思想，被后人称为冯.诺依曼思想，这是计算机发展史上的里程碑。自1945 年至今大多采用其结构，因此冯.诺依曼被称为计算机之父。他的体系结构计算机由运算器、控制器、存储器、输入设备、输出设备五大部件构成。 C语言拥有一套完整的理论体系经过了漫长的发展历史，在编程语言 中具有举足轻重的地位。</p><br>
+               <p style="color: blue">发展历史：</p>
+               <p>c语言诞生于美国的贝尔实验室，由D．M．Ritchie以B语言为基础发展而来，在它的主体设计完成后，Thompson和Ritchie用它完全重写了UNIX，且随着UNIX的发展，c语言也得到了不断的完善。为了利于C语言的全面推广，许多专家学者和硬件厂商联合组成了C语言标准委员会，并在之后的1989年，诞生了第一个完备的C标准，简称“C89”，也就是“ANSI c”，目前，最新的C语言标准为2011年发布的 “C11”。</p>
+               <p>C语言之所以命名为C，是因为 C语言源自Ken Thompson发明的B语言，而 B语言则源自BCPL语言。
+                1967年，剑桥大学的Martin Richards对CPL语言进行了简化，于是产生了BCPL（Basic Combined Programming Language）语言。</p>
+                <p>20世纪60年代，美国AT&T公司贝尔实验室（AT&T Bell Laboratory）的研究员Ken Thompson闲来无事，手痒难耐，想玩一个他自己编的，模拟在太阳系航行的电子游戏——Space Travel。他背着老板，找到了台空闲的机器——PDP-7。但这台机器没有操作系统，而游戏必须使用操作系统的一些功能，于是他着手为PDP-7开发操作系统。后来，这个操作系统被命名为——UNIX。</p>
+                <p>1970年，美国贝尔实验室的 Ken Thompson，以BCPL语言为基础，设计出很简单且很接近硬件的B语言（取BCPL的首字母）。并且他用B语言写了第一个UNIX操作系统。</p>
+                <p>1971年，同样酷爱Space Travel的Dennis M.Ritchie为了能早点儿玩上游戏，加入了Thompson的开发项目，合作开发UNIX。他的主要工作是改造B语言，使其更成熟。</p>
+                <p>1972年，美国贝尔实验室的 D.M.Ritchie 在B语言的基础上最终设计出了一种新的语言，他取了BCPL的第二个字母作为这种语言的名字，这就是C语言。</p>
+                <p>1973年初，C语言的主体完成。Thompson和Ritchie迫不及待地开始用它完全重写了UNIX。此时，编程的乐趣使他们已经完全忘记了那个"Space Travel"，一门心思地投入到了UNIX和C语言的开发中。随着UNIX的发展，C语言自身也在不断地完善。直到今天，各种版本的UNIX内核和周边工具仍然使用C语言作为最主要的开发语言，其中还有不少继承Thompson和Ritchie之手的代码。</p>
+                <p>在开发中，他们还考虑把UNIX移植到其他类型的计算机上使用。C语言强大的移植性（Portability）在此显现。机器语言和汇编语言都不具有移植性，为x86开发的程序，不可能在Alpha、SPARC和ARM等机器上运行。而C语言程序则可以使用在任意架构的处理器上，只要那种架构的处理器具有对应的C语言编译器和库，然后将C源代码编译、连接成目标二进制文件之后即可运行。</p>
+                <p>1977年，Dennis M.Ritchie发表了不依赖于具体机器系统的C语言编译文本《可移植的C语言编译程序》。</p>
+                <p>C语言继续发展，在1982年，很多有识之士和美国国家标准协会为了使这个语言健康地发展下去，决定成立C标准委员会，建立C语言的标准。委员会由硬件厂商、编译器及其他软件工具生产商、软件设计师、顾问、学术界人士、C语言作者和应用程序员组成。1989年，ANSI发布了第一个完整的C语言标准——ANSI X3.159—1989，简称“C89”，不过人们也习惯称其为“ANSI C”。C89在1990年被国际标准组织ISO(International Standard Organization)一字不改地采纳，ISO官方给予的名称为：ISO/IEC 9899，所以ISO/IEC9899: 1990也通常被简称为“C90”。1999年，在做了一些必要的修正和完善后，ISO发布了新的C语言标准，命名为ISO/IEC 9899：1999，简称“C99”。 在2011年12月8日，ISO又正式发布了新的标准，称为ISO/IEC9899: 2011，简称为“C11”。</p><br>
+
+            </div>
+		</div>
+		<div class="article-footer" id="article-footer"></div>
+		<a class="returnTop" href="javascript:returnTop()">
+			<img src="../images/returnTop.png">
+		</a>
+		<div class="bottom">
+			<p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
+			<p>COPYRIGHT © 2019 K WEB BLOG, ALL RIGHTS RESERVED.</p></br>
+			<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
+			<p>关于我们：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter</p>
+		</div>
+		</center>
+	</body>	
+</html>

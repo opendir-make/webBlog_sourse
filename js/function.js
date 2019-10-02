@@ -38,7 +38,14 @@ function randomApi(){
 	right.style.width=screenWidth*0.9*0.28+"px";
 	omit_text();
 }
-
+function omit_text(){
+	var list=document.getElementsByClassName("qianyan");
+	for(var i=0;i<list.length;i++){
+		var oBox=document.getElementsByClassName("qianyan")[i];
+		var demoHtml = oBox.innerHTML.slice(0,88)+'......';
+		oBox.innerHTML = demoHtml;
+	}
+}
 function photographOnload(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
@@ -88,11 +95,7 @@ function photographOnload(){
 	var pho12H=document.getElementById("pho12");
 	pho12H.style.width=screenWidth*0.7*0.45*0.31+"px";
 }
-function omit_text(){
-	var oBox=document.getElementById('qianyan');
-	var demoHtml = oBox.innerHTML.slice(0,66)+'......';
-	oBox.innerHTML = demoHtml;
-}
+
 function detailOnload(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
