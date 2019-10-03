@@ -131,15 +131,14 @@ body{
     -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
 }
 .home_article{
-	height: 2700px;
+	/*height: 2700px;*/
 	margin: 0 auto;
-	/*margin:0px 0px 0px 65px;*/
 	min-width: 959px;
 	max-width: width auto!important;
 }
 .home_article .left{
 	float: left;
-	height: 2700px;
+	/*height: 2700px;*/
 }
 .home_article .left .left-block{
 	height: 280px;
@@ -217,7 +216,7 @@ body{
 }
 .home_article .right{
 	float: right;
-	height: 2680px;
+	/*height: 2680px;*/
 	margin:0px 60px 0px 30px;
 }
 .home_article .right .right-block{
@@ -278,7 +277,9 @@ body{
 	height: 50px;
 }
 .bottom{
+	float: left;
 	max-width: auto!important;
+	width: 100%;
 	height: 180px;
 	background-color: rgba(0,0,0,0.4);
 	padding-top: 30px;
