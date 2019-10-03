@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=5" >
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
+		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
+		<title>K.web blog | 小K同學和DD-fighter的网站，编程学习无忧，旅行达人分享生活，摄影记录生活的美好时光</title>
+		<link rel="stylesheet icon" href="../images/d.ico"/>
+		<link rel="stylesheet" href="../css/article-Style.css">
+		<script type="text/javascript" src="../js/function.js"></script>
+		<style>
+			body{
+				background-attachment:fixed;
+				background-size:cover;
+				background-color: black;
+			}
+		</style>
+		<script>
+			function randomApi(){
+				var body=document.getElementById("body");
+				body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+		}
+		</script>
+	</head>
+	<body id="body" class="image" onload="detailOnload()">
+		<center>
+				<div class="header" id="header">
+						<div class="logo">
+							<a href="../index.html" class="refresh">
+								<img src="../images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="nav">
+							<ul class="menu">
+								<li class="study">
+									<a href="#">编程学习</a>
+									<ul>
+										<li>
+											<a href="C.html">C</a>
+										</li>
+										<li>
+											<a href="Java.html">Java</a>
+										</li>
+										<li>
+											<a href="404.html">Python</a>
+										</li>
+										<li>
+											<a href="Javascript.html">Javascript</a>
+										</li>
+										<li>
+											<a href="404.html">Web</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="software.html">好软推荐</a></li>
+								<li><a href="photograph.html">摄影修炼</a></li>
+								<li><a href="travel.html">旅行</a></li>
+								<li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每天一图</a></li>
+								<li><a href="javascript:changeimg()">换肤</a></li>
+							</ul>
+						</div>
+					</div>
+		<div class="text-motto">
+			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
+		</div>
+		<div class="article" id="article">
+			<div class="article-title" id="article-title">js经典题目集合啦~<div class="author"></br>作者：DD_fighter    发表日期：2019.10.03 </br></div>
+			</div>
+			<div class="article-body" id="article-body"><div class="innerPho" id="innerPho"><img src="../images/Javascript/1.jpg" style="height: 400px; margin-top: 20px; border-radius: 10px;"></div>
+               
+            <h2 style="float: left">如何对网站的文件和资源进行优化？</h2><br><br>
+            <p>期待的解决方案包括：</p>
+            <p>1、文件合并。</p>
+            <p>2、文件最小化/文件压缩。</p> 
+            <p>3、使用CDN托管。</p>
+            <p>4、缓存的使用（多个域名来提供缓存）。</p>
+            <p>5、其他。</p>   
+            <h2 style="float: left">减少页面加载时间的方法</h2><br><br>
+            <p>1、优化图片。</p>
+            <p>2、图像格式的选择（GIF：提供的颜色较少，可用在一些对颜色要求不高的地方） 。</p> 
+            <p>3、优化CSS（压缩合并css，如 margin-top, margin-left...)。 </p> 
+            <p>4、网址后加斜杠（如www.dongzaizhan.xyz/目录，会判断这个目录是什么文件类型，或者是目录）。</p>  
+            <p>5、标明高度和宽度（如果浏览器没有找到这两个参数，它需要一边下载图片一边计算大小，如果图片很多，浏览器需要不断地调整页面。这不但影响速度，也影响浏览体验。当浏览器知道了高度和宽度参数后，即使图片暂时无法显示，页面上也会腾出图片的空位，然后继续加载后面的内容。从而加载时间快了，浏览体验也更好了）。</p>
+            <p>6、减少http请求（合并文件，合并图片）。</p>
+            <h2 style="float: left">null和undefined的区别？</h2><br><br>
+            <p>null是一个表示"无"的对象，转为数值时为0 。</p>
+            <p>undefined是一个表示"无"的原始值，转为数值时为NaN 。</p>
+            <p>当声明的变量还未被初始化时，变量的默认值为undefined 。</p>
+            <p>null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象 。</p>
+            <p>undefined表示 “缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：</p>
+            <p>1. 变量被声明了，但没有赋值时，就等于 undefined 。</p>
+            <p>2. 调用函数时，应该提供的参数没有提供，该参数等于 undefined 。</p>
+            <p>3. 对象没有赋值的属性，该属性的值为 undefined 。</p>
+            <p>4. 函数没有返回值时，默认返回 undefined 。</p>
+            <p>null表示“没有对象”，即该处不应该有值。典型用法是：</p> 
+            <p>1. 作为函数的参数，表示该函数的参数不是对象 。</p>
+            <p>2. 作为对象原型链的终点 。</p>
+            <h2 style="float: left">new操作符具体干了什么？</h2><br><br>
+            <p>1、创建一个空对象，并且this变量引用该对象，同时还继承了该函数的原型。</p>
+            <p>2、属性和方法被加入到this引用的对象中。</p>
+            <p>3、新创建的对象由this所引用，并且最后隐式的返回this。</p>
+            <p>var obj={};</p>
+            <p>obj._proto_=Base.prototype;</p>
+            <p>Base.call(obj);</p>
+            <h2 style="float: left">对JSON的了解？</h2><br><br>
+            <p>JSON（JavaScript Object Notation）是一种轻量级的数据交换格式。它是基于JavaScript的一个子集。数据格式简单，易于读写，占用宽带小。</p>
+            <p>{"age":"12","name":"back"}</p>
+            <h2 style="float: left">js延迟加载的方式有哪些？</h2><br><br>
+            <p>1、defer和async。</p>
+            <p>2、动态创建DOM方式（创建script，插入到DOM中，加载完毕后callBack）。</p>
+            <p>3、按需异步载入js。</p>
+            <h2 style="float: left">如何解决跨域问题？</h2><br><br>
+            <p>1、jsonp(jsonp的原理是动态插入script标签)。</p>
+            <p>2、document.domain+iframe。</p>
+            <p>3、window.name、window.postMessage。</p>
+            <p>4、服务器上设置代理页面。</p>
+            <h2 style="float: left">哪些操作会造成内存泄漏？</h2><br><br>
+            <p>内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。</p> 
+            <p>垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。</p>
+            <p>1、setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。</p>
+            <p>2、闭包 </p>
+            <p>3、控制台日志</p> 
+            <p>4、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环） </p>
+            </div>
+		</div>
+		<div class="article-footer" id="article-footer"></div>
+		<a class="returnTop" href="javascript:returnTop()">
+			<img src="../images/returnTop.png">
+		</a>
+		<div class="bottom">
+			<p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
+			<p>COPYRIGHT © 2019 K WEB BLOG, ALL RIGHTS RESERVED.</p></br>
+			<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
+			<p>关于我们：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter</p>
+		</div>
+		</center>
+	</body>	
+</html>
