@@ -27,8 +27,7 @@ body{
 .header{
 	height: 5.0rem;
 	background-color:rgba(0,0,0,0.4);
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	top: 0px; 
 	min-width:1024px;
 	width: 100%;
@@ -101,7 +100,7 @@ body{
 .text-motto{
 	max-width: width auto!important;
 	height: 80px;
-	margin:80px auto;
+	margin:160px auto 80px auto;
 	width: 100%;
 	text-align: center;
 	min-width: 1024px;
