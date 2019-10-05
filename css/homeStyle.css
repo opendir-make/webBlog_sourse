@@ -227,6 +227,11 @@ body{
 	border-top-left-radius: 5px; 
 	border-top-right-radius: 5px;
 }
+.home_article .right .right-block .right-block-inner{
+	width: 84%;
+	height: 400px;
+	border-top:1px solid grey;
+}
 .home_article .right .right-block .avatar{
 	margin: -50px 37% 0;
     max-height: 90px;

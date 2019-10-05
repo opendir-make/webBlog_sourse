@@ -9,8 +9,6 @@ function changeimg(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(../images/"+images[i]+")";
 }
-
-
 var timer = null;
 function returnTop(){
 	cancelAnimationFrame(timer);
@@ -25,7 +23,6 @@ function returnTop(){
 		} 
 	});
 }
-
 function randomApi(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
@@ -95,7 +92,6 @@ function photographOnload(){
 	var pho12H=document.getElementById("pho12");
 	pho12H.style.width=screenWidth*0.7*0.45*0.31+"px";
 }
-
 function detailOnload(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
