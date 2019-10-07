@@ -1,4 +1,4 @@
-﻿body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
 body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; }
 address, cite, dfn, em, var { font-style:normal; }
@@ -13,98 +13,86 @@ legend { color:#000; }
 fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; }
 table { border-collapse:collapse; border-spacing:0; } 
-body{
-	margin:0 auto;
-	min-width:1024px;
-	width: 100%;
-	max-width: width auto!important;
-	height:100%;
-	animation: fade-in;/*动画名称*/  
-	animation-duration: 1s;/*动画持续时间*/  
-	-webkit-animation:fade-in 1s;/*针对webkit内核*/ 
-	overflow-x: hidden;
-}
-.header{
-	height: 5.0rem;
-	background-color:rgba(0,0,0,0.4);
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0px; 
-	min-width:1024px;
-	width: 100%;
-	max-width: width auto!important;
+
+@media screen and (max-width:768px){
+	#body{
+		background-color: lightgray!important;
+		background-image: none!important;
+	}
+	.container-fluid a{
+		padding: 0!important;
+	}
+	.blockPho{
+		border-radius: 0!important;
+		border: transparent!important;
+		margin: 0!important;
+	}
+	.left .left-block{
+		border-radius: 0!important;
+	}
+	.left .left-block .footer p{
+		margin-right: 0!important;
+	}
+	.bottom{
+		background-color: #848484!important;
+	}
+	.coolapk, .bottom p{
+		font-size: 10px!important;
+	}
 }
 
-.header  .logo{
-	margin-right: 1.0rem;
-	float: left;
-	width: 15.0rem;
+#body{
+	background-attachment:fixed;
+	background-size:cover;
+	background-color: black;
+	animation: fade-in;
+	animation-duration: 1s;
+	-webkit-animation:fade-in 1s;
 }
-.header .logo img{
-	width: 14.0rem;
-	padding-top: 0.3rem;
-	padding-left: 1.0rem;
+/*导航栏*/
+.logo{
+	width: 170px;
 }
-.header .nav{
-	width: 30rem;
-	margin:0 55px;
-	float: right;
-}
-.header .nav ul{
-	list-style: none;
-	display: block;
-	margin-top: 0.5rem;
-	height: 4.0rem;
-	text-align: -webkit-match-parent;
-}
-.header  .nav .menu li{
-	float: left;
-	width: 5.0rem;
-	height: 5.0rem;
-	line-height: 4.0rem;
-	font-size: 1.0rem;
-}
-.header  .nav .menu .study ul{
-	width: 5.0rem;
-	text-align: center;
-	display:none;
-}
-.header  .nav .menu .study ul li{
-	width: 5rem;
-	height: 2.5rem;
-	overflow:hidden; 
-}
-.header .nav .menu .study ul li:hover{
-	background-color: rgba(0,0,0,0.2);
-}
-.header  .nav .menu .study:hover ul{
-	display: block;
-	animation: fade-in; 
-	animation-duration: 0.5s;
-	-webkit-animation:fade-in 0.5s;
-}
-.header .nav .menu .study ul li a{
-	text-align: center;
+.navbar{
 	background-color: rgba(0,0,0,0.4);
-	height: 2.5rem;
-	line-height: 2.5rem;
+	border:transparent;
+	border-radius: 0px;
 }
-.header .nav ul li a{
-	display: block;
+.navbar-brand{
+	padding: 0;
+}
+.dropdown-menu{
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+.dropdown-menu li a{
 	color: white;
 	text-align: center;
-	text-decoration: none;
 }
-.header .nav ul li a:hover{
+.dropdown-menu li a:hover{
+	background-color: rgba(0,0,0,0.2);
 	color: skyblue;
 }
+.ullist{
+	float: right;
+	margin-right: 60px;
+}
+.ullist li a{
+	color: white!important;
+}
+.ullist li a:hover{
+	color: skyblue!important;
+}
+/*格言*/
 .text-motto{
-	max-width: width auto!important;
 	height: 80px;
-	margin:80px auto;
+	margin:140px auto 60px auto;
 	width: 100%;
 	text-align: center;
-	min-width: 1024px;
+}
+.text-motto p a{
+	text-decoration: none;
+	color: white;
 }
 .text-motto p{
 	font-size: 45px;
@@ -112,9 +100,9 @@ body{
 	text-shadow:2px 2px 8px black;
 	margin:0 auto;
 	font-family: "楷体";
-	animation: fade-in;/*动画名称*/  
-    animation-duration: 2s;/*动画持续时间*/  
-    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
+	animation: fade-in;
+    animation-duration: 2s;
+    -webkit-animation:fade-in 2s;
 }
 .text-motto sub{
 	font-size: 25px;
@@ -122,89 +110,117 @@ body{
 	margin-left: 400px;
 	text-shadow: 2px 2px 8px black;
 	font-family: "楷体";
-	animation: fade-in-delay;/*动画名称*/  
-    animation-duration: 2s;/*动画持续时间*/  
-    -webkit-animation:fade-in-delay 2s;/*针对webkit内核*/ 
+	animation: fade-in-delay;
+    animation-duration: 2s;
+    -webkit-animation:fade-in-delay 2s;
 }
-.home_article{
-	height: 2700px;
-	margin:0px 0px 0px 65px;
-	min-width: 959px;
-	max-width: width auto!important;
+
+/*正文*/
+.article{
+	margin-bottom: 50px;
 }
-.home_article .left{
-	float: left;
-	height: 2700px;
+.left{
+ 	padding: 0;
+ 	margin-top: 60px;
 }
-.home_article .left .left-block{
-	height: 280px;
+.left .left-block{
 	background-color: hsla(0,0%,100%,.9);
 	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
 	margin: 0px 0px 30px 0px;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-bottom: 20px;
 }
-.home_article .left .left-block .text{
-	float: right;
-	height: 55%;
-	width: 50%;
-	margin: 25px 25px 25px 0px;
-	text-align: justify;
-	text-justify: newspaper;
-	word-break: break-all;
+.blockPho{
+	display: block;
+	width: 100%;
+	margin: 20px 0 10px 0;
+	border-radius: 5px;
+	border: 1px solid gray;
 }
-.home_article .left .left-block .text .sprite{
-	width: 45px;
+.left .left-block .text{
+	display: block;
+	padding: 20px; 
+}
+.left .left-block .text a p{
+	margin-bottom: 5px;
+}
+.left .left-block .text a p .sprite{
+	width: 50px;
 	height: 21px;
 	margin-right: 5px;
+	vertical-align: middle; 
 }
-.home_article .left .left-block .text a{
+.left .left-block .text a{
 	text-decoration: none;
-	font-size: 21px;
+	font-size: 20px;
 	color: black;
 }
-.home_article .left .left-block .text a p{
-	margin-bottom: 20px;
-}
-.home_article .left .left-block .text a:hover{
+.left .left-block .text a:hover{
 	color: #4876FF; 
 }
-.home_article .left .left-block a .img{
-	width: 35%;
-	height: 60%;
-	float: left;
-	border-radius: 5px;
-    margin: 30px;
-    float: left;
-	border:2px solid gray;
+
+.left .left-block .footer{
+	width: 80%;
+	height: 40px;
+	margin:0 10%;
+	border-top:1px solid lightgray;
 }
-.home_article .right{
+.left .left-block .footer p{
+	padding: 0;
+	float: left; 
+	margin-top:10px;
+	margin-right: 20px;
+	color: #666;
+	width: 90px;
+	font-size: 13px;
+}
+.left .left-block .footer p::before{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.left .left-block .footer a{
+	width: 70px;
+	padding: 0;
 	float: right;
-	height: 2680px;
-	margin:0px 60px 0px 30px;
+	margin-top:10px;
+	text-decoration: none;
+	color: #666;
+	font-size: 13px;
 }
-.home_article .right .right-block{
-	height: 315px;
-	margin:0px 20px 0px 0px;
+.left .left-block .footer a::before{
+	vertical-align: middle;
+	margin-right: 5px;
+	float: right; 
+}
+.left .left-block .footer a:hover{
+	color: #4876FF; 
+}
+.right{
+	float: right;
+	padding: 0 0 0 40px;
+ 	margin-top: 60px;
+}
+.right .right-block{
+	height: 300px;
 	background-color: #FFFFCC;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
-.home_article .right .right-block .right-block-header{
-	height: 157px;
+.right .right-block .right-block-header{
+	height: 50%;
 	width: 100%; 
 	border-top-left-radius: 5px; 
 	border-top-right-radius: 5px;
 }
-.home_article .right .right-block .avatar{
-	margin: -50px 37% 0;
+.right .right-block .avatar{
+	margin: -45px 38% 0;
     max-height: 90px;
     border: rgba(255,255,255,.4) 4px solid;
     border-radius: 50%;
     width: 82px;
     height: 82px;
 }
- .home_article .right .right-block p{
+.right .right-block p{
 	margin: 5px 10px;
     font-family: 'Microsoft YaHei';
 	font-size: 16px;
@@ -214,13 +230,21 @@ body{
 	text-justify: newspaper;
 	word-break: break-all;
 }
- .home_article .right .right-block sub{
-	margin: 2px auto;
+.right .right-block sub{
+	margin: 2px 10px;
 	float: right;
+	font-size: 12px;
 	color: #555555;
     font-family: 'Microsoft YaHei';
 }
+.right .right-block .right-block-inner{
+	width: 84%;
+	height: 400px;
+	margin:0 auto;
+	border-top:1px solid grey;
+}
 
+/*返回顶部按钮*/
 .returnTop{
 	position:fixed;
 	right:30px;
@@ -232,20 +256,24 @@ body{
 }
 .returnTop:hover{
 	background-color:hsla(0,0%,100%,.8);
-	animation: fade-in;/*动画名称*/  
-	animation-duration: 0.3s;/*动画持续时间*/  
-	-webkit-animation:fade-in 0.3s;/*针对webkit内核*/ 
+	animation: fade-in;
+	animation-duration: 0.3s;
+	-webkit-animation:fade-in 0.3s;
 }
 .returnTop img{
 	width: 50px;
 	height: 50px;
 }
+
+/*页面底栏*/
+.container-fluid{
+	padding: 0;
+}
 .bottom{
-	max-width: auto!important;
-	height: 180px;
+	float: left;
+	width: 100%;
 	background-color: rgba(0,0,0,0.4);
-	padding-top: 30px;
-	min-width: 1024px;
+	padding-top: 20px;
 }
 .bottom #bottom-inner span{
 	color: #ABABAB;
@@ -263,6 +291,11 @@ body{
 .bottom p a:hover{
 	color: skyblue;
 }
+.bold{
+	font-weight:bold;
+}
+
+/*animation*/
 @keyframes fade-in {  
     0% {opacity: 0;}/*初始状态 透明度为0*/  
     40% {opacity: 0;}/*过渡状态 透明度为0*/  

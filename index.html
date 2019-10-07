@@ -11,14 +11,13 @@
 		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
 		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
 		<title>K.web blog | 小K同學和DD-fighter的网站，编程学习无忧，旅行达人分享生活，摄影记录生活的美好时光</title>
-<<<<<<< HEAD
-		<link rel="stylesheet icon" href="images/k.ico"/>
-=======
 		<link rel="stylesheet icon" href="images/d.ico"/>
->>>>>>> 1504ab6638ba8747d5312f605794d0dc4fa61465
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/homeStyle.css" />
+	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/function.js"></script>
-		<script type="text/javascript">
+	    <script type="text/javascript">
 			var i=-1;
 			function changeimg(){
 				var images=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg','21.jpg'];
@@ -29,189 +28,234 @@
 				}
 				var body=document.getElementById("body");
 			    body.style.backgroundImage="url(images/"+images[i]+")";
-			}
+			} 
 		</script>
-		<style>
-			body{
-				background-attachment:fixed;
-				background-size:cover;
-				background-color: black;
-			}
-		</style>
 	</head>
-	<body id="body" class="image" onload="randomApi()">
-		<center>	 
-		<div class="header" id="header">
-				<div class="logo">
-					<a href="index.html" class="refresh">
-						<img src="images/logo.png" alt="">
-					</a>
-				</div>
-				<div class="nav">
-					<ul class="menu">
-						<li class="study">
-							<a href="#">编程学习</a>
-							<ul>
-								<li>
-									<a href="page/C.html">C</a>
-								</li>
-								<li>
-									<a href="page/Java.html">Java</a>
-								</li>
-								<li>
-									<a href="page/Python.html">Python</a>
-								</li>
-								<li>
-									<a href="page/Javascript.html">JavaScript</a>
-								</li>
-								<li>
-									<a href="page/Web.html">Web</a>
-								</li>
-							</ul>
-						</li>
-						<li><a href="page/software.html">好软推荐</a></li>
-						<li><a href="page/photograph.html">摄影修炼</a></li>
-						<li><a href="page/travel.html">旅行</a></li>
-						<li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每天一图</a></li>
-						<li><a href="javascript:changeimg()">换肤</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="text-motto">
-			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
-		</div>
-		<div class="home_article" id="home-article">
-			<div class="left" id="left">
-				<div class="left-block" id="travel">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img1.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/travel.png" alt="">爱旅游，这个地方世间绝美！</p></a>
-							<span id="qianyan">前言：各位亲爱的小编，各位可爱的酷友大家好[嘿哈]又是我小K同学[微笑]写了上两期无论是小编还是酷友们都很给力，秒头条(疼)[受虐滑稽]好多酷友都想我尽快出下一期(日常催更)，我也不好意思拖太久了[偷看]来吧，大学生穷游日本第三期正式开机！！！始めるよ！！
-							</span>
-						</div>
-				</div>
+	
+	<body id="body" onload="randomApi()">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        
+            <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+            	<li>
+                    <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="page/C.html">C</a></li>
+                        <li><a href="page/Java.html">Java</a></li>
+                        <li><a href="page/Python.html">Python</a></li>
+                        <li><a href="page/JavaScript.html">JavaScript</a></li>
+                        <li><a href="page/Web.html">Web</a></li>
+                    </ul>
+                </li>
+                <li><a href="page/Linux.html">Linux系统</a></li>
+                <li><a href="page/software.html">好软推荐</a></li>
+                <li><a href="page/photograph.html">摄影修炼</a></li>
+                <li><a href="page/travel.html">旅行</a></li>
+                <li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每日一图</a></li>
+                <li class=" hidden-xs"><a href="javascript:changeimg()">换肤</a></li>
+            </ul>
+    	</div>
 
-				<div class="left-block" id="program">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img2.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/program.png" alt="">爱编程，爱学习，</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="travel">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img3.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/travel.png" alt="">旅游2</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="photograph">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img4.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/photograph.png" alt="">摄影</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="software">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img5.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/software.png" alt="">软件</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="program">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img6.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/program.png" alt="">编程</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="software">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img7.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/software.png" alt="">软件2</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="program">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/img8.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/program.png" alt="">编程2</p></a></div>	
-				</div>
-				
-				<div class="left-block" id="travel">
-						<a href="page/detail-article.html">
-							<img class="img" src="images/view.jpg" alt="">
-						</a>
-						<div class="text"><a href="page/detail-article.html"><p><img class="sprite" src="images/travel.png" alt="">旅游3</p></a></div>	
-				</div>
-				
-			</div>
-			<div class="right"  id="right">
-				<div class="right-block">
+    	<div class="text-motto hidden-xs">
+			<p><a href="index.html">倘只看书，便变成书橱。</a></p><sub>— —鲁迅</sub>
+		</div>
+    	<div class="article container">
+    		<div class="left col-md-8">
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/travel1.html"><img class="blockPho" src="images/travel1/1.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/travel1.html"><p><img class="sprite" src="images/travel.png" alt="">一人の体験2.0（一）--大学生穷游日本2019</p></a>
+							<span class="qianyan">前言：各位小编,各位酷基大家好我是小K同学，大学一年生一枚，喜欢旅行。本次图文的内容是我寒假去日本时候的精彩分享。原来的标题应该是大学生穷游日本2.0的，因为这是我第二次一个人日本自由行啦。
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-1</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">102浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/program.html"><img class="blockPho" src="images/program1/program.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/program.html"><p><img class="sprite" src="images/program.png" alt="">想学编程语言？教你如何快速入门~</p></a>
+							<span class="qianyan">前言：在这个编程的时代，人们生活中的点点滴滴都已经有代码这东西介入。大到国家航天事业，小到家里面开个空调，空调里面单片机的芯片上都烧录的有代码，可见代码在我们生活中的重要性。想要学习编程语言，来，教你一招，快速入门~
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">20浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/travel2.html"><img class="blockPho" src="images/travel2/1.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/travel2.html"><p><img class="sprite" src="images/travel.png" alt="">一人の体験2.0（二）--大学生穷游日本2019</p></a>
+							<span class="qianyan">前言：亲爱的各位小编，亲爱的各位酷基们大家猴，我是小K同学，上一篇图文发出后感谢小编的py，我手机下午一刻也没停过。同时也感谢酷友们的捧场，酷友们的所有评论我都回复了。一些酷友想看更多细节那我这篇图文就讲得详细些，根据酷友们的评论我发现还有很多细节没有讲到。
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">14浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/photograph.html"><img class="blockPho" src="https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/photograph.html"><p><img class="sprite" src="images/photograph.png" alt="">摄影修炼</p></a>
+							<span id="qianyan">前言：树叶慢慢地变得枯黄，带着一丝渴望，但同时也带着期待的激动，我们一边期待秋天，一边告别夏天。<br>摄影修炼，用摄影分享生活中的每一点美好，用摄影记录旅行中每一点难忘。点击进入摄影修炼专题，不定期更新中......
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-1</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">112浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/JavaScript1.html"><img class="blockPho" src="images/Javascript/js.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/JavaScript1.html"><p><img class="sprite" src="images/program.png" alt="">带你初步了解js脚本语言，go!</p></a>
+							<span class="qianyan">JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">32浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+    			
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/program1.html"><img class="blockPho" src="images/program2/1.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/program1.html"><p><img class="sprite" src="images/program.png" alt="">程序猿国庆相亲图鉴</p></a>
+							<span class="qianyan">前言：国庆节，你妈逼你相亲了吗？程序员，已经渐渐成为当代相亲市场的一支主力军！甚至可以说是“香饽饽”。越来越多的妹子，在写择偶要求时，会说对程序员有好感。因为他们，他是聪明又靠谱，钱多花花肠子少。但是关于程序员谈恋爱的“笑点”也不少，一起来看看吧~
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">64浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+    			
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/software1.html"><img class="blockPho" src="images/software1/3.png"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/software1.html"><p><img class="sprite" src="images/software.png" alt="">好软推荐第一期---一个木函</p></a>
+							<span class="qianyan">前言：一个木函，何为木函？为什么要叫一个木函？相信很多人都有这个疑问。
+							百度一下，发现木函是如此意思：《后汉书·光武帝纪上》“大司徒邓禹入长安，遣府掾奉十一帝神主，纳於高庙” 李贤 注引 汉 卫宏 《旧汉仪》：“已葬，收主，为木函，藏庙太室中西壁坎中。”《晋书·成都王颖传》：“﹝司马颖﹞造浮桥以通河北，以大木函盛石，沉之以系桥，名曰石鳖。”
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">99浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+    			
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/Java1.html"><img class="blockPho" src="images/Java1/1.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="page/Java1.html"><p><img class="sprite" src="images/program.png" alt="">Java中常见基本问题集合...</p></a>
+							<span class="qianyan">什么是Java虚拟机？为什么Java被称作是“平台无关的编程语言”？JDK和JRE的区别是什么？“static”关键字是什么意思？Java中是否可以覆盖（override）一个private或者是static的方法？
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">262浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+    			
+    			<div class="left-block">
+    				<div class="container-fluid">
+    					<a class="col-md-5 col-sm-12 col-xs-12" href="page/travel3.html"><img class="blockPho" src="images/travel3/1.jpg"></a>
+    					<div class="text col-md-7 col-sm-12 col-xs-12">
+    						<a href="images/travel.png"><p><img class="sprite" src="images/travel.png" alt="">[小K周围走] 唔同角度睇香港（一）--港岛北</p></a>
+							<span class="qianyan">亲爱的各位小编，亲爱的各位酷基大家好！好久不见，是我小K同学~
+							暑假不知不觉已经过半，本K整个7月大部分时间都在家里修行(没办法，热爱学习的我)，到了8月当然是出去耍啦。好了接下来开始8月第一站行程。
+							不知道大家对香港的印象是怎样的，香港我是有空就去一下，但是每次很多时候都是为了买点东西，油尖旺地区就是目的地了(游客聚集的购物天堂嘛)，港岛几年没去过。
+							</span>
+    					</div>
+    				</div>
+    				<div class="footer">
+    					<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-3</p>
+						<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-eye-open">152浏览量</p>
+						<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/travel1.html">阅读全文</a>
+    				</div>
+    			</div>
+    			
+    			<div class="left-block">
+    				
+    			</div>
+    		</div>
+
+    		<div class="right col-md-4 hidden-xs hidden-sm">
+    			<div class="right-block">
 					<img class="right-block-header" src="images/right-block-header.jpg">
-					<a href=""><img class="avatar" src="images/avatar1.jpg"></a>
+					<a href="#"><img class="avatar" src="images/avatar1.jpg"></a>
 					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
 				</div>
 
 				<div class="right-block" style="background-color: #CCFFFF">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<a href=""><img class="avatar" src="images/avatar2.jpg"></a>
+					<img class="right-block-header" src="images/right-block-header2.jpg">
+					<a href="#"><img class="avatar" src="images/avatar2.jpg"></a>
 					<p>孔子曰：三人行，则必有我师。是故弟子不必不如师，师不必贤于弟子，闻道有先后，术业有专攻，如是而已。</p><sub>--韩愈《师说》</sub>
 				</div>
-				
-				<div class="right-block">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar3.jpg">
-					<p>好学近乎知，力行近乎仁，知耻近乎勇。</p><sub>--《中庸》</sub>
+
+				<div class="right-block" style="background-color:white; height:600px;">
+					<p style="font-size: 20px; padding-top:30px;padding-left:20px;padding-bottom:10px;">开心一刻</p>
+					<div class="right-block-inner">
+						
+					</div>
 				</div>
-				
-				<div class="right-block" style="background-color: #CCFFFF">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar1.jpg">
-					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
-				</div>
-				
-				<div class="right-block">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar1.jpg">
-					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
-				</div>
-				
-				<div class="right-block" style="background-color: #CCFFFF">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar1.jpg">
-					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
-				</div>
-				
-				<div class="right-block">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar1.jpg">
-					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
-				</div>
-				
-				<div class="right-block" style="background-color: #CCFFFF">
-					<img class="right-block-header" src="images/right-block-header.jpg">
-					<img class="avatar" src="images/avatar1.jpg">
-					<p>夏虫不可语冰，井蛙不可语海，曲士不可语道。</p><sub>--庄子《庄子·外篇·秋水》</sub>
-				</div>
-			</div>
-		</div>
-		<a class="returnTop" href="javascript:returnTop()">
+    		</div>
+    	</div>
+
+    	<a class="returnTop hidden-xs" href="javascript:returnTop()">
 			<img src="images/returnTop.png">
 		</a>
-		<div class="bottom">
-			<p>COPYRIGHT © 2019 K-D web blog, ALL RIGHTS RESERVED.</p></br>
-			<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
-			<p>DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter</p>
-			<div id="bottom-inner">
-					<br><span id="busuanzi_container_site_pv">本站总访问量<span id="all_value_site"></span>次</span>
-					| 本站今日访客数<span id="today_value_site"></span>人次
+    	<div class="container-fluid">
+	    	<div class="bottom">
+				<p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
+				<p>COPYRIGHT © 2019 K WEB BLOG, ALL RIGHTS RESERVED.</p></br>
+				<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
+				<p>关于我们：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter</p>
+				<div class="hidden-xs hidden-sm hidden-md" id="bottom-inner">
+				<span id="busuanzi_container_site_pv">本站总访问量<span id="all_value_site"></span>次</span> | 本站今日访客数<span id="today_value_site"></span>人次
+				</div>
 			</div>
 		</div>
-	</center>
+
 	</body>
 </html>
