@@ -116,6 +116,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	font-size: 25px;
 	color: white;
 	margin-left: 400px;
+	float: right;
 	text-shadow: 2px 2px 8px black;
 	font-family: "楷体";
 	animation: fade-in-delay;
@@ -145,6 +146,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .pho_header sub{
 	float: right;
 	font-size: 22px;
+	margin-top: 10px;
 	color: white;
 	text-shadow:2px 2px 8px black;
 	font-family: "楷体";
