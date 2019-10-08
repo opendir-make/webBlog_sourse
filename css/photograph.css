@@ -16,7 +16,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 @media screen and (max-width:768px){
 	#body{
-		background-color: #79cdcd!important;
+		background-color: #6C7B8B!important;
 		background-image: none!important;
 	}
 	.article{
@@ -37,7 +37,7 @@ table { border-collapse:collapse; border-spacing:0; }
 		font-size: 20px!important;
 	}
 	.bottom{
-		background-color: #848484!important;
+		/*background-color: #848484!important;*/
 	}
 	.coolapk, .bottom p{
 		font-size: 10px!important;
