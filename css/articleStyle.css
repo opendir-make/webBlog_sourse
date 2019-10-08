@@ -20,6 +20,8 @@ table { border-collapse:collapse; border-spacing:0; }
 		background-image: none!important;
 	}
 	.article{
+		padding-left: 20px!important;
+		padding-right: 20px!important;
 		border-radius: 0!important;
 		margin: 60px 15px 10px 15px!important;
 		box-shadow: 2px 2px 5px rgba(0,0,0,.2)!important;
@@ -111,6 +113,8 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /*正文*/
 .article{
+	padding-left: 60px;
+	padding-right: 60px;
 	background-color: hsla(0,0%,100%,.9);
 	border-radius: 10px;
 	margin-top: 60px;
@@ -122,6 +126,10 @@ table { border-collapse:collapse; border-spacing:0; }
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	text-align: center;
+}
+.article-title img{
+	width: 25px;
+	height: 25px;
 }
 .article-title .author{
 	font-size: 15px;
@@ -136,6 +144,8 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .article-body h2{
 	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 .innerPho{
 	border-radius: 10px;

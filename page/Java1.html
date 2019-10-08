@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=5">
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
+		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
+		<title>K.web blog | 小K同學和DD-fighter的网站，编程学习无忧，旅行达人分享生活，摄影记录生活的美好时光</title>
+		<link rel="stylesheet icon" href="../images/d.ico"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/articleStyle.css" />
+	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../js/function.js"></script>
+	</head>
+	
+	<body id="body" onload="randomApi()">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.png"></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        
+            <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+            	<li>
+                    <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../page/C.html">C</a></li>
+                        <li><a href="../page/Java.html">Java</a></li>
+                        <li><a href="../page/Python.html">Python</a></li>
+                        <li><a href="../page/JavaScript.html">JavaScript</a></li>
+                        <li><a href="../page/Web.html">Web</a></li>
+                    </ul>
+                </li>
+                <li><a href="../page/Linux.html">Linux系统</a></li>
+                <li><a href="../page/software.html">好软推荐</a></li>
+                <li><a href="../page/photograph.html">摄影修炼</a></li>
+                <li><a href="../page/travel.html">旅行</a></li>
+                <li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每日一图</a></li>
+                <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
+            </ul>
+    	</div>
+
+    	<div class="text-motto hidden-xs">
+			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
+		</div>
+    	<div class="container">
+         <div class="row">
+             <div class="article col-md-10 col-md-offset-1">
+            <div class="article-title">Java中常见基本问题集合...<div class="author"></br>作者：DD_fighter    发表日期：2019.10.02</br></div>
+            </div>
+            <div class="article-body"><div class="innerPho"><img src="../images/Java1/1.jpg" style="height: 400px;"></div>
+                <p>一、什么是Java虚拟机？为什么Java被称作是“平台无关的编程语言”？</p><br>
+                <p>答：Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文件被编译成能被Java虚拟机执行的字节码文件。</p>
+                   <p>Java被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。</p><br>
+                <p>二、JDK和JRE的区别是什么？</p><br>
+                <p>答：Java运行时环境(JRE)。它包括Java虚拟机、Java核心类库和支持文件。它不包含开发工具（JDK）--编译器、调试器和其他工具。 </p>
+                 <p> Java开发工具包(JDK)是完整的Java软件开发包，包含了JRE，编译器和其他的工具(比如：JavaDoc，Java调试器)，可以让开发者开发、编译、执行Java应用程序。</p><br>
+                <p>三、“static”关键字是什么意思？Java中是否可以覆盖（override）一个private或者是static的方法？</p><br>
+                <p>答：“static”关键字表明一个成员变量或者是成员方法可以在没有所属的类的实例变量的情况下被访问。</p>
+                <p>Java中static方法不能被覆盖，因为方法覆盖是基于运行时动态绑定的，而static方法是编译时静态绑定的。static方法跟类的任何实例都不相关，所以概念上不适用。 </p>
+                <p>java中也不可以覆盖private的方法，因为private修饰的变量和方法只能在当前类中使用，如果是其他的类继承当前类是不能访问到private变量或方法的，当然也不能覆盖。</p><br>
+                <p>四、是否可以在static环境中访问非static变量？</p><br>
+                <p>static变量在Java中是属于类的，它在所有的实例中的值是一样的。当类被Java虚拟机载入的时候，会对static变量进行初始化。如果你的代码尝试不用实例来访问非static的变量，编译器会报错，因为这些变量还没有被创建出来，还没有跟任何实例关联上。</p><br>
+                <p>五、Java支持的数据类型有哪些？什么是自动拆装箱？</p><br>
+                <p>Java语言支持的8种基本数据类型是：byte、short、int、long、float、double、boolean、char</p>
+                <p>自动装箱是Java编译器在基本数据类型和对应的对象包装类型之间做的一个转化。比如：把int转化成Integer，double转化成Double，等等。反之就是自动拆箱。 </p><br>
+                <p>Java支持的数据类型包括两种：一种是基本数据类型，包含byte，char,short, boolean ,int , long, float,double;另一种是引用类型：如String等，其实是对象的引用，JVM中虚拟栈中存的是对象的地址，创建的对象实质在堆中，通过地址来找到堆中的对象的过程，即为引用类型。自动装箱就是Java编译器在基本数据类型和对应的对象包装类型间的转化，即int转化为Integer,自动拆箱是Integer调用其方法将其转化为int的过程。</p><br>
+                <p>六、Java中的方法覆盖（Overriding）和方法重载（Overload）是什么意思？</p><br>
+                <p>答：Java中的方法重载发生在同一个类里面两个或者是多个方法的方法名相同但是参数不同的情况。与此相对，方法覆盖是说子类重新定义了父类的方法。方法覆盖必须有相同的方法名，参数列表和返回类型。覆盖者可能不会限制它所覆盖的方法的访问。</p><br>
+                <p>七、Java中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？</p><br>
+                <p>答：当新对象被创建的时候，构造方法会被调用。每一个类都有构造方法。在程序员没有给类提供构造方法的情况下，Java编译器会为这个类创建一个默认的构造方法。</p>
+                <p>Java中构造方法重载和方法重载很相似。可以为一个类创建多个构造方法。每一个构造方法必须有它自己唯一的参数列表。</p>
+                <p>Java不支持像C++中那样的复制构造方法，这个不同点是因为如果你不自己写构造方法的情况下，Java不会创建默认的复制构造方法。</p><br>
+                <p>八、Java支持多继承么？</p><br>
+                <p>答：Java中类不支持多继承，只支持单继承（即一个类只有一个父类）。 但是java中的接口支持多继承，，即一个子接口可以有多个父接口。（接口的作用是用来扩展对象的功能，一个子接口继承多个父接口，说明子接口扩展了多个功能，当类实现接口时，类就扩展了相应的功能）。</p><br>
+            </div>
+                <div class="article-footer"></div>
+            </div>
+        </div>
+
+             </div>
+         </div>   
+        </div>
+
+    	<a class="returnTop hidden-xs" href="javascript:returnTop()">
+			<img src="../images/returnTop.png">
+		</a>
+    	<div class="container-fluid">
+	    	<div class="bottom">
+				<p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
+				<p>COPYRIGHT © 2019 K WEB BLOG, ALL RIGHTS RESERVED.</p></br>
+				<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
+				<p>关于我们：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter</p>
+			</div>
+		</div>
+
+	</body>
+</html>
