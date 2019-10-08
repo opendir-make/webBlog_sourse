@@ -14,33 +14,38 @@ fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; }
 table { border-collapse:collapse; border-spacing:0; } 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
 	#body{
-		background-color: lightgray!important;
+		background-color: #79cdcd!important;
 		background-image: none!important;
 	}
 	.article{
-		margin-bottom: 15px!important;
+		padding: 0 40px!important;
+		margin: 0px 15px 10px 15px!important;
 	}
-	.container-fluid a{
-		padding: 0!important;
+	.left{
+		margin-top: 50px!important;
+		margin-bottom: 80px!important;
 	}
-	.blockPho{
-		border-radius: 0!important;
-		border: transparent!important;
-		margin: 0!important;
+	.right{
+		margin-bottom: 80px!important;
 	}
-	.left .left-block{
-		border-radius: 0!important;
+	.pho_header p{
+		font-size: 30px!important;
 	}
-	.left .left-block .footer p{
-		margin-right: 0!important;
+	.pho_header sub{
+		font-size: 20px!important;
 	}
 	.bottom{
 		background-color: #848484!important;
 	}
 	.coolapk, .bottom p{
 		font-size: 10px!important;
+	}
+}
+@media screen and (max-width:970px){
+	.left{
+		margin-bottom: 80px!important;
 	}
 }
 
@@ -86,11 +91,10 @@ table { border-collapse:collapse; border-spacing:0; }
 .ullist li a:hover{
 	color: skyblue!important;
 }
-
 /*格言*/
 .text-motto{
-	height: 80px;
-	margin:140px auto 60px auto;
+	height: 50px;
+	margin:140px auto 80px auto;
 	width: 100%;
 	text-align: center;
 }
@@ -121,153 +125,40 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /*正文*/
 .article{
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
-.left{
- 	padding: 0;
- 	margin-top: 60px;
-}
-.left .left-block{
-	background-color: hsla(0,0%,100%,.9);
-	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
-	margin: 0px 0px 30px 0px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-}
-.blockPho{
-	display: block;
-	width: 100%;
-	margin: 20px 0 10px 0;
-	border-radius: 5px;
-	border: 1px solid gray;
-}
-.left .left-block .text{
-	display: block;
-	padding: 20px; 
-}
-.left .left-block .text a p{
-	margin-bottom: 5px;
-}
-.left .left-block .text a p .sprite{
-	width: 50px;
-	height: 21px;
-	margin-right: 5px;
-	vertical-align: middle; 
-}
-.left .left-block .text a{
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
-}
-.left .left-block .text a:hover{
-	color: #4876FF; 
-}
-
-.left .left-block .footer{
-	width: 80%;
-	height: 40px;
-	margin:0 10%;
-	border-top:1px solid lightgray;
-}
-.left .left-block .footer p{
-	width: 100px!important;
+.left, .right{
 	padding: 0;
-	float: left; 
-	margin-top:10px;
-	margin-right: 20px;
-	color: #666;
-	width: 90px;
-	font-size: 13px;
 }
-.left .left-block .footer p::before{
-	vertical-align: middle;
-	margin-right: 5px;
-}
-.left .left-block .footer a{
-	width: 70px;
-	padding: 0;
-	float: right;
-	margin-top:10px;
-	text-decoration: none;
-	color: #666;
-	font-size: 13px;
-}
-.left .left-block .footer a::before{
-	vertical-align: middle;
-	margin-right: 5px;
-	float: right; 
-}
-.left .left-block .footer a:hover{
-	color: #4876FF; 
-}
-.right{
-	float: right;
-	padding: 0 0 0 40px;
- 	margin-top: 60px;
-}
-.right .right-block{
-	height: 300px;
-	background-color: #FFFFCC;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-.right .right-block .right-block-header{
-	height: 50%;
+.pho_header{
 	width: 100%; 
-	border-top-left-radius: 5px; 
-	border-top-right-radius: 5px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-shadow:2px 2px 8px black;
+	font-family: "楷体";
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
 }
-.right .right-block .avatar{
-	margin: -45px 38% 0;
-    max-height: 90px;
-    border: rgba(255,255,255,.4) 4px solid;
-    border-radius: 50%;
-    width: 82px;
-    height: 82px;
-}
-.right .right-block p{
-	margin: 5px 10px;
-    font-family: 'Microsoft YaHei';
-	font-size: 16px;
-	color: #363636;
-	line-height:27px;
-	text-align: justify;
-	text-justify: newspaper;
-	word-break: break-all;
-}
-.right .right-block sub{
-	margin: 2px 10px;
+.pho_header sub{
 	float: right;
-	font-size: 12px;
-	color: #555555;
-    font-family: 'Microsoft YaHei';
+	font-size: 22px;
+	color: white;
+	text-shadow:2px 2px 8px black;
+	font-family: "楷体";
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
 }
-.right .right-block .right-block-inner{
-	width: 84%;
-	height: 400px;
-	margin:0 auto;
-	border-top:1px solid grey;
+.row .img{
+	float: left;
+	padding: 2px;
 }
-
-/*返回顶部按钮*/
-.returnTop{
-	position:fixed;
-	right:30px;
-	bottom:30px;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
-}
-.returnTop:hover{
-	background-color:hsla(0,0%,100%,.8);
-	animation: fade-in;
-	animation-duration: 0.3s;
-	-webkit-animation:fade-in 0.3s;
-}
-.returnTop img{
-	width: 50px;
-	height: 50px;
+.row .img a img{
+	width: 100%;
+	border: rgba(255,255,255,.4) 4px solid;
 }
 
 /*页面底栏*/
@@ -275,7 +166,6 @@ table { border-collapse:collapse; border-spacing:0; }
 	padding: 0;
 }
 .bottom{
-	float: left;
 	width: 100%;
 	background-color: rgba(0,0,0,0.4);
 	padding-top: 20px;
