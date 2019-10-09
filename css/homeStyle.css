@@ -226,14 +226,15 @@ table { border-collapse:collapse; border-spacing:0; }
     height: 82px;
 }
 .right .right-block p{
-	margin: 5px 10px;
+	margin: 10px 20px;
     font-family: 'Microsoft YaHei';
 	font-size: 16px;
 	color: #363636;
 	line-height:27px;
-	text-align: justify;
+	/*换行文字左对齐*/
+	/*text-align: justify;
 	text-justify: newspaper;
-	word-break: break-all;
+	word-break: break-all;*/
 } 
 .right .right-block a p:hover{
 	color: #4876FF;
