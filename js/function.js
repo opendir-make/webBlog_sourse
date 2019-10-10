@@ -43,3 +43,11 @@ function omit_text(){
 		oBox.innerHTML = demoHtml;
 	}
 }
+
+function getTime(){
+    var now=new Date();
+    var time=now.toDateString();
+    var date=document.getElementById("date");
+    date.innerHTML=time;
+ }
+ setInterval("getTime()");

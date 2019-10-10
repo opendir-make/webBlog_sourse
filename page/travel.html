@@ -10,13 +10,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=8">
 		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
 		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
-		<title>Life is a journey,let your journey be wonderful.</title>
+		<title>云旅游</title>
 		<link rel="stylesheet icon" href="../images/d.ico"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/homeStyle.css" />
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="../js/function.js"></script>
+        <script type="text/javascript" src="https://api.ooopn.com/history/api.php?type=js"></script>
 	</head>
 	
 	<body id="body" onload="randomApi()">
@@ -117,7 +118,7 @@
     			<div class="right-block">
                     <img class="right-block-header" src="../images/right-block-header.jpg">
                     <img class="avatar" src="../images/avatar1.jpg">
-                    <p style="text-align: center;">我有拖延症，唯有改bug不会拖延。</p><sub>--开发者@_小K同學</sub>
+                    <p style="text-align: center;">我有拖延症，唯独改bug不会拖延。</p><sub>--开发者@_小K同學</sub>
                 </div>
 
                 <div class="right-block" style="background-color: #CCFFFF;">
@@ -126,12 +127,12 @@
                     <p style="text-align: center;">编程五分钟，扯淡两小时。</p><sub>--开发者@DD_fighter</sub>
                 </div>
 
-				<div class="right-block" style="background-color:white; height:600px;">
-					<p style="font-size: 20px; padding-top:30px;padding-left:20px;padding-bottom:10px;">历史上的今天</p>
-					<div class="right-block-inner">
-						
-					</div>
-				</div>
+				<div class="right-block" style="height:140px;">
+                    <p style="font-size: 20px; padding-top:20px;padding-left:20px;padding-right: 20px; padding-bottom:10px;">历史上的今天<span style="float: right;font-size: 14px;" id="date"></span></p>
+                    <div id="history" class="right-block-inner">
+                        <p style="margin-top: 10px;"><script type="text/javascript">history()</script></p>
+                    </div>
+                </div>
     		</div>
     	</div>
 

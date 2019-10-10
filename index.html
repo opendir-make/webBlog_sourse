@@ -17,6 +17,7 @@
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/function.js"></script>
+        <script type="text/javascript" src="https://api.ooopn.com/history/api.php?type=js"></script>
 	    <script type="text/javascript">
 			var i=-1;
 			function changeimg(){
@@ -29,6 +30,7 @@
 				var body=document.getElementById("body");
 			    body.style.backgroundImage="url(images/"+images[i]+")";
 			} 
+            
 		</script>
 	</head>
 	
@@ -227,7 +229,7 @@
     			<div class="right-block">
 					<img class="right-block-header" src="images/right-block-header.jpg">
 					<img class="avatar" src="images/avatar1.jpg">
-					<p style="text-align: center;">我有拖延症，唯有改bug不会拖延。</p><sub>--开发者@_小K同學</sub>
+					<p style="text-align: center;">我有拖延症，唯独改bug不会拖延。</p><sub>--开发者@_小K同學</sub>
 				</div>
 
 				<div class="right-block" style="background-color: #CCFFFF;">
@@ -236,9 +238,11 @@
 					<p style="text-align: center;">编程五分钟，扯淡两小时。</p><sub>--开发者@DD_fighter</sub>
 				</div>
 
-				<div class="right-block" style="background-color:white; height:200px;">
-					<p style="font-size: 20px; padding-top:30px;padding-left:20px;padding-bottom:10px;" class="widget-title">历史上的今天</p>
-					<div class="right-block-inner"></div>
+				<div class="right-block" style="height:140px;">
+					<p style="font-size: 20px; padding-top:20px;padding-left:20px;padding-right: 20px; padding-bottom:10px;">历史上的今天<span style="float: right;font-size: 14px;" id="date"></span></p>
+					<div id="history" class="right-block-inner">
+                        <p style="margin-top: 10px;"><script type="text/javascript">history()</script></p>
+                    </div>
 				</div>
     		</div>
     	</div>
