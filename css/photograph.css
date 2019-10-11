@@ -34,7 +34,7 @@ table { border-collapse:collapse; border-spacing:0; }
 		font-size: 30px!important;
 	}
 	.pho_header sub{
-		font-size: 20px!important;
+		font-size: 18px!important;
 	}
 	.bottom{
 		/*background-color: #848484!important;*/
@@ -135,7 +135,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	width: 100%; 
 	margin-bottom: 40px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	color: white;
 	text-shadow:2px 2px 8px black;
 	font-family: "楷体";
@@ -145,7 +145,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .pho_header sub{
 	float: right;
-	font-size: 22px;
+	font-size: 20px;
 	margin-top: 10px;
 	color: white;
 	text-shadow:2px 2px 8px black;
