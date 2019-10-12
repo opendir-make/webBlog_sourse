@@ -566,13 +566,13 @@
                     </div>
 				</div>
 
-                <div class="right-bloc" style="background-color: pink;">
-                    <p style="font-size: 20px; padding-top:20px;padding-left:20px;padding-right: 20px; padding-bottom:10px;">站内搜索<span style="float: right;font-size: 14px;" id="date"></span></p>
-                    <div class="right-block-inner">
+                <div class="searchBlock">
+                    <p>站内搜索</p>
+                    <div class="searchBlock-inner">
                         <form id="main" v-cloak>
                             <div class="searchBox">
                                 <input type="text" v-model="searchString" placeholder="Hello World !" />
-                                <button onclick="searchClick()">搜索</button>
+                                <p onclick="searchClick()">搜索</p>
                             </div>
                             <ul style="display: none;" id="searchList" class="searchList">
                                 <!-- 循环输出数据 -->
