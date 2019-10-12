@@ -31,6 +31,35 @@
 			    body.style.backgroundImage="url(images/"+images[i]+")";
 			} 
 		</script>
+		<script>
+			var a_idx = 0; 
+			jQuery(document).ready(function($) { 
+				$("body").click(function(e) { 
+					var a = new Array("学习","娱乐","写代码","电协程序部"); 
+					var $i = $("<span></span>").text(a[a_idx]); 
+					a_idx = (a_idx + 1) % a.length; 
+					var x = e.pageX, 
+					y = e.pageY; 
+					$i.css({ 
+						"z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
+						"top": y - 20, 
+						"left": x, 
+						"position": "absolute", 
+						"font-weight": "bold", 
+						"color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")" 
+					}); 
+					$("body").append($i); 
+					$i.animate({ 
+						"top": y - 180, 
+						"opacity": 0 
+					}, 
+					1500, 
+					function() { 
+						$i.remove(); 
+					}); 
+				}); 
+			}); 
+		</script>
 	</head>
 	
 	<body id="body" onload="randomApi()">
@@ -250,8 +279,38 @@
 							<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Linux2.html">阅读全文</a>
 						</div>
 					</div>
+					<div class="left-block" id="movie12">
+						<div class="container-fluid">
+							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Java1.html"><img class="blockPho" src="images/Java1/1.jpg"></a>
+							<div class="text col-md-7 col-sm-12 col-xs-12">
+								<a href="page/Java1.html"><p><img class="sprite" src="images/program.png" alt="">Java中常见基本问题集合...</p></a>
+								<span class="qianyan">一、什么是Java虚拟机？为什么Java被称作是“平台无关的编程语言”？答：Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文件被编译成能被Java虚拟机执行的字节码文件。Java被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。
+								</span>
+							</div>
+						</div>
+						<div class="footer">
+							<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+							<p class="col-md-2 col-sm-2 glyphicon glyphicon-eye-open hidden-xs">92浏览量</p>
+							<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Java1.html">阅读全文</a>
+						</div>
+					</div>
+					<div class="left-block" id="movie13">
+						<div class="container-fluid">
+							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Java2.html"><img class="blockPho" src="images/Java1/2.png"></a>
+							<div class="text col-md-7 col-sm-12 col-xs-12">
+								<a href="Java2.html"><p><img class="sprite" src=".images/program.png" alt="">Java第二课---晋级篇</p></a>
+								<span class="qianyan">关键字：接口、抽象类、值传递、引用传递、进程、线程
+								</span>
+							</div>
+						</div>
+						<div class="footer">
+							<p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-2</p>
+							<p class="col-md-2 col-sm-2 glyphicon glyphicon-eye-open hidden-xs">422浏览量</p>
+							<a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Java2.html">阅读全文</a>
+						</div>
+					</div>
 					<script type="text/javascript">
-						var l=11,s=8,show=',',list=',';
+						var l=13,s=8,show=',',list=',';
 						for(var i=1;i<=l;i++){
 						list+=(i+",");
 						document.getElementById('movie'+i).style.display='none';
