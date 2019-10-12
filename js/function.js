@@ -55,7 +55,7 @@ function getTime(){
   var a_idx = 0; 
 jQuery(document).ready(function($) { 
 	$("body").click(function(e) { 
-		var a = new Array("学习","娱乐","写代码","电协程序部"); 
+		var a = new Array("学习","娱乐","云旅游","敲代码","电协程序部"); 
 		var $i = $("<span></span>").text(a[a_idx]); 
 		a_idx = (a_idx + 1) % a.length; 
 		var x = e.pageX, 
