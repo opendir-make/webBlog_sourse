@@ -89,34 +89,92 @@ function search(){
             searchString: "",
             articles: [
                 {
-                    "title": "你好",
-                    "url": "https://www.runoob.com/css/css-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/css.png"
+                    "title": "C语言概述篇--了解C语言",
+                    "url": "page/C1.html"
                 },
                 {
-                    "title": "Freebie: 4 Great Looking Pricing Tables",
-                    "url": "https://www.runoob.com/html/html-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/html.png"
+                    "title": "C语言基础篇--入门必读",
+                    "url": "page/C2.html"
                 },
                 {
-                    "title": "20 Interesting JavaScript and CSS Libraries for February 2016",
-                    "url": "https://www.runoob.com/css3/css3-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/css3.png"
+                    "title": "C语言基础练习题--小牛试刀",
+                    "url": "page/C3.html"
                 },
                 {
-                    "title": "Quick Tip: The Easiest Way To Make Responsive Headers",
-                    "url": "https://www.runoob.com/css3/css3-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/css3.png"
+                    "title": "C语言基础知识点整理",
+                    "url": "page/C4.html"
                 },
                 {
-                    "title": "Learn SQL In 20 Minutes",
-                    "url": "https://www.runoob.com/sql/sql-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/sql.png"
+                    "title": "Java中常见基本问题集合...",
+                    "url": "page/Java1.html"
                 },
                 {
-                    "title": "Creating Your First Desktop App With HTML, JS and Electron",
-                    "url": "https://www.runoob.com/js/js-tutorial.html",
-                    "image": "https://static.runoob.com/images/icon/html.png"
+                    "title": "Java第二课---晋级篇",
+                    "url": "page/Java2.html"
+                },
+                {
+                    "title": "Java:new一个对象的过程中发生了什么？",
+                    "url": "page/Java3.html"
+                },
+                {
+                    "title": "今天补充一下Java基础内容--了解Java",
+                    "url": "page/Java4.html"
+                },
+                {
+                    "title": "带你初步了解JavaScript脚本语言，go!",
+                    "url": "page/JavaScript1.html"
+                },
+                {
+                    "title": "JavaScript经典题目集合啦~",
+                    "url": "page/JavaScript2.html"
+                },
+                {
+                    "title": "Linux第一篇---了解Linux~",
+                    "url": "page/Linux1.html"
+                },
+                {
+                    "title": "Linux第二篇---在虚拟机上安装Linux",
+                    "url": "page/Linux2.html"
+                },
+                {
+                    "title": "Linux到底学什么？讲完下节课开始命令操作！",
+                    "url": "page/Linux3.html"
+                },
+                {
+                    "title": "好软推荐第一期---一个木函",
+                    "url": "page/software1.html"
+                },
+                {
+                    "title": "好软推荐第二期---Via浏览器",
+                    "url": "page/software2.html"
+                },
+                {
+                    "title": "好软推荐第三期---Geek Uninstaller",
+                    "url": "page/software3.html"
+                },
+                {
+                    "title": "一人の体験2.0（一）--大学生穷游日本2019",
+                    "url": "page/travel1.html"
+                },
+                {
+                    "title": "一人の体験2.0（二）--大学生穷游日本2019",
+                    "url": "page/travel2.html"
+                },
+                {
+                    "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
+                    "url": "page/travel3.html"
+                },
+                {
+                    "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
+                    "url": "page/travel4.html"
+                },
+                {
+                    "title": "Web第一课--风里雨里，我在前端战场等你！",
+                    "url": "page/Web1.html"
+                },
+                {
+                    "title": "Web基础第二课---HTML/HTML5",
+                    "url": "page/Web2.html"
                 }
             ]
         },
