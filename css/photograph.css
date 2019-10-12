@@ -16,12 +16,12 @@ table { border-collapse:collapse; border-spacing:0; }
 
 @media screen and (max-width:768px){
 	#body{
-		background-color: #6C7B8B!important;
-		background-image: none!important;
+		background-color: #9dbac7!important;
+		background-image: url(../images/photograph/black-linen.png)!important;
 	}
 	.article{
 		padding: 0 40px!important;
-		margin: 0px 15px 10px 15px!important;
+		margin: 0 15px!important;
 	}
 	.left{
 		margin-top: 50px!important;
@@ -35,9 +35,6 @@ table { border-collapse:collapse; border-spacing:0; }
 	}
 	.pho_header sub{
 		font-size: 18px!important;
-	}
-	.bottom{
-		/*background-color: #848484!important;*/
 	}
 	.coolapk, .bottom p{
 		font-size: 10px!important;

@@ -44,6 +44,7 @@ function omit_text(){
 	}
 }
 
+//获取当前时间
 function getTime(){
     var now=new Date();
     var time=now.toDateString();
@@ -52,6 +53,7 @@ function getTime(){
  }
  setInterval("getTime()");
  
+//鼠标点击特效
   var a_idx = 0; 
 jQuery(document).ready(function($) { 
 	$("body").click(function(e) { 
@@ -79,3 +81,74 @@ jQuery(document).ready(function($) {
 		}); 
 	}); 
 }); 
+
+function search(){
+	var demo = new Vue({
+        el: '#main',
+        data: {
+            searchString: "",
+            articles: [
+                {
+                    "title": "你好",
+                    "url": "https://www.runoob.com/css/css-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/css.png"
+                },
+                {
+                    "title": "Freebie: 4 Great Looking Pricing Tables",
+                    "url": "https://www.runoob.com/html/html-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/html.png"
+                },
+                {
+                    "title": "20 Interesting JavaScript and CSS Libraries for February 2016",
+                    "url": "https://www.runoob.com/css3/css3-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/css3.png"
+                },
+                {
+                    "title": "Quick Tip: The Easiest Way To Make Responsive Headers",
+                    "url": "https://www.runoob.com/css3/css3-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/css3.png"
+                },
+                {
+                    "title": "Learn SQL In 20 Minutes",
+                    "url": "https://www.runoob.com/sql/sql-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/sql.png"
+                },
+                {
+                    "title": "Creating Your First Desktop App With HTML, JS and Electron",
+                    "url": "https://www.runoob.com/js/js-tutorial.html",
+                    "image": "https://static.runoob.com/images/icon/html.png"
+                }
+            ]
+        },
+        computed: {
+            // 计算数学，匹配搜索
+            filteredArticles: function () {
+                var articles_array = this.articles,
+                    searchString = this.searchString;
+
+                if(!searchString){
+                    return articles_array;
+                }
+
+                searchString = searchString.trim().toLowerCase();
+
+                articles_array = articles_array.filter(function(item){
+                    if(item.title.toLowerCase().indexOf(searchString) !== -1){
+                        return item;
+                    }
+                })
+                // 返回过来后的数组
+                return articles_array;;
+            }
+        }
+    });
+}
+
+function searchClick(){
+	if($('#searchList').css('display')=='none')
+		{$('#searchList').css('display','block');
+}
+	else{
+		$('#searchList').css('display','none');
+	}
+}
