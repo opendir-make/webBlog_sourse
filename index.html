@@ -251,24 +251,24 @@
 						</div>
 					</div>
 					<script type="text/javascript">
-					var l=11,s=9,show=',',list=',';
-					for(var i=1;i<=l;i++){
-					list+=(i+",");
-					document.getElementById('movie'+i).style.display='none';
-					}
-					function divrefresh(){
-					var i,a=show.split(','),c=list,d,e;
-					for(i=1;i<=s&&i<a.length;i++) c=c.replace(','+a[i]+',',',');
-					show=',';
-					for(i=1;i<=s;i++){
-					d=c.split(',');
-					e=d[(parseInt(Math.random()*1000)%(d.length-2))+1];
-					show+=(e+',');
-					c=c.replace(','+e+',',',');
-					document.getElementById('show'+i).innerHTML=document.getElementById('movie'+e).innerHTML;
-					}
-					}
-					divrefresh();
+						var l=11,s=8,show=',',list=',';
+						for(var i=1;i<=l;i++){
+						list+=(i+",");
+						document.getElementById('movie'+i).style.display='none';
+						}
+						function divrefresh(){
+						var i,a=show.split(','),c=list,d,e;
+						for(i=1;i<=s&&i<a.length;i++) c=c.replace(','+a[i]+',',',');
+						show=',';
+						for(i=1;i<=s;i++){
+							d=c.split(',');
+							e=d[(parseInt(Math.random()*1000)%(d.length-2))+1];
+							show+=(e+',');
+							c=c.replace(','+e+',',',');
+							document.getElementById('show'+i).innerHTML=document.getElementById('movie'+e).innerHTML;
+							}
+						}
+						divrefresh();
 				</script>
 			</div>
 			
