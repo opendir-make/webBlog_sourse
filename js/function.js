@@ -90,9 +90,9 @@ function search(){
             searchString: "",
             articles: [
                 {
-                    "label":"C语言入门编程",
-                    "title": "C语言概述篇--了解C语言",
-                    "url": "page/C1.html"
+                    "label":"C语言入门编程",//标签，关键字
+                    "title": "C语言概述篇--了解C语言",//文章标题
+                    "url": "page/C1.html"//文章相对链接
                 },
                 {
                     "label":"C语言入门编程",
@@ -198,25 +198,32 @@ function search(){
                     "label":"web基础，HTML",
                     "title": "Web基础第二课---HTML/HTML5",
                     "url": "page/Web2.html"
-                },{
+                },
+                {
                     "label":"电子协会程序部，程序设计部，电协程序设计部",
                     "title":"电协程序设计部牛逼逼！",
                     "url":"https://u.eqxiu.com/s/JfuKBIyf"
+                },
+                {
+                    "label":"开源关于本网站简单站内搜索功能的实现,进阶",
+                    "title":"开源！关于本网站简单站内搜索功能的实现",
+                    "url":"page/Web3.html"
                 }
             ]
         },
         computed: {
-            // 计算数学，匹配搜索
+            // 匹配搜索
             filteredArticles: function () {
-                var articles_array = this.articles,
-                    searchString = this.searchString;
-                if(!searchString){
-                    return articles_array;
+                var articles_array = this.articles,//把articles数组赋值给articles_array对象
+                    searchString = this.searchString;//把searchString(用户搜索的关键字)赋值给searchString对象
+                if(!searchString){//如果没输入关键字
+                    return articles_array;//返回原来的数组
                 }
-                searchString = searchString.trim().toLowerCase();
-                articles_array = articles_array.filter(function(item){
-                    if(item.label.toLowerCase().indexOf(searchString) !== -1){
-                        return item;
+                searchString = searchString.trim().toLowerCase();//trim()意思为去掉左右两边的空格，toLowerCase
+                                                                //则是把字符串转换为小写
+                articles_array = articles_array.filter(function(item){//filter用于接收里面函数的返回结果
+                    if(item.label.toLowerCase().indexOf(searchString) !== -1){//检索关键字
+                        return item;//返回适配的结果
                     }
                 })
                 // 返回过来后的数组
@@ -230,7 +237,7 @@ function searchClick(){
             if($('#searchList').css('display')=='none')
             {
                 $('#searchList').css('display','block');
-                document.getElementById("search_pSM").innerHTML="关闭";
+                document.getElementById("search_p").innerHTML="关闭";
             }
             else{
             $('#searchList').css('display','none');
@@ -246,7 +253,7 @@ function searchenter(event) {
         if (event.keyCode == 13) //回车键的键值为13 
         searchClick();//回车需执行的方法
      };
-     $('#searchList').css('display','none');
+    $('#searchList').css('display','none');
     document.getElementById("search_p").innerHTML="搜索";
 }
 
@@ -367,6 +374,11 @@ function searchSM(){
                     "label":"web基础，HTML",
                     "title": "Web基础第二课---HTML/HTML5",
                     "url": "page/Web2.html"
+                },
+                {
+                    "label":"开源关于本网站简单站内搜索功能的实现,进阶",
+                    "title":"开源！关于本网站简单站内搜索功能的实现",
+                    "url":"page/Web3.html"
                 }
             ]
         },
