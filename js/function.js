@@ -206,7 +206,7 @@ function searchClick(){
 	if($('#searchList').css('display')=='none')
 		{$('#searchList').css('display','block');
 }
-	else{
+	else{ 
 		$('#searchList').css('display','none');
 	}
 }
