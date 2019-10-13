@@ -203,10 +203,24 @@ function search(){
 }
 
 function searchClick(){
-	if($('#searchList').css('display')=='none')
-		{$('#searchList').css('display','block');
+    if(document.getElementById("searchInput").value.length!=0){
+            if($('#searchList').css('display')=='none')
+            {
+                $('#searchList').css('display','block');
+                document.getElementById("search_p").innerHTML="关闭";
+            }else{
+            $('#searchList').css('display','none');
+            document.getElementById("search_p").innerHTML="搜索";
+        }
+    }else{
+        $('#searchList').css('display','none');
+        document.getElementById("search_p").innerHTML="搜索";
+    }	
 }
-	else{ 
-		$('#searchList').css('display','none');
-	}
+function searchenter(event) {
+    document.onkeydown = function (event) {
+        if (event.keyCode == 13) //回车键的键值为13 
+        searchClick();//回车需执行的方法
+        return false;
+     };
 }

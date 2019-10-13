@@ -571,11 +571,9 @@
                     <div class="searchBlock-inner">
                         <form id="main" v-cloak>
                             <div class="searchBox">
-                                <div class="row">
-                                    <input class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="Hello World !" />
-                                </div>
-                                <p onclick="searchClick()">搜索</p>
-                            </div>
+                                <input class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="Hello World !" id="searchInput" onfocus="getText()" onkeydown="searchenter(event)"/>
+								<p id="search_p" onclick="searchClick()">搜索</p>
+							</div>
                             <ul style="display: none;" id="searchList" class="searchList">
                                 <!-- 循环输出数据 -->
                                 <li v-for="article in filteredArticles">
@@ -583,7 +581,7 @@
                                 </li>
                             </ul>
                         </form>
-                        <script>search()</script>
+						<script>search()</script>
                     </div>
                 </div>
 
