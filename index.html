@@ -542,6 +542,25 @@
 			
 
     		<div class="right col-md-4 hidden-xs hidden-sm" id="right">
+                <div class="searchBlock">
+                    <p>站内搜索</p>
+                    <div class="searchBlock-inner">
+                        <form id="main" v-cloak onsubmit="return false">
+                            <div class="searchBox">
+                                <input id="searchInput" class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="Hello World !" onkeydown="searchenter()"/>
+                                <p id="search_p" onclick="searchClick()">搜索</p>
+                            </div>
+                            <ul id="searchList" class="searchList">
+                                <!-- 循环输出数据 -->
+                                <li v-for="article in filteredArticles">
+                                    <a v-bind:href="article.url"><p>{{article.title}}</p></a>
+                                </li>
+                            </ul>
+                        </form>
+                        <script>search()</script>
+                    </div>
+                </div>
+
                 <div class="right-block" style="background:-webkit-linear-gradient(left,#c6cfd8,#d4d8e1,#f1f2f6)">
                     <img style="margin-bottom: 30px;" class="right-block-header" src="images/dianxiebg.jpg">
                     <a style="text-decoration: none;display: block;" href="https://u.eqxiu.com/s/JfuKBIyf" target="_blank"><p style="font-family:华文彩云;font-size: 40px;line-height:40px;text-align: center; font-weight: bold;">电子协会<br>程序设计部</p></a>
@@ -565,25 +584,6 @@
                         <p style="margin-top: 10px;"><script type="text/javascript">history()</script></p>
                     </div>
 				</div>
-
-                <div class="searchBlock">
-                    <p>站内搜索</p>
-                    <div class="searchBlock-inner">
-                        <form id="main" v-cloak>
-                            <div class="searchBox">
-                                <input class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="Hello World !" id="searchInput" onfocus="getText()" onkeydown="searchenter(event)"/>
-								<p id="search_p" onclick="searchClick()">搜索</p>
-							</div>
-                            <ul style="display: none;" id="searchList" class="searchList">
-                                <!-- 循环输出数据 -->
-                                <li v-for="article in filteredArticles">
-                                    <a v-bind:href="article.url"><p>{{article.title}}</p></a>
-                                </li>
-                            </ul>
-                        </form>
-						<script>search()</script>
-                    </div>
-                </div>
 
     		</div>
     	</div>

@@ -183,13 +183,10 @@ function search(){
             filteredArticles: function () {
                 var articles_array = this.articles,
                     searchString = this.searchString;
-
                 if(!searchString){
                     return articles_array;
                 }
-
                 searchString = searchString.trim().toLowerCase();
-
                 articles_array = articles_array.filter(function(item){
                     if(item.title.toLowerCase().indexOf(searchString) !== -1){
                         return item;
@@ -208,7 +205,8 @@ function searchClick(){
             {
                 $('#searchList').css('display','block');
                 document.getElementById("search_p").innerHTML="关闭";
-            }else{
+            }
+            else{
             $('#searchList').css('display','none');
             document.getElementById("search_p").innerHTML="搜索";
         }
@@ -221,6 +219,11 @@ function searchenter(event) {
     document.onkeydown = function (event) {
         if (event.keyCode == 13) //回车键的键值为13 
         searchClick();//回车需执行的方法
-        return false;
      };
+}
+function searchDisN(){
+	if(document.getElementById("searchInput").value.length==0){
+    	$('#searchList').css('display','none');
+		document.getElementById("search_p").innerHTML="搜索";
+    }
 }
