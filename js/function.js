@@ -31,7 +31,7 @@ function returnTop(){
 function randomApi(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
-	omit_text();
+    omit_text();
 }
 
 // 省略前言
@@ -198,6 +198,10 @@ function search(){
                     "label":"web基础，HTML",
                     "title": "Web基础第二课---HTML/HTML5",
                     "url": "page/Web2.html"
+                },{
+                    "label":"电子协会程序部，程序设计部，电协程序设计部",
+                    "title":"电协程序设计部牛逼逼！",
+                    "url":"https://u.eqxiu.com/s/JfuKBIyf"
                 }
             ]
         },
