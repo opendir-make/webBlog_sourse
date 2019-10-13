@@ -82,6 +82,7 @@ jQuery(document).ready(function($) {
 	}); 
 }); 
 
+// 大屏搜索
 function search(){
 	var demo = new Vue({
         el: '#main',
@@ -89,12 +90,12 @@ function search(){
             searchString: "",
             articles: [
                 {
-                    "label":"C语言编程",
+                    "label":"C语言入门编程",
                     "title": "C语言概述篇--了解C语言",
                     "url": "page/C1.html"
                 },
                 {
-                    "label":"C入门编程",
+                    "label":"C语言入门编程",
                     "title": "C语言基础篇--入门必读",
                     "url": "page/C2.html"
                 },
@@ -109,7 +110,7 @@ function search(){
                     "url": "page/C4.html"
                 },
                 {
-                    "label":"Java常见问题",
+                    "label":"Java入门常见问题",
                     "title": "Java中常见基本问题集合...",
                     "url": "page/Java1.html"
                 },
@@ -169,22 +170,22 @@ function search(){
                     "url": "page/software3.html"
                 },
                 {
-                    "label":"旅游，日本，大学生",
+                    "label":"旅游，旅行，日本，大学生",
                     "title": "一人の体験2.0（一）--大学生穷游日本2019",
                     "url": "page/travel1.html"
                 },
                 {
-                    "label":"旅游，日本，大学生",
+                    "label":"旅游，旅行，日本，大学生",
                     "title": "一人の体験2.0（二）--大学生穷游日本2019",
                     "url": "page/travel2.html"
                 },
                 {
-                    "label":"旅游、香港",
+                    "label":"旅游，旅行，香港",
                     "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
                     "url": "page/travel3.html"
                 },
                 {
-                    "label":"旅游，马来西亚，多元文化",
+                    "label":"旅游，旅行，马来西亚，多元文化",
                     "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
                     "url": "page/travel4.html"
                 },
@@ -220,13 +221,12 @@ function search(){
         }
     });
 }
-
 function searchClick(){
     if(document.getElementById("searchInput").value.length!=0){
             if($('#searchList').css('display')=='none')
             {
                 $('#searchList').css('display','block');
-                document.getElementById("search_p").innerHTML="关闭";
+                document.getElementById("search_pSM").innerHTML="关闭";
             }
             else{
             $('#searchList').css('display','none');
@@ -235,7 +235,7 @@ function searchClick(){
     }else{
         $('#searchList').css('display','none');
         document.getElementById("search_p").innerHTML="搜索";
-    }	
+    }   
 }
 function searchenter(event) {
     document.onkeydown = function (event) {
@@ -243,5 +243,171 @@ function searchenter(event) {
         searchClick();//回车需执行的方法
      };
      $('#searchList').css('display','none');
-	document.getElementById("search_p").innerHTML="搜索";
+    document.getElementById("search_p").innerHTML="搜索";
 }
+
+
+// 小屏搜索
+function searchSM(){
+    var demo = new Vue({
+        el: '#mainSM',
+        data: {
+            searchString: "",
+            articles: [
+                {
+                    "label":"C语言入门编程",
+                    "title": "C语言概述篇--了解C语言",
+                    "url": "page/C1.html"
+                },
+                {
+                    "label":"C语言入门编程",
+                    "title": "C语言基础篇--入门必读",
+                    "url": "page/C2.html"
+                },
+                {
+                    "label":"C语言试题",
+                    "title": "C语言基础练习题--小牛试刀",
+                    "url": "page/C3.html"
+                },
+                {
+                    "label":"C语言基础知识",
+                    "title": "C语言基础知识点整理",
+                    "url": "page/C4.html"
+                },
+                {
+                    "label":"Java入门常见问题",
+                    "title": "Java中常见基本问题集合...",
+                    "url": "page/Java1.html"
+                },
+                {
+                    "label":"Java晋级篇",
+                    "title": "Java第二课---晋级篇",
+                    "url": "page/Java2.html"
+                },
+                {
+                    "label":"Java new对象",
+                    "title": "Java:new一个对象的过程中发生了什么？",
+                    "url": "page/Java3.html"
+                },
+                {
+                    "label":"了解Java，Java基础",
+                    "title": "今天补充一下Java基础内容--了解Java",
+                    "url": "page/Java4.html"
+                },
+                {
+                    "label":"JavaScript脚本语言",
+                    "title": "带你初步了解JavaScript脚本语言，go!",
+                    "url": "page/JavaScript1.html"
+                },
+                {
+                    "label":"JavaScript题目",
+                    "title": "JavaScript经典题目集合啦~",
+                    "url": "page/JavaScript2.html"
+                },
+                {
+                    "label":"Linux认识，了解Linux",
+                    "title": "Linux第一篇---了解Linux~",
+                    "url": "page/Linux1.html"
+                },
+                {
+                    "label":"虚拟机上安装Linux",
+                    "title": "Linux第二篇---在虚拟机上安装Linux",
+                    "url": "page/Linux2.html"
+                },
+                {
+                    "label":"学习Linux学习什么",
+                    "title": "Linux到底学什么？讲完下节课开始命令操作！",
+                    "url": "page/Linux3.html"
+                },
+                {
+                    "label":"软件推荐，一个木函",
+                    "title": "好软推荐第一期---一个木函",
+                    "url": "page/software1.html"
+                },
+                {
+                    "label":"软件推荐，via浏览器",
+                    "title": "好软推荐第二期---Via浏览器",
+                    "url": "page/software2.html"
+                },
+                {
+                    "label":"软件推荐Geek Uninstaller",
+                    "title": "好软推荐第三期---Geek Uninstaller",
+                    "url": "page/software3.html"
+                },
+                {
+                    "label":"旅游，旅行，日本，大学生",
+                    "title": "一人の体験2.0（一）--大学生穷游日本2019",
+                    "url": "page/travel1.html"
+                },
+                {
+                    "label":"旅游，旅行，日本，大学生",
+                    "title": "一人の体験2.0（二）--大学生穷游日本2019",
+                    "url": "page/travel2.html"
+                },
+                {
+                    "label":"旅游，旅行，香港",
+                    "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
+                    "url": "page/travel3.html"
+                },
+                {
+                    "label":"旅游，旅行，马来西亚，多元文化",
+                    "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
+                    "url": "page/travel4.html"
+                },
+                {
+                    "label":"web基础，了解web",
+                    "title": "Web第一课--风里雨里，我在前端战场等你！",
+                    "url": "page/Web1.html"
+                },
+                {
+                    "label":"web基础，HTML",
+                    "title": "Web基础第二课---HTML/HTML5",
+                    "url": "page/Web2.html"
+                }
+            ]
+        },
+        computed: {
+            // 计算数学，匹配搜索
+            filteredArticles: function () {
+                var articles_array = this.articles,
+                    searchString = this.searchString;
+                if(!searchString){
+                    return articles_array;
+                }
+                searchString = searchString.trim().toLowerCase();
+                articles_array = articles_array.filter(function(item){
+                    if(item.label.toLowerCase().indexOf(searchString) !== -1){
+                        return item;
+                    }
+                })
+                // 返回过来后的数组
+                return articles_array;;
+            }
+        }
+    });
+}
+function searchClickSM(){
+    if(document.getElementById("searchInputSM").value.length!=0){
+            if($('#searchListSM').css('display')=='none')
+            {
+                $('#searchListSM').css('display','block');
+                document.getElementById("search_pSM").innerHTML="关闭";
+            }
+            else{
+            $('#searchListSM').css('display','none');
+            document.getElementById("search_pSM").innerHTML="搜索";
+        }
+    }else{
+        $('#searchListSM').css('display','none');
+        document.getElementById("search_pSM").innerHTML="搜索";
+    }	
+}
+function searchenterSM(event) {
+    document.onkeydown = function (event) {
+        if (event.keyCode == 13) //回车键的键值为13 
+        searchClick();//回车需执行的方法
+     };
+     $('#searchListSM').css('display','none');
+	document.getElementById("search_pSM").innerHTML="搜索";
+}
+
