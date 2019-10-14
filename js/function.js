@@ -198,10 +198,16 @@ function search(){
                     "label":"web基础，HTML",
                     "title": "Web基础第二课---HTML/HTML5",
                     "url": "page/Web2.html"
-                },{
+                },
+                {
                     "label":"电子协会程序部，程序设计部，电协程序设计部",
                     "title":"电协程序设计部牛逼逼！",
                     "url":"https://u.eqxiu.com/s/JfuKBIyf"
+                },
+                {
+                    "label":"开源 Open Sourse 关于本网站简单站内搜索功能的实现",
+                    "title":"Open Sourse！关于本网站简单站内搜索功能的实现",
+                    "url":"page/Web3.html"
                 }
             ]
         },
@@ -230,7 +236,7 @@ function searchClick(){
             if($('#searchList').css('display')=='none')
             {
                 $('#searchList').css('display','block');
-                document.getElementById("search_pSM").innerHTML="关闭";
+                document.getElementById("search_p").innerHTML="关闭";
             }
             else{
             $('#searchList').css('display','none');
@@ -367,6 +373,16 @@ function searchSM(){
                     "label":"web基础，HTML",
                     "title": "Web基础第二课---HTML/HTML5",
                     "url": "page/Web2.html"
+                },
+                {
+                    "label":"电子协会程序部，程序设计部，电协程序设计部",
+                    "title":"电协程序设计部牛逼逼！",
+                    "url": "https://u.eqxiu.com/s/JfuKBIyf"
+                },
+                {
+                    "label":"开源 Open Sourse 关于本网站简单站内搜索功能的实现",
+                    "title":"Open Sourse！关于本网站简单站内搜索功能的实现",
+                    "url": "page/Web3.html"
                 }
             ]
         },
