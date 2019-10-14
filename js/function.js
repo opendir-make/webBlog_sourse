@@ -218,9 +218,13 @@ function search(){
                     if(item.label.toLowerCase().indexOf(searchString) !== -1){
                         return item;
                     }
+                   
                 })
+                if(articles_array==""){
+                    document.getElementById("search_p").innerHTML="未找到该信息！";
+                }
                 // 返回过来后的数组
-                return articles_array;;
+                return articles_array;
             }
         }
     });
@@ -230,7 +234,7 @@ function searchClick(){
             if($('#searchList').css('display')=='none')
             {
                 $('#searchList').css('display','block');
-                document.getElementById("search_pSM").innerHTML="关闭";
+                document.getElementById("search_p").innerHTML="关闭";
             }
             else{
             $('#searchList').css('display','none');
@@ -243,8 +247,10 @@ function searchClick(){
 }
 function searchenter(event) {
     document.onkeydown = function (event) {
-        if (event.keyCode == 13) //回车键的键值为13 
+        if (event.keyCode == 13) {
+            //回车键的键值为13 
         searchClick();//回车需执行的方法
+    }
      };
      $('#searchList').css('display','none');
     document.getElementById("search_p").innerHTML="搜索";
@@ -384,6 +390,9 @@ function searchSM(){
                         return item;
                     }
                 })
+                if(articles_array==""){
+                    document.getElementById("search_pSM").innerHTML="未找到该信息！";
+                }
                 // 返回过来后的数组
                 return articles_array;;
             }
