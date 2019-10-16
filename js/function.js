@@ -205,8 +205,8 @@ function search(){
                     "url":"https://u.eqxiu.com/s/JfuKBIyf"
                 },
                 {
-                    "label":"开源 Open Sourse 关于本网站简单站内搜索功能的实现",
-                    "title":"Open Sourse！关于本网站简单站内搜索功能的实现",
+                    "label":"开源 Open Source 关于本网站简单站内搜索功能的实现",
+                    "title":"Open Source！关于本网站简单站内搜索功能的实现",
                     "url":"page/Web3.html"
                 }
             ]
@@ -214,20 +214,21 @@ function search(){
         computed: {
             // 计算数学，匹配搜索
             filteredArticles: function () {
-                var articles_array = this.articles,
-                    searchString = this.searchString;
-                if(!searchString){
-                    return articles_array;
+                var articles_array = this.articles,//把articles数组赋值给articles_array对象
+                    searchString = this.searchString;//把searchString(用户搜索的关键字)赋值给searchString对象
+                if(!searchString){//如果没输入关键字
+                    return articles_array;//返回原来的数组
                 }
-                searchString = searchString.trim().toLowerCase();
-                articles_array = articles_array.filter(function(item){
-                    if(item.label.toLowerCase().indexOf(searchString) !== -1){
-                        return item;
+                searchString = searchString.trim().toLowerCase();//trim()的意思为去掉左右两边的空格，toLowerCase()
+                                                                 //则是把字符串中的大写转换成小写
+                articles_array = articles_array.filter(function(item){//filter用于接收里面函数的返回结果
+                    if(item.label.toLowerCase().indexOf(searchString) !== -1){//确保搜索的字符和已有关键字是子集关系
+                        return item;//返回适配的结果
                     }
                    
                 })
-                if(articles_array==""){
-                    document.getElementById("search_p").innerHTML="未找到该信息！";
+                if(articles_array==""){//如果返回的数组为空
+                    document.getElementById("search_p").innerHTML="未找到该信息！";//则打印“未找到该信息！”
                 }
                 // 返回过来后的数组
                 return articles_array;
@@ -381,13 +382,18 @@ function searchSM(){
                     "url": "page/Web2.html"
                 },
                 {
+                    "label":"电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
+                    "title":"电协各部门介绍~join us！",
+                    "url": "https://mp.weixin.qq.com/s/iwPRSkQYAzLtgxWbohABGQ"
+                },
+                {
                     "label":"电子协会程序部，程序设计部，电协程序设计部",
                     "title":"电协程序设计部牛逼逼！",
                     "url": "https://u.eqxiu.com/s/JfuKBIyf"
                 },
                 {
-                    "label":"开源 Open Sourse 关于本网站简单站内搜索功能的实现",
-                    "title":"Open Sourse！关于本网站简单站内搜索功能的实现",
+                    "label":"开源 Open Source 关于本网站简单站内搜索功能的实现",
+                    "title":"Open Source！关于本网站简单站内搜索功能的实现",
                     "url": "page/Web3.html"
                 }
             ]
