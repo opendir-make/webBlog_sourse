@@ -729,7 +729,8 @@
                             else {
                                 if ((r = i[c]) && r[0] === S && r[1] === p) return a[2] = r[2];
                                 if ((i[c] = a)[2] = s(e, t, n)) return !0
-                            } return !1
+                            }
+                return !1
             }
         }
 
