@@ -15,6 +15,9 @@
 		background-color: #9dbac7!important;
 		background-image: url(../images/photograph/black-linen.png)!important;
 	}
+	h3{
+		font-size: 80px!important;
+	}
 }
 body {
 	background-attachment:fixed;
@@ -31,9 +34,7 @@ body {
 }
 h3{
 	color: white!important;
-	font-size:100px!important;
-	line-height:100px!important;
-	margin-top:150px!important;
+	margin-top:180px!important;
 }
 button{
 	margin-right: 20px!important;
