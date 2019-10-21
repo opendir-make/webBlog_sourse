@@ -32,6 +32,18 @@ function randomApi(){
 	var body=document.getElementById("body");
 	body.style.backgroundImage="url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
+    //固定div
+var rightTop=$('#right').offset().top;
+console.log(rightTop);
+$(document).scroll(function(){
+    if($(document).scrollTop()==rightTop+50.1){
+        $("#right").css("position","fixed");
+        $("#right").css("top","50.1");
+    }
+    else{
+        $("#right").css("position","static")
+    }
+});
 }
 
 // 省略前言
@@ -253,13 +265,9 @@ function searchClick(){
 }
 function searchenter(event) {
     document.onkeydown = function (event) {
-        if (event.keyCode == 13) {
-            //回车键的键值为13 
+        if (event.keyCode == 13)//回车键的键值为13 
         searchClick();//回车需执行的方法
-    }
-     };
-     $('#searchList').css('display','none');
-    document.getElementById("search_p").innerHTML="搜索";
+     }
 }
 
 
@@ -435,8 +443,7 @@ function searchenterSM(event) {
     document.onkeydown = function (event) {
         if (event.keyCode == 13) //回车键的键值为13 
         searchClick();//回车需执行的方法
-     };
-     $('#searchListSM').css('display','none');
-	document.getElementById("search_pSM").innerHTML="搜索";
+     }
 }
+
 
