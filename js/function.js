@@ -252,7 +252,7 @@ function searchClick(){
         document.getElementById("search_p").innerHTML="搜索";
     }   
 }
-function searchenter(event) {
+function searchEnter(event) {
     document.onkeydown = function (event) {
         if (event.keyCode == 13) {
             //回车键的键值为13 
@@ -262,7 +262,6 @@ function searchenter(event) {
      $('#searchList').css('display','none');
     document.getElementById("search_p").innerHTML="搜索";
 }
-
 
 // 小屏搜索
 function searchSM(){
@@ -437,12 +436,38 @@ function searchClickSM(){
         document.getElementById("search_pSM").innerHTML="搜索";
     }	
 }
-function searchenterSM(event) {
-    document.onkeydown = function (event) {
-        if (event.keyCode == 13) //回车键的键值为13 
-        searchClick();//回车需执行的方法
-     };
-     $('#searchListSM').css('display','none');
-	document.getElementById("search_pSM").innerHTML="搜索";
+
+// 首页文章排序
+function indexRefreshment(){
+    var l=29,s=9,show=',',list=',';
+    for(var i=1;i<=l;i++){
+    list+=(i+",");
+    document.getElementById('movie'+i).style.display='none';
+    }
+    function divrefresh(){
+    var i,a=show.split(','),c=list,d,e;
+    for(i=1;i<=s&&i<a.length;i++) c=c.replace(','+a[i]+',',',');
+    show=',';
+    for(i=1;i<=s;i++){
+        d=c.split(',');
+        e=d[(parseInt(Math.random()*1000)%(d.length-2))+1];
+        show+=(e+',');
+        c=c.replace(','+e+',',',');
+        document.getElementById('show'+i).innerHTML=document.getElementById('movie'+e).innerHTML;
+        }
+    }
+    divrefresh();
 }
 
+// 鼠标按下
+function mouseDown(event){
+    var e=window.event;
+    var obj=e.srcElement;
+    obj.style.color='blue';
+}
+// 鼠标松开
+function mouseUp(event){
+    var e=window.event;
+    var obj=e.srcElement;
+    obj.style.color='#4876FF';
+}
