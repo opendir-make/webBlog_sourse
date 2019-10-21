@@ -76,7 +76,7 @@
                         <div class="searchBlockSM-inner">
                             <form id="mainSM" v-cloak onsubmit="return false">
                                 <div class="searchBoxSM">
-                                    <input id="searchInputSM" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1" type="text" v-model="searchString" placeholder="Hello World !" onkeydown="searchenterSM()"/>
+                                    <input id="searchInputSM" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1" type="text" v-model="searchString" placeholder="电协程序设计部！" onkeydown="searchenterSM()"/>
                                     <p id="search_pSM" onclick="searchClickSM()">搜索</p>
                                 </div>
                                 <ul style="display: none;" id="searchListSM" class="searchList">
@@ -525,7 +525,7 @@
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/Linux3.html"><img class="blockPho" src="images/Linux/3.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
                             <a href="page/Linux3.html"><p><img class="sprite" src="images/program.png" alt="">Linux到底学什么？讲完下节课开始命令操作！</p></a>
-                            <span class="qianyan">前言：我们常常听到很多人说要学学Linux或者被人告知说应该学学Linux，那么学Linux到底要学什么？
+                            <span class="qianyan">我们常常听到很多人说要学学Linux或者被人告知说应该学学Linux，那么学Linux到底要学什么？
                             </span>
                         </div>
                     </div>
@@ -533,6 +533,21 @@
                         <p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-12</p>
                         <p class="col-md-2 col-sm-2 glyphicon glyphicon-eye-open hidden-xs">536浏览量</p>
                         <a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Linux3.html">阅读全文</a>
+                    </div> 
+                </div>
+                <div class="left-block" id="movie29">
+                    <div class="container-fluid">
+                        <a class="col-md-5 col-sm-12 col-xs-12" href="page/Web3.html"><img class="blockPho" src="images/Web3/0.jpg"></a>
+                        <div class="text col-md-7 col-sm-12 col-xs-12">
+                            <a href="page/Web3.html"><p><img class="sprite" src="images/hot.png" alt=""><img class="sprite" src="images/program.png" alt="">Open Sourse！关于本网站简单站内搜索功能的实现</p></a>
+                            <span class="qianyan">现在世界上最牛X的搜索引擎绝对是谷歌（Google）无疑了；百度（Baidu）因为符合中国国情成为全球最大的中文搜索引擎；必应（Bing）则在国内知名度不高，不温不火，但我觉得还是挺好用的。最近看见别人的个人小网站也有自己的站内搜索突然羡慕，决定在本网站中也做一个出来。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-10-14</p>
+                        <p class="col-md-2 col-sm-2 glyphicon glyphicon-eye-open hidden-xs">56浏览量</p>
+                        <a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Web3.html">阅读全文</a>
                     </div> 
                 </div>
 
@@ -565,13 +580,13 @@
                     <div class="searchBlock-inner">
                         <form id="main" v-cloak onsubmit="return false">
                             <div class="searchBox">
-                                <input id="searchInput" class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="电协程序设计部！" onkeydown="searchenter()"/>
+                                <input id="searchInput" class="col-md-10 col-md-offset-1" type="text" v-model="searchString" placeholder="Hello World !" onkeydown="searchenter()"/>
                                 <p id="search_p" onclick="searchClick()">搜索</p>
                             </div>
                             <ul id="searchList" class="searchList">
                                 <!-- 循环输出数据 -->
                                 <li v-for="article in filteredArticles">
-                                    <a v-bind:href="article.url" target="_black"><p>{{article.title}}</p></a>
+                                    <a v-bind:href="article.url" target="_blank"><p>{{article.title}}</p></a>
                                 </li>
                             </ul>
                         </form>
