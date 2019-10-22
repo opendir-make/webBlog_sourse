@@ -34,6 +34,21 @@ function randomApi() {
     body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
 
+    // counter
+    var i = 0;
+    // create object
+    imageObj = new Image();
+    // set image list
+    images = new Array();
+    images[0] = "image1.jpg"
+    images[1] = "image2.jpg"
+    images[2] = "image3.jpg"
+    images[3] = "image4.jpg"
+    // start preloading
+    for (i = 0; i <= 3; i++) {
+        imageObj.src = images[i];
+    }
+
     //固定div
     var rightTop = $('#right').offset().top;
     console.log(rightTop);

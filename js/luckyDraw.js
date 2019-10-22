@@ -1,7 +1,7 @@
 function testTime() {
 	var Array = []; //首先创建一个空数组，用来放随机数
-	var min = document.getElementById("input1").value;
-	var max = document.getElementById("input2").value;
+	var min = parseInt(document.getElementById("input1").value); //因为用getElementById取得的是字符串类型
+	var max = parseInt(document.getElementById("input2").value); //所以需要parseInt转换成number类型
 
 	function getRandom(num1, num2) { //定义一个函数，这个函数是写num1~num2的随机数，现在把他封装成一个函数
 		var transition = num2 - num1 + 1; //这里面的加1是为了能够取到num2
