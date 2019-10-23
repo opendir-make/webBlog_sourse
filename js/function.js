@@ -212,6 +212,10 @@ function search() {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web3.html"
+            }, {
+                "label": "幸运抽奖 luckydraw",
+                "title": "幸运抽奖系统",
+                "url": "page/luckyDraw.html"
             }]
         },
         computed: {
@@ -371,6 +375,10 @@ function searchSM() {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web3.html"
+            }, {
+                "label": "幸运抽奖 luckydraw",
+                "title": "幸运抽奖系统",
+                "url": "page/luckyDraw.html"
             }]
         },
         computed: {
