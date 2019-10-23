@@ -419,6 +419,16 @@ function searchClickSM() {
         document.getElementById("search_pSM").innerHTML = "搜索";
     }
 }
+function searchEnterSM(event) {
+    document.onkeydown = function(event) {
+        if (event.keyCode == 13) {
+            //回车键的键值为13
+            searchClickSM(); //回车需执行的方法
+        }
+    };
+    $('#searchListSM').css('display', 'none');
+    document.getElementById("search_pSM").innerHTML = "搜索";
+}
 
 // 首页文章排序
 function indexRefreshment() {
