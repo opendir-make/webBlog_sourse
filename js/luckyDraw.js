@@ -9,15 +9,15 @@ function testTime() {
 		return res;
 	} //上面的代码已经获取了num1~num2的随机数
 
-	if (min.length == 0 || max.length == 0) {
-		document.getElementById("one").innerHTML = "<h3>" + "请圈定范围" + "</h3>";
-		document.getElementsByTagName("h3")[0].style.fontSize = "150px";
+	if (min == max || min > max) {//判断min和max是否相等或min是否大于max
+		document.getElementById("one").innerHTML = "<h3>" + "请输入正确的范围" + "</h3>";
+		document.getElementsByTagName("h3")[0].style.fontSize = "140px";
 		clearInterval(timer);
 	} else {
 		Array.push(getRandom(min, max)); //把getRandom()函数传给数组
 		// 在div中显示一个h3标签，里面装着随机数的数组
 		document.getElementById("one").innerHTML = "<h3>" + Array[0] + "</h3>";
-		document.getElementsByTagName("h3")[0].style.fontSize = "150px";
+		document.getElementsByTagName("h3")[0].style.fontSize = "140px";
 	}
 }
 
