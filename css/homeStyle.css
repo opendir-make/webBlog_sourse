@@ -133,8 +133,17 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /*捐赠入口*/
 #donate{
+	opacity: 50%;
 	position: fixed;
-	top: 35%;
+	left:25px;
+	bottom:30px;
+	cursor: pointer;
+}
+#donate:hover{
+	opacity: 100%;
+	animation: fade-in-Dtext;
+	animation-duration: 0.3s;
+	-webkit-animation:fade-in-Dtext 0.3s;
 }
 #Dtext{
 	opacity: 50%;
@@ -165,11 +174,6 @@ table { border-collapse:collapse; border-spacing:0; }
     40% {opacity: 0.5;}
     100% {opacity: 1;}
 }
-#donateBox{
-	display: none;
-	position: absolute;
-	width: 104px;
-}
 .img1{
 	margin-top: 5px;
 	border: 2px solid skyblue;
@@ -179,6 +183,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	animation-duration: 0.5s;
 	-webkit-animation:fade-in 0.5s;
 }
+
 /*正文*/
 .article{
 	margin-bottom: 50px;

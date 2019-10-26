@@ -158,7 +158,8 @@ table { border-collapse:collapse; border-spacing:0; }
 	float: left;
 	padding: 2px;
 }
-.row .img a img{
+.innerImg{
+	cursor: pointer;
 	width: 100%;
 	border: rgba(255,255,255,.4) 4px solid;
 }

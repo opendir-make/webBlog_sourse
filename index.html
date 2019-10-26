@@ -48,8 +48,12 @@
             }
             function pay(){
                 layer.photos({
-                photos: '#layer-photos-demo',
-                anim: 3 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+                photos: '#lg_donate',
+                anim: 4
+                }); 
+                layer.photos({
+                photos: '#xs_pay',
+                anim: 3
                 }); 
             }
 		</script>
@@ -123,8 +127,10 @@
                     <div id="show9" class="left-block"></div>
                     <div id="xs_donate" class="left-block hidden-sm hidden-md hidden-lg">
                         <div class="container-fluid">
-                        <a target="_blank" class="ol-xs-12" href="images/pay1.png"><img style="float: left;width: 50%;" class="blockPho" src="images/pay1.png"></a>
-                        <a target="_blank" class="ol-xs-12" href="images/pay2.png"><img style="float: left;width: 50%;" class="blockPho" src="images/pay2.png"></a>
+                            <div id="xs_pay">
+                                <img onclick="pay()" class="ol-xs-12" style="float: left;width: 50%;" class="blockPho" src="images/pay1.png" alt="@_小K同學">
+                                <img onclick="pay()" class="ol-xs-12" style="float: left;width: 50%;" class="blockPho" src="images/pay2.png" alt="@DD_fighter">
+                            </div>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
                             <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="##"><p><img class="sprite" src="images/donate.png">请我喝杯饮料吧！</p></a>
                             <span id="qianyan">支持是给予我们最大的动力~</span>
@@ -653,8 +659,8 @@
 		</a>
         <!-- 捐赠入口 -->
         <div class="hidden-xs" id="donate">
-            <div id="layer-photos-demo" class="layer-photos-demo" onclick="pay()">
-                <img class="img1" src="images/donate.png" layer-src="images/pay.jpg">
+            <div id="lg_donate">
+                <img onclick="pay()" class="img1" src="images/donate.png" layer-src="images/pay.jpg" alt="支持是给予我们最大的动力！">
             </div>
         </div>
     	<div class="container-fluid">
