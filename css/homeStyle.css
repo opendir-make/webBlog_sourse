@@ -12,7 +12,7 @@ sub{ vertical-align:text-bottom; }
 legend { color:#000; }
 fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; }
-table { border-collapse:collapse; border-spacing:0; } 
+table { border-collapse:collapse; border-spacing:0; }
 
 @media screen and (max-width:767px){
 	#body{
@@ -62,10 +62,14 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 /*导航栏*/
 .logo{
-	width: 170px;
+	/*position: absolute;
+    top: 10%;
+	display: block;*/
+	margin-top: 5px;
+	width: 180px;
 }
 .navbar{
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.5);
 	border:transparent;
 	border-radius: 0px;
 }
@@ -73,7 +77,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	padding: 0;
 }
 .dropdown-menu{
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.5);
 	border-radius: 10px;
 }
 .dropdown-menu li a{
@@ -125,6 +129,55 @@ table { border-collapse:collapse; border-spacing:0; }
 	animation: fade-in-delay;
     animation-duration: 2s;
     -webkit-animation:fade-in-delay 2s;
+}
+
+/*捐赠入口*/
+#donate{
+	position: fixed;
+	top: 40%;
+}
+#Dtext{
+	opacity: 50%;
+	width: 120px;
+	text-align: center;
+	border: 2px solid skyblue;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: skyblue;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	right: -50px;
+}
+#Dtext:hover{
+	opacity: 100%;
+	animation: fade-in-Dtext;
+	animation-duration: 0.5s;
+	-webkit-animation:fade-in-Dtext 0.5s;
+}
+@keyframes fade-in-Dtext {
+    0% {opacity: 0.5;}/*初始状态 透明度为0*/
+    40% {opacity: 0.5;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in-Dtext {/*针对webkit内核*/
+    0% {opacity: 0.5;}
+    40% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+#donateBox{
+	display: none;
+	position: absolute;
+	width: 104px;
+	animation: fade-in;
+	animation-duration: 0.5s;
+	-webkit-animation:fade-in 0.5s;
+}
+#donateBox img{
+	margin-top: 5px;
+	border: 2px solid skyblue;
+	width: 120px;
+	height: 120px;
 }
 
 /*正文*/
@@ -180,7 +233,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .left .left-block .footer p{
 	width: 100px!important;
 	padding: 0;
-	float: left; 
+	float: left;
 	margin-top:10px;
 	margin-right: 20px;
 	color: #666;
@@ -203,10 +256,10 @@ table { border-collapse:collapse; border-spacing:0; }
 .left .left-block .footer a::before{
 	vertical-align: middle;
 	margin-right: 5px;
-	float: right; 
+	float: right;
 }
 .left .left-block .footer a:hover{
-	color: #4876FF; 
+	color: #4876FF;
 }
 .right{
 	float: right;
@@ -221,8 +274,8 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .right .right-block .right-block-header{
 	height: 50%;
-	width: 100%; 
-	border-top-left-radius: 5px; 
+	width: 100%;
+	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 .right .right-block .avatar{
