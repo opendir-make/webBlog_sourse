@@ -16,7 +16,21 @@
 		<link rel="stylesheet" type="text/css" href="../css/articleStyle.css" />
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="../js/function.js"></script>
+        <script type="text/javascript" src="../js/function.js"></script>
+        <script src="js/layer.js"></script>
+        <script>
+            function next(){
+    //页面层
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['240px', '100px'], //宽高
+            content:"这是最后一篇了哟！",
+            anim:3,
+            isOutAnim:true
+        });
+}
+        </script>
 	</head>
 	
 	<body id="body" onload="randomApi()">

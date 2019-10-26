@@ -20,6 +20,7 @@
 		<script type="text/javascript" src="js/function.js"></script>
         <script type="text/javascript" src="https://api.ooopn.com/history/api.php?type=js"></script>
         <script type="text/javascript" src="js/vue.js"></script>
+        <script src="js/layer.js"></script>
 	    <script type="text/javascript">
 			var i=-1;
 			function changeimg(){
@@ -44,6 +45,12 @@
             }
             function xs_donate_close(){
                 $('#xs_donate').css('display', 'none');
+            }
+            function pay(){
+                layer.photos({
+                photos: '#layer-photos-demo',
+                anim: 3 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+                }); 
             }
 		</script>
 	</head>
@@ -641,15 +648,13 @@
     	</div>
 
         <!-- 返回顶部 -->
-    	<a id="returnTop" class="returnTop hidden-xs" href="javascript:returnTop()">
+    	<a class="returnTop hidden-xs" href="javascript:returnTop()">
 			<img src="images/returnTop.png">
 		</a>
         <!-- 捐赠入口 -->
         <div class="hidden-xs" id="donate">
-            <div onclick="show()" id="Dtext">请我喝杯饮料吧!</div>
-            <div id="donateBox">
-                <img class="img1" src="images/pay1.png">
-                <img class="img2" src="images/pay2.png">
+            <div id="layer-photos-demo" class="layer-photos-demo" onclick="pay()">
+                <img class="img1" src="images/donate.png" layer-src="images/pay.jpg">
             </div>
         </div>
     	<div class="container-fluid">

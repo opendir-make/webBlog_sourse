@@ -445,12 +445,27 @@ function indexRefreshment() {
     }
     divrefresh();
 }
-
 function tip(){
-    alert("这是第一篇");
+//页面层
+    layer.open({
+        type: 1,
+        skin: 'layui-layer-rim', //加上边框
+        area: ['100px', '80px'], //宽高
+        content:"到头了哟！",
+        anim:3,
+        isOutAnim:true
+    });
 }
 function next(){
-    alert("这是最后一篇");
+    //页面层
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['100px', '80px'], //宽高
+            content:"这是最后一篇了哟！",
+            anim:3,
+            isOutAnim:true
+        });
 }
 // 鼠标按下
 function mouseDown(event) {
