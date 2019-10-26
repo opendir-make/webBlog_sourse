@@ -446,6 +446,12 @@ function indexRefreshment() {
     divrefresh();
 }
 
+function tip(){
+    alert("这是第一篇");
+}
+function next(){
+    alert("这是最后一篇");
+}
 // 鼠标按下
 function mouseDown(event) {
     var e = window.event;
