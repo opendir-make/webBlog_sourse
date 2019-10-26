@@ -56,7 +56,10 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 /*导航栏*/
 .logo{
-	width: 170px;
+	position: absolute;
+    top: 10%;
+	display: block;
+	width: 180px;
 }
 .navbar{
 	background-color: rgba(0,0,0,0.4);

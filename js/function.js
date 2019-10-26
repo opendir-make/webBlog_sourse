@@ -62,7 +62,9 @@ function getTime() {
     var now = new Date();
     var time = now.toDateString();
     var date = document.getElementById("date");
+    var date2 = document.getElementById("date2"); //小屏
     date.innerHTML = time;
+    date2.innerHTML = time; //小屏
 }
 setInterval("getTime()");
 
@@ -197,6 +199,10 @@ function search() {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web3.html"
+            }, {
+                "label": "幸运抽奖 luckydraw",
+                "title": "幸运抽奖系统",
+                "url": "page/luckyDraw.html"
             }]
         },
         computed: {
@@ -356,6 +362,10 @@ function searchSM() {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web3.html"
+            }, {
+                "label": "幸运抽奖 luckydraw",
+                "title": "幸运抽奖系统",
+                "url": "page/luckyDraw.html"
             }]
         },
         computed: {
@@ -395,6 +405,17 @@ function searchClickSM() {
         $('#searchListSM').css('display', 'none');
         document.getElementById("search_pSM").innerHTML = "搜索";
     }
+}
+
+function searchEnterSM(event) {
+    document.onkeydown = function(event) {
+        if (event.keyCode == 13) {
+            //回车键的键值为13
+            searchClickSM(); //回车需执行的方法
+        }
+    };
+    $('#searchListSM').css('display', 'none');
+    document.getElementById("search_pSM").innerHTML = "搜索";
 }
 
 // 首页文章排序
