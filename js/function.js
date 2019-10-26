@@ -48,18 +48,6 @@ function randomApi() {
     for (i = 0; i <= 3; i++) {
         imageObj.src = images[i];
     }
-
-    //固定div
-    var rightTop = $('#right').offset().top;
-    console.log(rightTop);//340
-    $(document).scroll(function() {
-        if ($(document).scrollTop() == rightTop + 50.1) {
-            $("#right").css("position", "fixed");
-            $("#right").css("top", "50.1");
-        } else {
-            $("#right").css("position", "static")
-        }
-    });
 }
 
 // 省略前言

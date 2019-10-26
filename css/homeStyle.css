@@ -186,7 +186,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .left{
  	padding: 0;
- 	margin-top: 60px;
+	 margin-top: 60px;
 }
 .left .left-block{
 	background-color: hsla(0,0%,100%,.9);
@@ -262,11 +262,11 @@ table { border-collapse:collapse; border-spacing:0; }
 	color: #4876FF;
 }
 .right{
-	float: right;
 	padding: 0 0 0 40px;
  	margin-top: 60px;
 }
 .right .right-block{
+	float:right;
 	height: 300px;
 	background-color: #FFFFCC;
 	margin-top: 20px;
