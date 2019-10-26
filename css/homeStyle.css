@@ -174,21 +174,11 @@ table { border-collapse:collapse; border-spacing:0; }
 	margin-top: 5px;
 	border: 2px solid skyblue;
 	width: 120px;
-	height: 120px;
+	height: 40px;
 	animation: fade-in;
 	animation-duration: 0.5s;
 	-webkit-animation:fade-in 0.5s;
 }
-.img2{
-	margin-top: 5px;
-	border: 2px solid skyblue;
-	width: 120px;
-	height: 120px;
-	animation: fade-in;
-	animation-duration: 1s;
-	-webkit-animation:fade-in 1s;
-}
-
 /*正文*/
 .article{
 	margin-bottom: 50px;
