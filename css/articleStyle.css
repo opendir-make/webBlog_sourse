@@ -185,6 +185,48 @@ table { border-collapse:collapse; border-spacing:0; }
 	height: 50px;
 }
 
+/* 换文章 */
+.changepage{
+	position:fixed;
+	width: 50px;
+	height: 50px;
+	left: 30px;
+	border-radius: 50%;
+	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
+	top:45%;
+}
+.changepage img{
+	width: 50px;
+	height: 50px;
+}
+.changepage:hover{
+	background-color:hsla(0,0%,100%,.8);
+	animation: fade-in;
+	animation-duration: 0.3s;
+	-webkit-animation:fade-in 0.3s;
+}
+.changepagenext{
+	position:fixed;
+	float: right;
+	width: 50px;
+	height: 50px;
+	right: 30px;
+	border-radius: 50%;
+	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
+	top:45%;
+}
+.changepagenext img{
+	width: 50px;
+	height: 50px;
+	transform: rotateY(180deg);
+}
+.changepagenext:hover{
+	background-color:hsla(0,0%,100%,.8);
+	animation: fade-in;
+	animation-duration: 0.3s;
+	-webkit-animation:fade-in 0.3s;
+}
+
 /*页面底栏*/
 .container-fluid{
 	padding: 0;
