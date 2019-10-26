@@ -33,6 +33,18 @@ function randomApi() {
     var body = document.getElementById("body");
     body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
+
+    //固定div
+    var rightTop = $('#right').offset().top;
+    console.log(rightTop);
+    $(document).scroll(function() {
+        if ($(document).scrollTop() == rightTop + 50.1) {
+            $("#right").css("position", "fixed");
+            $("#right").css("top", "50.1");
+        } else {
+            $("#right").css("position", "static")
+        }
+    });
 }
 
 // 省略前言
