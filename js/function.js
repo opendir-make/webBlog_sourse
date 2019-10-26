@@ -40,10 +40,10 @@ function randomApi() {
     imageObj = new Image();
     // set image list
     images = new Array();
-    images[0] = "image1.jpg"
-    images[1] = "image2.jpg"
-    images[2] = "image3.jpg"
-    images[3] = "image4.jpg"
+    images[0] = "../images/photograph/pho1.jpg"
+    images[1] = "../images/photograph/pho2.jpg"
+    images[2] = "../images/photograph/pho3.jpg"
+    images[3] = "../images/photograph/pho4.jpg"
     // start preloading
     for (i = 0; i <= 3; i++) {
         imageObj.src = images[i];
@@ -65,7 +65,9 @@ function getTime() {
     var now = new Date();
     var time = now.toDateString();
     var date = document.getElementById("date");
+    var date2 = document.getElementById("date2");//小屏
     date.innerHTML = time;
+    date2.innerHTML = time;//小屏
 }
 setInterval("getTime()");
 
@@ -407,6 +409,7 @@ function searchClickSM() {
         document.getElementById("search_pSM").innerHTML = "搜索";
     }
 }
+
 function searchEnterSM(event) {
     document.onkeydown = function(event) {
         if (event.keyCode == 13) {

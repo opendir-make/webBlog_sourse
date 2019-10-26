@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/homeStyle.css" />
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jQuery.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/function.js"></script>
         <script type="text/javascript" src="https://api.ooopn.com/history/api.php?type=js"></script>
@@ -30,40 +31,55 @@
 				}
 				var body=document.getElementById("body");
 			    body.style.backgroundImage="url(images/"+images[i]+")";
+			}
+
+            function show(){
+                if ($('#donateBox').css('display') == 'none') {
+                    $('#donateBox').css('display', 'block');
+                    document.getElementById("Dtext").innerHTML = "不请X(";
+                } else {
+                    $('#donateBox').css('display', 'none');
+                    document.getElementById("Dtext").innerHTML = "请我喝杯饮料吧!";
+                }
+            }
+            function xs_donate_close(){
+                $('#xs_donate').css('display', 'none');
             }
 		</script>
 	</head>
 
 	<body id="body" onload="randomApi()">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-          <a class="navbar-brand hidden-xs" href="index.html"><img class="logo" src="images/logo.png"></a>
-			    <a class="navbar-brand visible-xs" href="index.html"><img class="logo" src="images/dianxie4.png" alt=""></a>
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+            <div class="container">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png"></a>
+        	 <!-- <a class="navbar-brand visible-xs" href="index.html"><img class="logo" src="images/dianxie4.png" alt=""></a> -->
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-            <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
-            	<li>
-                    <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="page/C.html">C</a></li>
-                        <li><a href="page/Java.html">Java</a></li>
-                        <li><a href="page/Python.html">Python</a></li>
-                        <li><a href="page/JavaScript.html">JavaScript</a></li>
-                        <li><a href="page/Web.html">Web</a></li>
-                    </ul>
-                </li>
-                <li><a href="page/Linux.html">Linux系统</a></li>
-                <li><a href="page/software.html">好软推荐</a></li>
-                <li><a href="page/photograph.html">摄影修炼</a></li>
-                <li><a href="page/travel.html">云旅游</a></li>
-                <li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每日一图</a></li>
-                <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
-            </ul>
+                <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+                	<li>
+                        <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="page/C.html">C</a></li>
+                            <li><a href="page/Java.html">Java</a></li>
+                            <li><a href="page/Python.html">Python</a></li>
+                            <li><a href="page/JavaScript.html">JavaScript</a></li>
+                            <li><a href="page/Web.html">Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page/Linux.html">Linux系统</a></li>
+                    <li><a href="page/software.html">好软推荐</a></li>
+                    <li><a href="page/photograph.html">摄影修炼</a></li>
+                    <li><a href="page/travel.html">云旅游</a></li>
+                    <li><a href="https://api.xygeng.cn/bing/1920.php" target="_blank">每日一图</a></li>
+                    <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
+                </ul>
+            </div>
     	</div>
 
     	<div class="text-motto hidden-xs">
@@ -98,6 +114,21 @@
 					<div id="show7" class="left-block"></div>
 					<div id="show8" class="left-block"></div>
                     <div id="show9" class="left-block"></div>
+                    <div id="xs_donate" class="left-block hidden-sm hidden-md hidden-lg">
+                        <div class="container-fluid">
+                        <a target="_blank" class="ol-xs-12" href="images/pay1.png"><img style="float: left;width: 50%;" class="blockPho" src="images/pay1.png"></a>
+                        <a target="_blank" class="ol-xs-12" href="images/pay2.png"><img style="float: left;width: 50%;" class="blockPho" src="images/pay2.png"></a>
+                        <div class="text col-md-7 col-sm-12 col-xs-12">
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="##"><p><img class="sprite" src="images/donate.png">请我喝杯饮料吧！</p></a>
+                            <span id="qianyan">支持是给予我们最大的动力~</span>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p style="width: 160px!important;" id="date2" class="col-xs-2 glyphicon glyphicon-calendar"></p>
+                        <a style="width: 60px;" onclick="xs_donate_close()" class="col-xs-2 glyphicon glyphicon-chevron-right" href="##">不请X(</a>
+                    </div>
+            </div>
+
     			<div class="left-block" id="movie1">
     				<div class="container-fluid">
     					<a class="col-md-5 col-sm-12 col-xs-12" href="page/travel4.html"><img class="blockPho" src="images/travel4/1.jpg"></a>
@@ -598,15 +629,24 @@
             </div>
     	</div>
 
+        <!-- 返回顶部 -->
     	<a class="returnTop hidden-xs" href="javascript:returnTop()">
 			<img src="images/returnTop.png">
 		</a>
+        <!-- 捐赠入口 -->
+        <div class="hidden-xs" id="donate">
+            <div onclick="show()" id="Dtext">请我喝杯饮料吧!</div>
+            <div id="donateBox">
+                <img src="images/pay1.png">
+                <img src="images/pay2.png">
+            </div>
+        </div>
     	<div class="container-fluid">
 	    	<div class="bottom">
 				<p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
-				<p>COPYRIGHT © 2019 K WEB BLOG, ALL RIGHTS RESERVED.</p></br>
+				<p>COPYRIGHT © 2019 ORGLOFT.COM ALL RIGHTS RESERVED</p></br>
 				<p>THIS WEBSITE IS A PERSONAL WEBSITE FOR EVERYONE TO LEARN AND COMMUNICATE</p></br>
-				<p>关于我们：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter<br><br></p>
+				<p>ABOUT US：DEVELOPER <a class="coolapk" href="https://www.coolapk.com/" target="_blank">酷安</a> @_小K同學 & @DD_fighter<br><br></p>
 				<div class="hidden-xs hidden-sm hidden-md" id="bottom-inner">
 				<span id="busuanzi_container_site_pv">本站总访问量<span id="all_value_site"></span>次</span> | 本站今日访客数<span id="today_value_site"></span>人次
 				</div>
