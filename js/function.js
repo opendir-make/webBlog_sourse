@@ -33,21 +33,6 @@ function randomApi() {
     var body = document.getElementById("body");
     body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
-
-    // counter
-    var i = 0;
-    // create object
-    imageObj = new Image();
-    // set image list
-    images = new Array();
-    images[0] = "../images/photograph/pho1.jpg"
-    images[1] = "../images/photograph/pho2.jpg"
-    images[2] = "../images/photograph/pho3.jpg"
-    images[3] = "../images/photograph/pho4.jpg"
-    // start preloading
-    for (i = 0; i <= 3; i++) {
-        imageObj.src = images[i];
-    }
 }
 
 // 省略前言
@@ -65,9 +50,9 @@ function getTime() {
     var now = new Date();
     var time = now.toDateString();
     var date = document.getElementById("date");
-    var date2 = document.getElementById("date2");//小屏
+    var date2 = document.getElementById("date2"); //小屏
     date.innerHTML = time;
-    date2.innerHTML = time;//小屏
+    date2.innerHTML = time; //小屏
 }
 setInterval("getTime()");
 
