@@ -33,6 +33,7 @@ function randomApi() {
     var body = document.getElementById("body");
     body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
+    getTime();
 }
 
 // 省略前言
@@ -46,15 +47,14 @@ function omit_text() {
 }
 
 //获取当前时间
-function getTime() {
-    var now = new Date();
-    var time = now.toDateString();
-    var date = document.getElementById("date");
-    var date2 = document.getElementById("date2"); //小屏
-    date.innerHTML = time;
-    date2.innerHTML = time; //小屏
+function getTime(){
+    var date = new Date();	
+    var year = date.getFullYear();        //年 ,从 Date 对象以四位数字返回年份
+    var month = date.getMonth() + 1;      //月 ,从 Date 对象返回月份 (0 ~ 11) ,date.getMonth()比实际月份少 1 个月
+    var day = date.getDate();       //日
+    document.getElementById("date").innerHTML=year+"-"+month+"-"+day;
+    document.getElementById("date2").innerHTML=year+"-"+month+"-"+day;
 }
-setInterval("getTime()");
 
 //鼠标点击特效
 var a_idx = 0;
