@@ -47,13 +47,13 @@ function omit_text() {
 }
 
 //获取当前时间
-function getTime(){
-    var date = new Date();	
-    var year = date.getFullYear();        //年 ,从 Date 对象以四位数字返回年份
-    var month = date.getMonth() + 1;      //月 ,从 Date 对象返回月份 (0 ~ 11) ,date.getMonth()比实际月份少 1 个月
-    var day = date.getDate();       //日
-    document.getElementById("date").innerHTML=year+"-"+month+"-"+day;
-    document.getElementById("date2").innerHTML=year+"-"+month+"-"+day;
+function getTime() {
+    var date = new Date();
+    var year = date.getFullYear(); //年 ,从 Date 对象以四位数字返回年份
+    var month = date.getMonth() + 1; //月 ,从 Date 对象返回月份 (0 ~ 11) ,date.getMonth()比实际月份少 1 个月
+    var day = date.getDate(); //日
+    document.getElementById("date").innerHTML = year + "-" + month + "-" + day;
+    document.getElementById("date2").innerHTML = year + "-" + month + "-" + day;
 }
 
 //鼠标点击特效
@@ -433,14 +433,17 @@ function indexRefreshment() {
     }
     divrefresh();
 }
-function tip(){
+
+function tip() {
     layer.alert('到头了，这是第一篇！', {
         skin: 'layui-layer-molv' //样式类名
-        ,closeBtn: 0
-        ,anim: 6 //动画类型
-        });    
+            ,
+        closeBtn: 0,
+        anim: 6 //动画类型
+    });
 }
-function next(){
+
+function next() {
     // //页面层
     //     layer.open({
     //         type: 1,
@@ -452,9 +455,10 @@ function next(){
     //     });
     layer.alert('这是最后一篇了哟！', {
         skin: 'layui-layer-molv' //样式类名
-        ,closeBtn: 0
-        ,anim: 6 //动画类型
-        });    
+            ,
+        closeBtn: 0,
+        anim: 6 //动画类型
+    });
 }
 
 // 鼠标按下
@@ -468,4 +472,17 @@ function mouseUp(event) {
     var e = window.event;
     var obj = e.srcElement;
     obj.style.color = '#4876FF';
+}
+
+//iframe窗
+function superlink() {
+    //iframe窗
+    layer.open({
+        type: 2,
+        title: 'layer mobile页',
+        shadeClose: true,
+        shade: true,
+        area: ['1380px', '700px'],
+        content: 'https://www.xjh.me'
+    });
 }
