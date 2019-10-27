@@ -434,26 +434,27 @@ function indexRefreshment() {
     divrefresh();
 }
 function tip(){
-//页面层
-    layer.open({
-        type: 1,
-        skin: 'layui-layer-rim', //加上边框
-        area: ['100px', '80px'], //宽高
-        content:"到头了哟！",
-        anim:3,
-        isOutAnim:true
-    });
+    layer.alert('到头了，这是第一篇！', {
+        skin: 'layui-layer-molv' //样式类名
+        ,closeBtn: 0
+        ,anim: 6 //动画类型
+        });    
 }
 function next(){
-    //页面层
-        layer.open({
-            type: 1,
-            skin: 'layui-layer-rim', //加上边框
-            area: ['100px', '80px'], //宽高
-            content:"这是最后一篇了哟！",
-            anim:3,
-            isOutAnim:true
-        });
+    // //页面层
+    //     layer.open({
+    //         type: 1,
+    //         skin: 'layui-layer-rim', //加上边框
+    //         area: ['300px', '150px'], //宽高
+    //         content:"这是最后一篇了哟！",
+    //         anim:3,
+    //         isOutAnim:true
+    //     });
+    layer.alert('这是最后一篇了哟！', {
+        skin: 'layui-layer-molv' //样式类名
+        ,closeBtn: 0
+        ,anim: 6 //动画类型
+        });    
 }
 
 // 鼠标按下
