@@ -17,56 +17,25 @@
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="../js/function.js"></script>
-        <script src="../js/layer.js"></script>
+        <link rel="stylesheet" href="../layui/css/layui.css">
+        <script src="../layui/layui.all.js"></script>
         <script>
             function showImg(){
                 layer.photos({
-                photos: '#img1',
-                anim: 2
-                }); 
+                photos: '#img',
+                anim: 5
+                });
                 layer.photos({
                 photos: '#img2',
-                anim: 2
+                anim: 5
                 }); 
                 layer.photos({
                 photos: '#img3',
-                anim: 2
+                anim: 5
                 }); 
                 layer.photos({
                 photos: '#img4',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img5',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img6',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img7',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img8',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img9',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img10',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img11',
-                anim: 2
-                }); 
-                layer.photos({
-                photos: '#img12',
-                anim: 2
+                anim: 5
                 }); 
             }
         </script>
@@ -109,67 +78,158 @@
 		</div>
         
     	<div class="article container">
-    		<div class="row">
-    			<div class="left col-md-4 col-sm-12 col-xs-12 col-md-offset-1">
-    				<div class="pho_header">
-    					<p>隆市印象<br>位置：吉隆坡·马来西亚</p><sub>----Photo by @_小K同學</sub>
-    				</div>
-    				<div class="container-fluid">
-    					<div class="row">
-    						<div id="img1" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho1.jpg" layer-src="../images/photograph/pho1.jpg" alt="武吉免登">
-    						</div>
-    						<div id="img2" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho2.jpg" layer-src="../images/photograph/pho2.jpg" alt="武吉免登">
-    						</div>
-    						<div id="img3" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho3.jpg" layer-src="../images/photograph/pho3.jpg" alt="茨厂街">
-    						</div>
-    					</div>
-    					<div class="row">
-    						<div id="img4" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho4.jpg" layer-src="../images/photograph/pho4.jpg" alt="茨厂街">
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 style="color: white;" class="layui-timeline-title">2019年8月12日</h3>
+                        <div class="row">
+                <div class="left col-md-4 col-sm-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+                    <div class="pho_header">
+                        <p>隆市印象<br>位置：吉隆坡·马来西亚</p><sub>----Photo by @_小K同學</sub>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="img">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho1.jpg" layer-src="../images/photograph/pho1.jpg" alt="武吉免登">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho2.jpg" layer-src="../images/photograph/pho2.jpg" alt="武吉免登">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho3.jpg" layer-src="../images/photograph/pho3.jpg" alt="茨厂街">
+                                </div>
                             </div>
-    						<div id="img5" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho5.jpg" layer-src="../images/photograph/pho5.jpg" alt="六味清宝凉">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho4.jpg" layer-src="../images/photograph/pho4.jpg" alt="茨厂街">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho5.jpg" layer-src="../images/photograph/pho5.jpg" alt="六味清宝凉">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho6.jpg" layer-src="../images/photograph/pho6.jpg" alt="中华夜市">
+                                </div>
                             </div>
-    						<div id="img6" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho6.jpg" layer-src="../images/photograph/pho6.jpg" alt="中华夜市">
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-md-4 col-sm-12 col-xs-12 col-md-offset-2 col-xs-offset-1">
+                    <div class="pho_header">
+                        <p>南澳印象<br>位置：南澳岛·广东汕头</p><sub>--转载自酷安 @戴上耳机听故事</sub>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="img2">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho7.jpg" layer-src="../images/photograph/pho7.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho8.jpg" layer-src="../images/photograph/pho8.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho9.jpg" layer-src="../images/photograph/pho9.jpg">
+                                </div>
                             </div>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="right col-md-4 col-sm-12 col-xs-12 col-md-offset-2">
-    				<div class="pho_header">
-    					<p>南澳印象<br>位置：南澳岛·广东汕头</p><sub>--转载自酷安 @戴上耳机听故事</sub>
-    				</div>
-    				<div class="container-fluid">
-    					<div class="row">
-    						<div id="img7" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho7.jpg" layer-src="../images/photograph/pho7.jpg">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho10.jpg" layer-src="../images/photograph/pho10.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho11.jpg" layer-src="../images/photograph/pho11.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho12.jpg" layer-src="../images/photograph/pho12.jpg">
+                                </div>
                             </div>
-    						<div id="img8" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho8.jpg" layer-src="../images/photograph/pho8.jpg">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </li>
+
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 style="color: white;" class="layui-timeline-title">2019年1月19日</h3>
+                        <div class="row">
+                <div class="left col-md-4 col-sm-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+                    <div class="pho_header">
+                        <p>日本世界遺産財<br>位置：白川郷·北陸地方</p><sub>----Photo by @_小K同學</sub>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="img3">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho13.jpg" layer-src="../images/photograph/pho13.jpg" alt="白川郷">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho14.jpg" layer-src="../images/photograph/pho14.jpg" alt="白川郷の山">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho15.jpg" layer-src="../images/photograph/pho15.jpg" alt="白川郷の部屋">
+                                </div>
                             </div>
-    						<div id="img9" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho9.jpg" layer-src="../images/photograph/pho9.jpg">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho16.jpg" layer-src="../images/photograph/pho16.jpg" alt="白川郷">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho17.jpg" layer-src="../images/photograph/pho17.jpg" alt="自分の写真撮影">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho18.jpg" layer-src="../images/photograph/pho18.jpg" alt="白川郷の部屋">
+                                </div>
                             </div>
-    					</div>
-    					<div class="row">
-    						<div id="img10" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho10.jpg" layer-src="../images/photograph/pho10.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-md-4 col-sm-12 col-xs-12 col-md-offset-2 col-xs-offset-1">
+                    <div class="pho_header">
+                        <p>盖房子的人其实是“差劲”的俄罗斯方块玩家</p><sub>--转载自酷安 @東寫西讀</sub>
+                    </div>
+                    <div class="container-fluid">
+                        <div id="img4">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho19.jpg" layer-src="../images/photograph/pho19.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho20.jpg" layer-src="../images/photograph/pho20.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho21.jpg" layer-src="../images/photograph/pho21.jpg">
+                                </div>
                             </div>
-    						<div id="img11" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho11.jpg" layer-src="../images/photograph/pho11.jpg">
+                            <div class="row">
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho22.jpg" layer-src="../images/photograph/pho22.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho23.jpg" layer-src="../images/photograph/pho23.jpg">
+                                </div>
+                                <div class="img col-md-4 col-sm-4 col-xs-4">
+                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho24.jpg" layer-src="../images/photograph/pho24.jpg">
+                                </div>
                             </div>
-    						<div id="img12" class="img col-md-4 col-sm-4 col-xs-4">
-                                <img onclick="showImg()" class="innerImg" src="../images/photograph/pho12.jpg" layer-src="../images/photograph/pho12.jpg">
-                            </div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </li>
+
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 style="color: white;" class="layui-timeline-title">过去</h3>
+                    <p style="color: white;">摄影之旅开始。</p>
+                </div>
+              </li>
+            </ul>
+        </div>
     	<div class="container-fluid">
             <div class="bottom">
                 <p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
