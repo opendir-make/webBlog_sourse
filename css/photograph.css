@@ -19,6 +19,12 @@ table { border-collapse:collapse; border-spacing:0; }
 		background-color: #9dbac7!important;
 		background-image: url(../images/photograph/black-linen.png)!important;
 	}
+	.inner{
+		width: 100%!important;
+	}
+	h2{
+		font-size: 16px!important;
+		}
 	.article{
 		margin-top: 60px!important;
 		margin-right:40px!important;
@@ -45,6 +51,9 @@ table { border-collapse:collapse; border-spacing:0; }
 	}
 }
 
+.inner{
+	width: 50%;
+}
 #body{
 	background-attachment:fixed;
 	background-size:cover;

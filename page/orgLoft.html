@@ -19,26 +19,48 @@
 		<script type="text/javascript" src="../js/function.js"></script>
         <link rel="stylesheet" href="../layui/css/layui.css">
         <script src="../layui/layui.all.js"></script>
+        <script src="../layui/layui.js"  charset="utf-8"></script>
+        <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
         <script>
-            function showImg(){
-                layer.photos({
-                photos: '#img',
-                anim: 5
-                });
-                layer.photos({
-                photos: '#img2',
-                anim: 5
-                }); 
-                layer.photos({
-                photos: '#img3',
-                anim: 5
-                }); 
-                layer.photos({
-                photos: '#img4',
-                anim: 5
-                }); 
-            }
+        layui.use(['element', 'layer'], function(){
+        var element = layui.element;
+        var layer = layui.layer;
+        
+        // //监听折叠
+        // element.on('collapse(test)', function(data){
+        //     layer.msg('展开状态：'+ data.show);
+        // });
+        });
         </script>
+        <style>
+            img{
+                padding:15px; 
+                width: 170px;
+                padding: 0;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .layui-collapse{
+                border:0 ;
+            }
+            .layui-colla-item{
+               
+                border-radius: 5px;
+            }
+            .layui-colla-content{
+                padding: 0 0;
+                border-radius: 5px;
+            }
+            .layui-colla-title{
+                background-color: #fff;
+                border-radius: 5px;
+            }
+            .layui-p{
+                background-color: hsla(0,0%,100%,.9); 
+                padding:15px;
+                border-radius: 5px;
+            }
+        </style>
 	</head>
 	<body id="body" onload="randomApi()">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -82,150 +104,165 @@
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                     <div class="layui-timeline-content layui-text">
-                        <h3 style="color: white;" class="layui-timeline-title">2019年8月12日</h3>
-                        <div class="row">
-                <div class="left col-md-4 col-sm-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
-                    <div class="pho_header">
-                        <p>隆市印象<br>位置：吉隆坡·马来西亚</p><sub>----Photo by @_小K同學</sub>
-                    </div>
-                    <div class="container-fluid">
-                        <div id="img">
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho1.jpg" layer-src="../images/photograph/pho1.jpg" alt="武吉免登">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho2.jpg" layer-src="../images/photograph/pho2.jpg" alt="武吉免登">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho3.jpg" layer-src="../images/photograph/pho3.jpg" alt="茨厂街">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho4.jpg" layer-src="../images/photograph/pho4.jpg" alt="茨厂街">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho5.jpg" layer-src="../images/photograph/pho5.jpg" alt="六味清宝凉">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho6.jpg" layer-src="../images/photograph/pho6.jpg" alt="中华夜市">
-                                </div>
+                        <h3 style="color: white;" class="layui-timeline-title">2019年8月28日</h3>
+                        <legend class="legend"><img src="../images/headline.png" alt=""></legend>
+                        <div class="layui-collapse" lay-filter="test">
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">《青少年编程能力等级》标准发布，包含151个编程能力要求</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">近日，《青少年编程能力等级》标准联合发布会在北京清华大学举行。据悉，该系列标准主要针对课外培训领域，发布会公示了《青少年编程能力等级》标准第1部分「图形化编程」标准和第2部分「Python编程」标准。 <br><img class="inner" src="../images/headline/3.jpg" alt=""><br>「图形化编程」标准将分为三级，「Python编程」标准将分为四级，两个等级标准分别包含103个图形化能力要求和48个Python能力要求。第一次青少年编程能力等级测试将于2019年年底前于部分地区落地，预计明年将开放全国范围的申报服务。第3部分机器人编程和第4部分C++编程将启动研究。（芥末堆）</p>
+                        </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">史玉柱：区块链会深刻改变社会和公司管理架构</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">史玉柱在微博发表点评称，区块链的技术攻关难度不太大，难在深刻理解区块链思想，并成功应用于各场景。区块链会深刻改变社会，改变公司管理架构。以前两陌生人间做交易，彼此缺乏信用，不得不找双方都信任的第三方（银行、支付宝等）做中介，去完成交易。区块链能有效解决两陌生人间的信用问题，提高交易效率，改变交易流程。（新浪财经）</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="right col-md-4 col-sm-12 col-xs-12 col-md-offset-2 col-xs-offset-1">
-                    <div class="pho_header">
-                        <p>南澳印象<br>位置：南澳岛·广东汕头</p><sub>--转载自酷安 @戴上耳机听故事</sub>
-                    </div>
-                    <div class="container-fluid">
-                        <div id="img2">
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho7.jpg" layer-src="../images/photograph/pho7.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho8.jpg" layer-src="../images/photograph/pho8.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho9.jpg" layer-src="../images/photograph/pho9.jpg">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho10.jpg" layer-src="../images/photograph/pho10.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho11.jpg" layer-src="../images/photograph/pho11.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho12.jpg" layer-src="../images/photograph/pho12.jpg">
-                                </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">北京5G基站数量将超1.4万个，明年全市5G网络全覆盖</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">北京市经济和信息化局与顺义区人民政府举办的“5G-50”技术与应用专家论坛上获悉，预计今年年底，北京全市5G基站将超1.4万个，基本实现五环内部署完成，到2020年实现城郊5G网络全覆盖，为5G场景示范应用提供良好的网络环境保障。截至目前，三大运营商在全市共建成1.1万个5G基站，5G网络信号可覆盖六环内人口密集区域、大兴国际机场等区域。（北京日报）</p>
                             </div>
                         </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">腾讯安全：首次攻破超声波屏下指纹识别技术</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">在近日召开的GeekPwn 2019国际安全极客大赛上，腾讯安全玄武实验室披露了指纹识别领域的最新研究——自动化破解多种类型指纹识别。腾讯方面表示，该研究通过提取用户在日常生活中留存的指纹，自动化进行克隆复原，进而通过各种指纹设备的验证。这次挑战也是国际上第一次成功攻破超声波屏下指纹识别技术。（新浪科技）</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">字节跳动正在研发新产品“音乐帮”</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">字节跳动正在研发一款名为“音乐帮”的新产品。该产品由北京微字节网络科技有限公司研发，该公司为字节跳动100%控股。目前，音乐帮上线了26首歌曲，QQ音乐显示，这26首歌曲的版权均属于抖音。当前，App Store和安卓市场均未上线该产品。（Tech星球）<br>
+                            <img class="inner" src="../images/headline/4.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">外媒称苹果10月30日发布多款新品：新Mac Pro最贵将卖到4.2万</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">据外媒报道称，苹果会在美国时间10月30日发布多款新品，其将直接在线上上架至少四款硬件，而它们之前都已经相继在iOS 13的测试版中出现。而Mac Pro新机中的美国制造的部件的成本是苹果上一代Mac Pro的2.5倍，制造成本上升的同时，产品的售价也在提高，新机售价6000美元起，约合人民币4.2万元，这苹果今年售价最贵新产品。（硅谷分析狮）</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">英媒：英国或将授予华为访问英国5G部分网络权限</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">据外媒报道，英国首相鲍里斯·约翰逊正准备授予中国华为公司访问英国未来的5G电信网络「不具争议性」部分的权限。英国就华为参加5G建设的决定曾被推迟。今年4月，英国时任首相特雷莎·梅和国家安全委员会已经决定允许华为参加英国5G建设的「非关键部分」，这一内容原本预计将出现在英国数字化、文化、媒体和体育部稍后发表的电信供应链评估报告中。但之后，特雷莎·梅辞职，约翰逊接任，英国就华为问题的决定被推迟。</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">Facebook再度推新闻服务，人工甄选而非完全依赖算法</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">Facebook上周五推出了一项新闻服务，内容将包括《芝加哥论坛报》（Chicago Tribune）、《纽约每日新闻报》（New York Daily news）等200多家新闻媒体的策划报道。该公司表示，这些报道将由Facebook雇佣的一个记者团队挑选，而不是完全依赖于算法。（新浪财经）</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">微软赢得五角大楼的100亿美元JEDI云合同</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">国防部证实，美国政府已向微软授予了100亿美元的巨额云计算合同。该合同被称为联合企业防御基础设施（JEDI），将为五角大楼提供基本服务和云功能的云服务，再到人工智能处理、机器学习以及处理关键任务工作负载的能力。
+                                    对于微软而言，这是一项相当重要的合同，因为该公司正在与亚马逊争夺云优势。虽然这份为期10年的合同授予对微软来说是一个巨大的胜利，但员工可能不一定同意。此前，数千名Google员工抗议该科技巨头参与了五角大楼的“探路者”人工智能计划，即Project Maven，Google最终被迫退出工作，并且确认不参与该合同最终竞标过程。（cnBeta）</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">Haxe 4.0发布，Web开发语言</h2>
+                        <div class="layui-colla-content">
+                        <p class="layui-p">Haxe 4.0已经发布了，Haxe是一门新兴的开源编程语言，是一种开源的编程语言。内容如下：
+                                新的函数类型语法；<br>
+                                不再支持自定义属性访问器；<br>
+                                键值迭代器。</p>
+                        </div>
                     </div>
-                </div>
-                </div>
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">PHP 7.1.33、7.3.11和7.2.24发布</h2>
+                        <div class="layui-colla-content">
+                        <p class="layui-p">主要更新：<br>
+                            PHP 7.1.33、7.3.11 和 7.2.24 已经发布，内容如下：<br>
+                            Core: <br>
+                            修复了 bug #78535(auto_detect_line_endings 值未解析为 bool) <br>
+                            修复了错误 #78620(内存不足) <br>
+                            Exif: <br>
+                            修复了 bug #78442(自 PHP 7 以来 exif_read_data 上的“非法组件”) <br>
+                            详情请见发布说明：https://www.php.net/。</p>
+                        </div>
+                    </div>
+        
                 </div>
                 </li>
 
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                     <div class="layui-timeline-content layui-text">
-                        <h3 style="color: white;" class="layui-timeline-title">2019年1月19日</h3>
-                        <div class="row">
-                <div class="left col-md-4 col-sm-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
-                    <div class="pho_header">
-                        <p>日本世界遺産財<br>位置：白川郷·北陸地方</p><sub>----Photo by @_小K同學</sub>
-                    </div>
-                    <div class="container-fluid">
-                        <div id="img3">
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho13.jpg" layer-src="../images/photograph/pho13.jpg" alt="白川郷">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho14.jpg" layer-src="../images/photograph/pho14.jpg" alt="白川郷の山">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho15.jpg" layer-src="../images/photograph/pho15.jpg" alt="白川郷の部屋">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho16.jpg" layer-src="../images/photograph/pho16.jpg" alt="白川郷">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho17.jpg" layer-src="../images/photograph/pho17.jpg" alt="自分の写真撮影">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho18.jpg" layer-src="../images/photograph/pho18.jpg" alt="白川郷の部屋">
-                                </div>
+                        <h3 style="color: white;" class="layui-timeline-title">2019年10月26日</h3>
+                        
+                        <legend class="legend"><img src="../images/headline.png" alt=""></legend>
+                        <div class="layui-collapse" lay-filter="test">
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">滴滴出行官方回应导航崩了：经全力抢修，目前正在陆续恢复中</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">昨日，有网友发布动态称：“导航不显示路线，驾驶员无法发现乘客，乘客也找不到驾驶员” ，有滴滴用户发现，司机已经直接了其他导航软件。滴滴出行官方回应称，今天晚高峰时，滴滴APP内的导航功能出现故障，经技术小哥哥全力修复，目前正在陆续恢复中。 <br><img class="inner" src="../images/headline/1.jpg" alt=""></p>
+                        </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">微信支付「向手机号转账」功能正式上线</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">微信支付正式上线新功能「向手机号转账」。该功能意味着在不是微信好友，不知道对方微信号，不能面对面扫码等情况下，通过手机号就能发起支付。用户使用该功能前，需要先点击微信页面右上角的「+」-「收付款」-「向银行卡或手机号转账」-「手机号收款设置」，开启「允许通过手机号向我转账」。如果你是转账方，点击「向手机号转账」，输入对方手机号即可。</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="right col-md-4 col-sm-12 col-xs-12 col-md-offset-2 col-xs-offset-1">
-                    <div class="pho_header">
-                        <p>盖房子的人其实是“差劲”的俄罗斯方块玩家</p><sub>--转载自酷安 @東寫西讀</sub>
-                    </div>
-                    <div class="container-fluid">
-                        <div id="img4">
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho19.jpg" layer-src="../images/photograph/pho19.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho20.jpg" layer-src="../images/photograph/pho20.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho21.jpg" layer-src="../images/photograph/pho21.jpg">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho22.jpg" layer-src="../images/photograph/pho22.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho23.jpg" layer-src="../images/photograph/pho23.jpg">
-                                </div>
-                                <div class="img col-md-4 col-sm-4 col-xs-4">
-                                    <img onclick="showImg()" class="innerImg" src="../images/photograph/pho24.jpg" layer-src="../images/photograph/pho24.jpg">
-                                </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">华为获颁中国首个 5G 基站设备进网许可证</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">近日，工业和信息化部颁发中国首个 5G 无线电通信设备进网许可证。华为率先获得首张 5G 基站设备的进网许可证，标志着华为 5G 基站设备可以支持中国规模部署，正式接入公用电信商用网络。</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                </div>
-                </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">魅族回应“未通过德国莱茵认证”：屏幕通过认证，未特别说明造成误解</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">此前德国莱茵TÜV在官方微博发声明称，魅族最新发布的16T产品整机并未通过该机构的任何相关测试及认证。对此，魅族通过官方微博回应称，在魅族16T上，我们与三星联合定制了最新一代AMOLED屏幕，且该屏幕通过了德国莱茵TÜV眼部舒适度认证。在产品相关宣传使用标识时，未特别说明该认证为屏幕认证，造成了多方的误解。</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">谷歌向搜索引擎中植入新 AI 技术，关键词搜索向语音搜索转变</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">据外媒报道，谷歌正在向其搜索引擎中植入新的人工智能（AI）技术，以更好地解释其每天处理的数十亿次网络查询。谷歌搜索主管本·戈麦斯表示：「此举将世界上最大的搜索引擎从基于关键词的搜索转变为更接近语言（语音搜索）的东西。我们离完全解决问题还很远，但这是向前迈出的一大步。<br>
+                            <img class="inner" src="../images/headline/2.jpg" alt=""></p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">传苹果2020版iPhone会配置更小的刘海和更宽的5G天线</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">据外媒报道，苹果正在测试不同的设计方法，准备为2020年版iPhone设计一个更小的刘海，并准备使用一种更宽的天线来支持5G网络。本杰明-格斯金(Benjamin Geskin)的一系列报告称，苹果正在测试其2020年版iPhone的不同原型机，同时尝试新的Face ID面部识别设计。这些设计与减小刘海的大小有关，包括高度和宽度的变化。本杰明-格斯金一直是智能手机行业的可靠消息来源。
+                                    格斯金在Twitter上声称，苹果正在考虑各种不同的Face ID 模型。</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">Twitter CEO 称绝不会加入「天秤币」计划</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">据外媒报道，Twitter 首席执行官杰克·多尔西今日在媒体活动上被问及是否会加入天秤币（Libra）时，他给出了「绝对不会」的回答。另外他还解释称，Facebook 创建的加密货币计划不需要成为加密货币就可以实现其让金融体系民主化的更广泛目标。</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">Netflix 开源多语言记事本环境 Polynote</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">Netflix 的技术团队宣布开源多语言记事本环境 Polynote，源代码发布在 GitHub 上（https://github.com/polynote/polynote/blob/master/LICENSE），采用 Apache License 2.0 许可证。Polynote 支持 Scala、Python、SQL 和 Vega。开发者称，Polynote 向数据科学家和机器学习研究员提供了一个记事本环境，允许自由无缝的整合基于 JVM 的机器学习平台。Polynote 受到了集成开发环境（IDE）的启发，提供了类似 IDE 的功能如交互式自动完成、参数提示、内联错误高亮、支持 LaTeX 的富文本编辑器。</p>
+                            </div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">Guns 6.0发布</h2>
+                            <div class="layui-colla-content">
+                            <p class="layui-p">主要更新：<br>
+                                    前端框架升级easyweb 3.1.5，layui升级2.5.5。<br>
+                                    优化整体前端UI界面，更加简洁，大气。<br>
+                                    抽象出一套权限模型，利用接口进行权限控制和调用规则，方便在权限控制方面进行拓展。<br>
+                                    替换掉了以往的ShiroKit，采用LoginContextHolder.getContext().getUser()获取当前登录用户。</p>
+                            </div>
+                        </div>
+                  </div>
                 </li>
-
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                 <div class="layui-timeline-content layui-text">
                     <h3 style="color: white;" class="layui-timeline-title">过去</h3>
-                    <p style="color: white;">摄影之旅开始。</p>
+                    <p style="color: white;">orgLoft头条的开始。</p>
                 </div>
               </li>
             </ul>
