@@ -20,17 +20,33 @@
         <link rel="stylesheet" href="../layui/css/layui.css">
         <script src="../layui/layui.all.js"></script>
         <script src="../layui/layui.js"  charset="utf-8"></script>
-        <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
         <script>
         layui.use(['element', 'layer'], function(){
         var element = layui.element;
         var layer = layui.layer;
-        
-        // //监听折叠
-        // element.on('collapse(test)', function(data){
-        //     layer.msg('展开状态：'+ data.show);
-        // });
         });
+
+        function randomApi2() {
+            var body = document.getElementById("body");
+            body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
+            omit_text2();
+            getTime();
+        }
+
+        function omit_text2(){
+        var windowWidth = window.innerWidth;
+        console.log(windowWidth);
+            if (windowWidth<768) {
+                function omit_texthaha() {
+                    var list = document.getElementsByClassName("layui-colla-title");
+                    for (var i = 0; i < list.length; i++) {
+                        var oBox = document.getElementsByClassName("layui-colla-title")[i];
+                        var demoHtml = oBox.innerHTML.slice(0, 27) + '......';
+                        oBox.innerHTML = demoHtml;
+                    }
+                }
+            }
+        }
         </script>
         <style>
             img{
@@ -40,22 +56,30 @@
                 border-radius: 5px;
                 margin-bottom: 10px;
             }
+            .inner{
+                width: 50%;
+            }
             .layui-collapse{
-                border:0 ;
+                border:0;
             }
             .layui-colla-item{
                 border-radius: 5px;
             }
+            .container{
+                padding: 0 120px;
+            }
             .layui-colla-content{
-                padding: 0 0;
+                padding: 0;
                 border-radius: 5px;
             }
             .layui-colla-title{
-                background-color: #fff;
+                font-size: 14px!important;
+                background-color: hsla(0,0%,100%,.8);
                 border-radius: 5px;
             }
             .layui-p{
-                background-color: hsla(0,0%,100%,.9); 
+                background-color: hsla(0,0%,100%,.7); 
+                font-size: 14px!important;
                 padding:15px;
                 border-radius: 5px;
                 color: #333333;
@@ -63,7 +87,7 @@
             }
         </style>
 	</head>
-	<body id="body" onload="randomApi()">
+	<body id="body" onload="randomApi2()">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -105,7 +129,7 @@
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                     <div class="layui-timeline-content layui-text">
-                        <h3 style="color: white;" class="layui-timeline-title">2019年8月28日</h3>
+                        <h3 style="color: white;" class="layui-timeline-title">2019年10月28日</h3>
                         <legend class="legend"><img src="../images/headline.png" alt=""></legend>
                         <div class="layui-collapse" lay-filter="test">
                         <div class="layui-colla-item item-one" style="margin-top:10px">
