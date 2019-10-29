@@ -191,6 +191,10 @@ function search() {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
                 "url": "page/luckyDraw.html"
+            },{
+                "label": "科技 现代5G",
+                "title": "台前与幕后的5G战争",
+                "url": "page/5G.html"
             }]
         },
         computed: {
@@ -354,6 +358,10 @@ function searchSM() {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
                 "url": "page/luckyDraw.html"
+            },{
+                "label": "科技 现代5G",
+                "title": "台前与幕后的5G战争",
+                "url": "page/5G.html"
             }]
         },
         computed: {
@@ -408,7 +416,7 @@ function searchEnterSM(event) {
 
 // 首页文章排序
 function indexRefreshment() {
-    var l = 29,
+    var l = 30,
         s = 9,
         show = ',',
         list = ',';
