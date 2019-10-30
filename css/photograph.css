@@ -22,7 +22,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	.inner{
 		width: 100%!important;
 	}
-	h2{
+	.layui-colla-title{
 		font-size: 16px!important;
 		overflow: hidden;
 		text-overflow:ellipsis;
