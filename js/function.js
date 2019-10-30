@@ -481,16 +481,3 @@ function mouseUp(event) {
     var obj = e.srcElement;
     obj.style.color = '#4876FF';
 }
-
-//iframe窗
-function superlink() {
-    //iframe窗
-    layer.open({
-        type: 2,
-        title: 'layer mobile页',
-        shadeClose: true,
-        shade: true,
-        area: ['1380px', '700px'],
-        content: 'https://www.xjh.me'
-    });
-}

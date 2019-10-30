@@ -317,14 +317,17 @@ table { border-collapse:collapse; border-spacing:0; }
 	border-top:1px solid lightgray;
 }
 .friend{
+	width: 100%;
 	color: black;
-	padding:10px;
+	padding:10px 10px 10px 0;
 	margin-top: 5px!important;
 	border-radius: 5px;
 	font-size: 15px;
 	line-height: 15px;
 }
-.friend:hover{
+.friend a:hover{
+	border-radius: 10px;
+	background-color:lightblue; 
 	text-decoration: none;
 	color: #4876FF;
 }
