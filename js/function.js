@@ -9,7 +9,7 @@ function changeimg() {
         i = 0;
     }
     var body = document.getElementById("body");
-    body.style.backgroundImage = "url(../images/" + images[i] + ")";
+    body.style.backgroundImage = "url(../../../images/" + images[i] + ")";
 }
 
 // 返回顶部
@@ -94,91 +94,95 @@ function search() {
             articles: [{
                 "label": "C语言入门编程",
                 "title": "C语言概述篇--了解C语言",
-                "url": "page/C1.html"
+                "url": "page/C/1/"
             }, {
                 "label": "C语言入门编程",
                 "title": "C语言基础篇--入门必读",
-                "url": "page/C2.html"
+                "url": "page/C/2/"
             }, {
                 "label": "C语言试题",
                 "title": "C语言基础练习题--小牛试刀",
-                "url": "page/C3.html"
+                "url": "page/C/3/"
             }, {
                 "label": "C语言基础知识",
                 "title": "C语言基础知识点整理",
-                "url": "page/C4.html"
+                "url": "page/C/4/"
             }, {
                 "label": "Java入门常见问题",
                 "title": "Java中常见基本问题集合...",
-                "url": "page/Java1.html"
+                "url": "page/Java/1/"
             }, {
                 "label": "Java晋级篇",
                 "title": "Java第二课---晋级篇",
-                "url": "page/Java2.html"
+                "url": "page/Java/2/"
             }, {
                 "label": "Java new对象",
                 "title": "Java:new一个对象的过程中发生了什么？",
-                "url": "page/Java3.html"
+                "url": "page/Java/3/"
             }, {
                 "label": "了解Java，Java基础",
                 "title": "今天补充一下Java基础内容--了解Java",
-                "url": "page/Java4.html"
+                "url": "page/Java/4/"
             }, {
                 "label": "JavaScript脚本语言",
                 "title": "带你初步了解JavaScript脚本语言，go!",
-                "url": "page/JavaScript1.html"
+                "url": "page/JavaScript/1/"
             }, {
                 "label": "JavaScript题目",
                 "title": "JavaScript经典题目集合啦~",
-                "url": "page/JavaScript2.html"
+                "url": "page/JavaScript/2/"
             }, {
                 "label": "Linux认识，了解Linux",
                 "title": "Linux第一篇---了解Linux~",
-                "url": "page/Linux1.html"
+                "url": "page/Linux/1/"
             }, {
                 "label": "虚拟机上安装Linux",
                 "title": "Linux第二篇---在虚拟机上安装Linux",
-                "url": "page/Linux2.html"
+                "url": "page/Linux/2/"
             }, {
                 "label": "学习Linux学习什么",
                 "title": "Linux到底学什么？讲完下节课开始命令操作！",
-                "url": "page/Linux3.html"
+                "url": "page/Linux/3/"
             }, {
                 "label": "软件推荐，一个木函",
                 "title": "好软推荐第一期---一个木函",
-                "url": "page/software1.html"
+                "url": "page/software/1/"
             }, {
                 "label": "软件推荐，via浏览器",
                 "title": "好软推荐第二期---Via浏览器",
-                "url": "page/software2.html"
+                "url": "page/software/2/"
             }, {
                 "label": "软件推荐Geek Uninstaller",
                 "title": "好软推荐第三期---Geek Uninstaller",
-                "url": "page/software3.html"
+                "url": "page/software/3/"
             }, {
                 "label": "旅游，旅行，日本，大学生",
                 "title": "一人の体験2.0（一）--大学生穷游日本2019",
-                "url": "page/travel1.html"
+                "url": "page/travel/1/"
             }, {
                 "label": "旅游，旅行，日本，大学生",
                 "title": "一人の体験2.0（二）--大学生穷游日本2019",
-                "url": "page/travel2.html"
+                "url": "page/travel/2/"
             }, {
                 "label": "旅游，旅行，香港",
                 "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
-                "url": "page/travel3.html"
+                "url": "page/travel/3/"
             }, {
                 "label": "旅游，旅行，马来西亚，多元文化",
                 "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
-                "url": "page/travel4.html"
+                "url": "page/travel/4/"
             }, {
                 "label": "web基础，了解web",
                 "title": "Web第一课--风里雨里，我在前端战场等你！",
-                "url": "page/Web1.html"
+                "url": "page/Web/1/"
             }, {
-                "label": "web基础，HTML",
+                "label": "web基础，HTML5",
                 "title": "Web基础第二课---HTML/HTML5",
-                "url": "page/Web2.html"
+                "url": "page/Web/2/"
+            }, {
+                "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
+                "title": "电协各部门介绍~join us！",
+                "url": "https://mp.weixin.qq.com/s/iwPRSkQYAzLtgxWbohABGQ"
             }, {
                 "label": "电子协会程序部，程序设计部，电协程序设计部",
                 "title": "电协程序设计部牛逼逼！",
@@ -186,7 +190,7 @@ function search() {
             }, {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
-                "url": "page/Web3.html"
+                "url": "page/Web/3/"
             }, {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
@@ -194,7 +198,7 @@ function search() {
             },{
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
-                "url": "page/5G.html"
+                "url": "page/technology/"
             }]
         },
         computed: {
@@ -257,91 +261,91 @@ function searchSM() {
             articles: [{
                 "label": "C语言入门编程",
                 "title": "C语言概述篇--了解C语言",
-                "url": "page/C1.html"
+                "url": "page/C/1/"
             }, {
                 "label": "C语言入门编程",
                 "title": "C语言基础篇--入门必读",
-                "url": "page/C2.html"
+                "url": "page/C/2/"
             }, {
                 "label": "C语言试题",
                 "title": "C语言基础练习题--小牛试刀",
-                "url": "page/C3.html"
+                "url": "page/C/3/"
             }, {
                 "label": "C语言基础知识",
                 "title": "C语言基础知识点整理",
-                "url": "page/C4.html"
+                "url": "page/C/4/"
             }, {
                 "label": "Java入门常见问题",
                 "title": "Java中常见基本问题集合...",
-                "url": "page/Java1.html"
+                "url": "page/Java/1/"
             }, {
                 "label": "Java晋级篇",
                 "title": "Java第二课---晋级篇",
-                "url": "page/Java2.html"
+                "url": "page/Java/2/"
             }, {
                 "label": "Java new对象",
                 "title": "Java:new一个对象的过程中发生了什么？",
-                "url": "page/Java3.html"
+                "url": "page/Java/3/"
             }, {
                 "label": "了解Java，Java基础",
                 "title": "今天补充一下Java基础内容--了解Java",
-                "url": "page/Java4.html"
+                "url": "page/Java/4/"
             }, {
                 "label": "JavaScript脚本语言",
                 "title": "带你初步了解JavaScript脚本语言，go!",
-                "url": "page/JavaScript1.html"
+                "url": "page/JavaScript/1/"
             }, {
                 "label": "JavaScript题目",
                 "title": "JavaScript经典题目集合啦~",
-                "url": "page/JavaScript2.html"
+                "url": "page/JavaScript/2/"
             }, {
                 "label": "Linux认识，了解Linux",
                 "title": "Linux第一篇---了解Linux~",
-                "url": "page/Linux1.html"
+                "url": "page/Linux/1/"
             }, {
                 "label": "虚拟机上安装Linux",
                 "title": "Linux第二篇---在虚拟机上安装Linux",
-                "url": "page/Linux2.html"
+                "url": "page/Linux/2/"
             }, {
                 "label": "学习Linux学习什么",
                 "title": "Linux到底学什么？讲完下节课开始命令操作！",
-                "url": "page/Linux3.html"
+                "url": "page/Linux/3/"
             }, {
                 "label": "软件推荐，一个木函",
                 "title": "好软推荐第一期---一个木函",
-                "url": "page/software1.html"
+                "url": "page/software/1/"
             }, {
                 "label": "软件推荐，via浏览器",
                 "title": "好软推荐第二期---Via浏览器",
-                "url": "page/software2.html"
+                "url": "page/software/2/"
             }, {
                 "label": "软件推荐Geek Uninstaller",
                 "title": "好软推荐第三期---Geek Uninstaller",
-                "url": "page/software3.html"
+                "url": "page/software/3/"
             }, {
                 "label": "旅游，旅行，日本，大学生",
                 "title": "一人の体験2.0（一）--大学生穷游日本2019",
-                "url": "page/travel1.html"
+                "url": "page/travel/1/"
             }, {
                 "label": "旅游，旅行，日本，大学生",
                 "title": "一人の体験2.0（二）--大学生穷游日本2019",
-                "url": "page/travel2.html"
+                "url": "page/travel/2/"
             }, {
                 "label": "旅游，旅行，香港",
                 "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
-                "url": "page/travel3.html"
+                "url": "page/travel/3/"
             }, {
                 "label": "旅游，旅行，马来西亚，多元文化",
                 "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
-                "url": "page/travel4.html"
+                "url": "page/travel/4/"
             }, {
                 "label": "web基础，了解web",
                 "title": "Web第一课--风里雨里，我在前端战场等你！",
-                "url": "page/Web1.html"
+                "url": "page/Web/1/"
             }, {
                 "label": "web基础，HTML5",
                 "title": "Web基础第二课---HTML/HTML5",
-                "url": "page/Web2.html"
+                "url": "page/Web/2/"
             }, {
                 "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
                 "title": "电协各部门介绍~join us！",
@@ -353,7 +357,7 @@ function searchSM() {
             }, {
                 "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
-                "url": "page/Web3.html"
+                "url": "page/Web/3/"
             }, {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
@@ -361,7 +365,7 @@ function searchSM() {
             },{
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
-                "url": "page/5G.html"
+                "url": "page/technology/"
             }]
         },
         computed: {
@@ -444,26 +448,15 @@ function indexRefreshment() {
 
 function tip() {
     layer.alert('到头了，这是第一篇！', {
-        skin: 'layui-layer-molv' //样式类名
-            ,
+        skin: 'layui-layer-molv', //样式类名
         closeBtn: 0,
         anim: 6 //动画类型
     });
 }
 
 function next() {
-    // //页面层
-    //     layer.open({
-    //         type: 1,
-    //         skin: 'layui-layer-rim', //加上边框
-    //         area: ['300px', '150px'], //宽高
-    //         content:"这是最后一篇了哟！",
-    //         anim:3,
-    //         isOutAnim:true
-    //     });
     layer.alert('这是最后一篇了哟！', {
-        skin: 'layui-layer-molv' //样式类名
-            ,
+        skin: 'layui-layer-molv', //样式类名
         closeBtn: 0,
         anim: 6 //动画类型
     });
