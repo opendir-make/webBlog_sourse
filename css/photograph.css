@@ -19,9 +19,6 @@ table { border-collapse:collapse; border-spacing:0; }
 		background-color: #9dbac7!important;
 		background-image: url(../images/photograph/black-linen.png)!important;
 	}
-	.container{
-		padding: 0 15px!important;
-	}
 	.inner{
 		width: 100%!important;
 	}
@@ -39,7 +36,7 @@ table { border-collapse:collapse; border-spacing:0; }
 		margin-right:40px!important;
 	}
 	.container{
-		padding:0 10px;
+		padding:0 15px!important;
 	}
 	.left{
 		margin-bottom: 80px!important;
