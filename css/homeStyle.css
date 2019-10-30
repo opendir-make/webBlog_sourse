@@ -194,10 +194,12 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .left .left-block{
 	background-color: hsla(0,0%,100%,.9);
-	box-shadow: 8px 8px 5px rgba(0,0,0,.2);
 	margin: 0px 0px 30px 0px;
 	border-radius: 10px;
 	margin-top: 20px;
+}
+.left .left-block:hover{
+	box-shadow: 8px 8px 10px rgba(0,0,0,.2);
 }
 .blockPho{
 	display: block;
