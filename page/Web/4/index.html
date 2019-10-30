@@ -11,46 +11,45 @@
 		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
 		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
 		<title>Open Source！关于本网站简单站内搜索功能的实现</title>
-		<link rel="stylesheet icon" href="../images/d.ico"/>
+		<link rel="stylesheet icon" href="../../../images/d.ico"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../css/articleStyle.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/articleStyle.css" />
 	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="../js/function.js"></script>
-        <link rel="stylesheet" href="../layui/css/layui.css">
-        <script src="../layui/layui.all.js"></script>
+        <script type="text/javascript" src="../../../js/function.js"></script>
+        <link rel="stylesheet" href="../../../layui/css/layui.css">
+        <script src="../../../layui/layui.all.js"></script>
 	</head>
 	
 	<body id="body" onload="randomApi()">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.png"></a>
+            <a class="navbar-brand" href="../../../index.html"><img class="logo" src="../../../images/logo.png"></a>
             <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
-        
-            <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
-                    <li><a href="../page/orgLoft.html">orgLoft头条</a></li>
-                    <li>
-                        <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../page/C.html">C</a></li>
-                            <li><a href="../page/Java.html">Java</a></li>
-                            <li><a href="../page/Python.html">Python</a></li>
-                            <li><a href="../page/JavaScript.html">JavaScript</a></li>
-                            <li><a href="../page/Web.html">Web</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../page/Linux.html">Linux系统</a></li>
-                    <li><a href="../page/software.html">好软推荐</a></li>
-                    <li><a href="../page/photograph.html">摄影修炼</a></li>
-                    <li><a href="../page/travel.html">云旅游</a></li>
-                <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
-            </ul>
+        <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+            <li><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
+            <li>
+                <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../page/C/">C</a></li>
+                    <li><a href="../../../page/Java/">Java</a></li>
+                    <li><a href="../../../page/Python/">Python</a></li>
+                    <li><a href="../../../page/JavaScript/">JavaScript</a></li>
+                    <li><a href="../../../page/Web/">Web</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../page/Linux/">Linux系统</a></li>
+            <li><a href="../../../page/software/">好软推荐</a></li>
+            <li><a href="../../../page/photograph.html">摄影修炼</a></li>
+            <li><a href="../../../page/travel/">云旅游</a></li>
+        <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
+    </ul>
         </div>
       </div>
 
@@ -60,7 +59,7 @@
         <a class="changepage hidden-xs" href="javascript:tip()">
                 <img src="../images/cp.png">
         </a>
-        <a class="changepagenext hidden-xs" href="Web1.html">
+        <a class="changepagenext hidden-xs" href="../1/">
                 <img src="../images/cp.png">
         </a>
     	<div class="container">
@@ -68,7 +67,7 @@
              <div class="article col-md-10 col-md-offset-1">
             <div class="article-title">Open Source！关于本网站简单站内搜索功能的实现<div class="author"></br>作者：@_小K同學    发表日期：2019.10.14</br></div>
             </div>
-            <div class="article-body"><div class="innerPho"><img src="../images/Web3/0.jpg"></div>
+            <div class="article-body"><div class="innerPho"><img src="../../../images/Web3/0.jpg"></div>
                <p>众所周知，搜索引擎是Web开发中比较难的部分。</p>
                <p>现在世界上最牛X的搜索引擎绝对是谷歌（Google）无疑了；百度（Baidu）因为符合中国国情加上中国市场成为全球最大的中文搜索引擎；必应（Bing）则在国内知名度不高，不温不火，但我觉得还是挺好用的，至少无广告。</p>
                <p>最近看见别人的个人小网站有自己的站内搜索突然羡慕，决定在本网站中也做一个出来。我们没模板，没数据库，纯手打。</p>
@@ -76,22 +75,22 @@
                <p>怎么做？思考了很久，我想到了vue，vue可以说是我们网站站内搜索的核心了。</p>
                <p>vue下载地址：<a target="_blank" href="https://vuejs.org/js/vue.min.js">点击跳转</a> (复制到文本文档把后缀改成js即可)<br><br></p>
                <h2 style="float: left;">先看效果图：</h2>
-               <p><br>这就是最终的亚子~有点简陋...</p><div class="innerPho"><img src="../images/Web3/style.png"></div>
-               <p>输入搜索内容然后点击搜索或回车，搜索列表会在下面出现，点击即可跳转。</p><div class="innerPho"><img src="../images/Web3/style2.png"></div>
+               <p><br>这就是最终的亚子~有点简陋...</p><div class="innerPho"><img src="../../../images/Web3/style.png"></div>
+               <p>输入搜索内容然后点击搜索或回车，搜索列表会在下面出现，点击即可跳转。</p><div class="innerPho"><img src="../../../images/Web3/style2.png"></div>
                <br><br><h2 style="float: left;">*思路：</h2>
                <p><br>通过js建立一个函数，把每篇文章的关键词(label)、文章标题(title)和文章链接(url)放进一个数组里，用户输入关键词返回文章的标题(可点击跳转)。再在html页面里引入返回的数据。<br><br>*其实这里可以写函数直接检查文章的标题(title)，有符合关键字的就返回文章标题(title)，不写label也可以。<br>但我的想法是实现近义词也能搜索出来，所以给数组多加了个标签(label)，函数检查标签(label)，有符合label的关键字就返回文章标题(title)。<br><br></p>
-               <p>首先我们要先设计基本的布局和样式，这里就不详细说了。CSS样式你们自行想象~_~</p><div class="innerPho"><img src="../images/Web3/before.png"></div>
-               <p>上面这个想法虽然简单，可是做起来却没那么容易，而且还有点麻烦(因为要把所有文章都放到数组里-_-||)。<br>上图！</p><div class="innerPho"><img src="../images/Web3/1.png"></div>
+               <p>首先我们要先设计基本的布局和样式，这里就不详细说了。CSS样式你们自行想象~_~</p><div class="innerPho"><img src="../../../images/Web3/before.png"></div>
+               <p>上面这个想法虽然简单，可是做起来却没那么容易，而且还有点麻烦(因为要把所有文章都放到数组里-_-||)。<br>上图！</p><div class="innerPho"><img src="../../../images/Web3/1.png"></div>
                <p>是不是很蠢，本K也觉得~<br><br></p>
                <p>数据部分我们完成了，接下来就是要通过一个js小小的算法把我们需要的数据返回。</p>
-               <div class="innerPho"><img src="../images/Web3/2.png"></div>
-               <p>好了我们有了返回数据，可以直接在html引用！(备注：v-bind它是一个vue指令，用于绑定html属性)</p><div class="innerPho"><img src="../images/Web3/after1.png"></div>
+               <div class="innerPho"><img src="../../../images/Web3/2.png"></div>
+               <p>好了我们有了返回数据，可以直接在html引用！(备注：v-bind它是一个vue指令，用于绑定html属性)</p><div class="innerPho"><img src="../../../images/Web3/after1.png"></div>
                <p>因为算法中无关键字时是返回整个数组，所以没输入东西时列表(ul)是默认展开的。</p>
                <p>要想它关闭，先给它设定个CSS样式display:none，想要展开后面再慢慢调。<br><br></p>
                <p>我的想法是什么呢？点击“搜索”按钮或回车(enter)展开搜索结果列表(ul)，再次点击则关闭列表(回车也一样)；还有展开时“搜索”按钮换成“关闭”二字。<br><br></p>
-               <p>想实现这个效果当然还是要用js啦！这里写了两个function就可以咯，由于很简单，这里就不详细讲啦。</p><div class="innerPho"><img src="../images/Web3/3.png"></div>
-               <p>然后遇到一个问题，按回车键后搜索结果列表出现了但是页面会刷新，检查了下发现是html写了表单默认会提交的问题，给表单加个onsubmit="return false"吧！</p><div class="innerPho"><img src="../images/Web3/after2.png"></div>
-               <p>本来到这里其实就可以结束的，但是我在自己体验的过程中遇到了一个未完善的地方，发现搜索完不关闭搜索结果列表而把搜索框中的文字全删除的话，整个列表(所有数据，我写的整个数组)就直接显示出来了。这个问题很影响用户体验。所以又改进了一把！</p><div class="innerPho"><img src="../images/Web3/final.png"></div>
+               <p>想实现这个效果当然还是要用js啦！这里写了两个function就可以咯，由于很简单，这里就不详细讲啦。</p><div class="innerPho"><img src="../../../images/Web3/3.png"></div>
+               <p>然后遇到一个问题，按回车键后搜索结果列表出现了但是页面会刷新，检查了下发现是html写了表单默认会提交的问题，给表单加个onsubmit="return false"吧！</p><div class="innerPho"><img src="../../../images/Web3/after2.png"></div>
+               <p>本来到这里其实就可以结束的，但是我在自己体验的过程中遇到了一个未完善的地方，发现搜索完不关闭搜索结果列表而把搜索框中的文字全删除的话，整个列表(所有数据，我写的整个数组)就直接显示出来了。这个问题很影响用户体验。所以又改进了一把！</p><div class="innerPho"><img src="../../../images/Web3/final.png"></div>
                <p>在这加了两行代码，搜索完删除文字自动display:none，完美解决！<br><br></p>
                <p>最终的成品就是你现在浏览我们的网站搜索的效果，是不是感觉有点简单粗暴？不过这也算是实现了我们站内的搜索功能了。</p>
                 <div class="article-footer"></div>
@@ -103,7 +102,7 @@
         </div>
 
     	<a class="returnTop hidden-xs" href="javascript:returnTop()">
-			<img src="../images/returnTop.png">
+			<img src="../../../images/returnTop.png">
 		</a>
     	<div class="container-fluid">
             <div class="bottom">
