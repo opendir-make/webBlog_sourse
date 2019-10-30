@@ -48,9 +48,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /*导航栏*/
 .logo{
-	position: absolute;
-    top: 10%;
-	display: block;
+	margin-top: 5px;
 	width: 180px;
 }
 .navbar{
