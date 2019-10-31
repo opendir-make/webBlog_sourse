@@ -34,6 +34,16 @@ function randomApi() {
     body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
     omit_text();
     getTime();
+    //轮播图
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        carousel.render({
+        elem: '#slideshow'
+        ,width: '100%' 
+        ,arrow: 'always'
+        ,anim: 'default' 
+        });
+    });
 }
 
 // 省略前言
@@ -474,3 +484,4 @@ function mouseUp(event) {
     var obj = e.srcElement;
     obj.style.color = '#4876FF';
 }
+  
