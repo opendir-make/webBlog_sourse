@@ -344,6 +344,19 @@ table { border-collapse:collapse; border-spacing:0; }
 	text-decoration: none;
 	color: #4876FF;
 }
+.friend_link{
+	font-size: 15px;
+	text-decoration: none;
+}
+.friend_link:hover{
+	border-radius: 10px;
+	background-color:lightblue; 
+	text-decoration: none;
+	color: #4876FF;
+}
+.friend_link_block{
+	height: 250px!important;
+}
 
 /*搜索大屏*/
 .searchBlock{
