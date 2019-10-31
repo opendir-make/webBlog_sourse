@@ -129,17 +129,6 @@ table { border-collapse:collapse; border-spacing:0; }
     animation-duration: 2s;
     -webkit-animation:fade-in 2s;
 }
-.text-motto sub{
-	font-size: 25px;
-	color: white;
-	margin-right: 500px;
-	float: right;
-	text-shadow: 2px 2px 8px black;
-	font-family: "楷体";
-	animation: fade-in-delay;
-    animation-duration: 2s;
-    -webkit-animation:fade-in-delay 2s;
-}
 
 /*正文*/
 .article{
