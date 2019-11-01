@@ -44,6 +44,15 @@ function randomApi() {
         ,anim: 'default' 
         });
     });
+    layui.use('carousel', function(){
+        var carousel2 = layui.carousel;
+        carousel2.render({
+        elem: '#slideshow2'
+        ,width: '100%' 
+        ,arrow: 'always'
+        ,anim: 'default' 
+        });
+    });
 }
 
 // 省略前言
