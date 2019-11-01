@@ -61,6 +61,11 @@ table { border-collapse:collapse; border-spacing:0; }
 	.left{
 		margin-bottom: 80px!important;
 	}
+	.layui-colla-title{
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		}
 }
 
 #body{
