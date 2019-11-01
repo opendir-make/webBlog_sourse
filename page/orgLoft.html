@@ -29,23 +29,7 @@
         function randomApi2() {
             var body = document.getElementById("body");
             body.style.backgroundImage = "url(https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302)";
-            omit_text2();
             getTime();
-        }
-
-        function omit_text2(){
-        var windowWidth = window.innerWidth;
-        console.log(windowWidth);
-            if (windowWidth<768) {
-                function omit_texthaha() {
-                    var list = document.getElementsByClassName("layui-colla-title");
-                    for (var i = 0; i < list.length; i++) {
-                        var oBox = document.getElementsByClassName("layui-colla-title")[i];
-                        var demoHtml = oBox.innerHTML.slice(0, 27) + '......';
-                        oBox.innerHTML = demoHtml;
-                    }
-                }
-            }
         }
         </script>
         <style>
@@ -64,9 +48,6 @@
             }
             .layui-colla-item{
                 border-radius: 5px;
-            }
-            .container{
-                padding: 0 120px;
             }
             .layui-colla-content{
                 padding: 0;
@@ -99,26 +80,26 @@
                     </button>
                 </div>
                 
-                    <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
-                            <li><a href="../page/orgLoft.html">orgLoft头条</a></li>
-                            <li>
-                                <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="../page/C/">C</a></li>
-                                    <li><a href="../page/Java/">Java</a></li>
-                                    <li><a href="../page/Python/">Python</a></li>
-                                    <li><a href="../page/JavaScript/">JavaScript</a></li>
-                                    <li><a href="../page/Web/">Web</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../page/Linux/">Linux系统</a></li>
-                            <li><a href="../page/software/">好软推荐</a></li>
-                            <li><a href="../page/photograph.html">摄影修炼</a></li>
-                            <li><a href="../page/travel/">云旅游</a></li>
-                        <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
-                    </ul>
-                </div>
+                <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+                        <li><a href="../page/orgLoft.html">orgLoft头条</a></li>
+                        <li>
+                            <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../page/C/">C</a></li>
+                                <li><a href="../page/Java/">Java</a></li>
+                                <li><a href="../page/Python/">Python</a></li>
+                                <li><a href="../page/JavaScript/">JavaScript</a></li>
+                                <li><a href="../page/Web/">Web</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../page/Linux/">Linux系统</a></li>
+                        <li><a href="../page/software/">好软推荐</a></li>
+                        <li><a href="../page/photograph.html">摄影修炼</a></li>
+                        <li><a href="../page/travel/">云旅游</a></li>
+                    <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
+                </ul>
             </div>
+        </div>
 
     	<div class="text-motto hidden-xs">
             <p>orgLoft头条——转载CSDN</p><sub></sub>
