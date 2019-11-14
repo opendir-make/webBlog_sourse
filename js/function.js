@@ -218,6 +218,10 @@ function search() {
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
                 "url": "page/technology/"
+            },{
+                "label": "双11 老板 加班",
+                "title": "双十一，老板的电话该不该接？",
+                "url": "page/technology/1/"
             }]
         },
         computed: {
@@ -385,6 +389,10 @@ function searchSM() {
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
                 "url": "page/technology/"
+            },{
+                "label": "双11 老板 加班",
+                "title": "双十一，老板的电话该不该接？",
+                "url": "page/technology/1/"
             }]
         },
         computed: {
@@ -439,7 +447,7 @@ function searchEnterSM(event) {
 
 // 首页文章排序
 function indexRefreshment() {
-    var l = 30,
+    var l = 31,
         s = 9,
         show = ',',
         list = ',';
