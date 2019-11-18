@@ -32,7 +32,7 @@
 				}
 				var body=document.getElementById("body");
 			    body.style.backgroundImage="url(images/"+images[i]+")";
-			}
+			} 
 
             function show(){
                 if ($('#donateBox').css('display') == 'none') {
@@ -73,7 +73,7 @@
                 <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
                     <li><a href="page/orgLoft.html">orgLoft头条</a></li>
                 	<li>
-                        <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                        <a class="dropdown" data-toggle="dropdown" href="">学习笔记<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="page/C/">C</a></li>
                             <li><a href="page/Java/">Java</a></li>
@@ -107,7 +107,7 @@
                                 <ul style="display: none;" id="searchListSM" class="searchList">
                                     <!-- 循环输出数据 -->
                                     <li v-for="article in filteredArticles">
-                                        <a target="_blank" v-bind:href="article.url"><p>{{article.title}}</p></a>
+                                        <a v-bind:href="article.url"><p>{{article.title}}</p></a>
                                     </li>
                                 </ul>
                             </form>
@@ -310,7 +310,7 @@
 						<div class="container-fluid">
 							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Linux/1/"><img class="blockPho" src="images/Linux/1.jpg"></a>
 							<div class="text col-md-7 col-sm-12 col-xs-12">
-								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/1/"><p><img class="sprite" src="images/Linux.png" alt="">Linux第一篇---了解Linux</p></a>
+								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/1/"><p><img class="sprite" src="images/Linux.png" alt="">Linux是什么？</p></a>
 								<span class="qianyan">21世纪的今天，大数据和云计算的出现使的我们从IT时代进入了DT时代，大量的数据存放在云端，很多服务转移到互联网上，只要联网，就可以随时随地的进行信息的访问、数据的处理与共享等操作，而不仅仅局限于本地客户端上，更加方便高效！
 								</span>
 							</div>
@@ -326,7 +326,7 @@
 						<div class="container-fluid">
 							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Linux/2/"><img class="blockPho" src="images/Linux/2.jpg"></a>
 							<div class="text col-md-7 col-sm-12 col-xs-12">
-								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/2/"><p><img class="sprite" src="images/Linux.png" alt="">Linux第二篇---在虚拟机上安装Linux</p></a>
+								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/2/"><p><img class="sprite" src="images/Linux.png" alt="">在虚拟机上安装Linux</p></a>
 								<span class="qianyan">在目前情况下，我们没有接触服务器，所以想要运行Linux只有通过虚拟机。虚拟机给大家推荐VMware,这个虚拟机功能很强大，用起来也很方便，下面课程将详细介绍~
 								</span>
 							</div>
@@ -342,7 +342,7 @@
 						<div class="container-fluid">
 							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Java/1/"><img class="blockPho" src="images/Java1/1.jpg"></a>
 							<div class="text col-md-7 col-sm-12 col-xs-12">
-								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/1/"><p><img class="sprite" src="images/program.png" alt="">Java中常见基本问题集合...</p></a>
+								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/1/"><p><img class="sprite" src="images/program.png" alt="">Java中常见基本问题集合</p></a>
 								<span class="qianyan">一、什么是Java虚拟机？为什么Java被称作是“平台无关的编程语言”？答：Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文件被编译成能被Java虚拟机执行的字节码文件。Java被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。
 								</span>
 							</div>
@@ -357,7 +357,7 @@
 						<div class="container-fluid">
 							<a class="col-md-5 col-sm-12 col-xs-12" href="page/Java/2/"><img class="blockPho" src="images/Java1/2.png"></a>
 							<div class="text col-md-7 col-sm-12 col-xs-12">
-								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/2/"><p><img class="sprite" src="images/program.png" alt="">Java第二课---晋级篇</p></a>
+								<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/2/"><p><img class="sprite" src="images/program.png" alt="">了解Java---晋级篇</p></a>
 								<span class="qianyan">Java提供和支持创建抽象类和接口。它们的实现有共同点，不同点在于：接口中所有的方法隐含的都是抽象的。而抽象类则可以同时包含抽象和非抽象的方法。
 								</span>
 							</div>
@@ -482,7 +482,7 @@
                     <div class="container-fluid">
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/Java/4/"><img class="blockPho" src="images/Java1/3.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
-                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/4/"><p><img class="sprite" src="images/program.png" alt="">今天补充一下Java基础内容--了解Java</p></a>
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Java/4/"><p><img class="sprite" src="images/program.png" alt="">了解Java</p></a>
                             <span class="qianyan">前几篇内容直接讲了一些Java知识，忘记了给小萌新们讲解Java的基础内容了，今天来带领大家了解一下Java~
                             </span>
                         </div>
@@ -512,7 +512,7 @@
                     <div class="container-fluid">
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/JavaScript/1/"><img class="blockPho" src="images/Javascript/js.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
-                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/JavaScript/1/"><p><img class="sprite" src="images/program.png" alt="">带你初步了解js脚本语言，go!</p></a>
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/JavaScript/1/"><p><img class="sprite" src="images/program.png" alt="">初步了解js脚本语言</p></a>
                             <span class="qianyan">JavaScript是一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
                             </span>
                         </div>
@@ -528,7 +528,7 @@
                     <div class="container-fluid">
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/JavaScript/2/"><img class="blockPho" src="images/Javascript/1.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
-                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/JavaScript/2/"><p><img class="sprite" src="images/program.png" alt="">js经典题目集合啦~</p></a>
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/JavaScript/2/"><p><img class="sprite" src="images/program.png" alt="">js经典题目集合~</p></a>
                             <span class="qianyan">关键字：优化网页页面、null、undefined、new、JSON、js延迟加载、跨域、内存泄漏
                             </span>
                         </div>
@@ -558,7 +558,7 @@
                     <div class="container-fluid">
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/Web/1/"><img class="blockPho" src="images/Web/1.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
-                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Web/1/"><p><img class="sprite" src="images/program.png" alt="">Web第一课--风里雨里，我在前端战场等你！~</p></a>
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Web/1/"><p><img class="sprite" src="images/program.png" alt="">风里雨里，我在前端战场等你！</p></a>
                             <span class="qianyan">前端在我们生活中是必不可少的东西，比如上网查个资料，上网页上看个电影，打开教务系统查个成绩等等。PC版、iPad版、手机版，它们都大同小异。这里，我们将见证一个前端攻城狮的诞生！
                             </span>
                         </div>
@@ -588,7 +588,7 @@
                     <div class="container-fluid">
                         <a class="col-md-5 col-sm-12 col-xs-12" href="page/Linux/3/"><img class="blockPho" src="images/Linux/3.jpg"></a>
                         <div class="text col-md-7 col-sm-12 col-xs-12">
-                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/3/"><p><img class="sprite" src="images/program.png" alt="">Linux到底学什么？讲完下节课开始命令操作！</p></a>
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Linux/3/"><p><img class="sprite" src="images/program.png" alt="">Linux到底学什么？</p></a>
                             <span class="qianyan">我们常常听到很多人说要学学Linux或者被人告知说应该学学Linux，那么学Linux到底要学什么？
                             </span>
                         </div>

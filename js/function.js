@@ -60,7 +60,7 @@ function omit_text() {
     var list = document.getElementsByClassName("qianyan");
     for (var i = 0; i < list.length; i++) {
         var oBox = document.getElementsByClassName("qianyan")[i];
-        var demoHtml = oBox.innerHTML.slice(0, 88) + '......';
+        var demoHtml = oBox.innerHTML.slice(0, 80) + '......';
         oBox.innerHTML = demoHtml;
     }
 }
@@ -128,11 +128,11 @@ function search() {
                 "url": "page/C/4/"
             }, {
                 "label": "Java入门常见问题",
-                "title": "Java中常见基本问题集合...",
+                "title": "Java中常见基本问题集合",
                 "url": "page/Java/1/"
             }, {
                 "label": "Java晋级篇",
-                "title": "Java第二课---晋级篇",
+                "title": "了解Java---晋级篇",
                 "url": "page/Java/2/"
             }, {
                 "label": "Java new对象",
@@ -140,27 +140,27 @@ function search() {
                 "url": "page/Java/3/"
             }, {
                 "label": "了解Java，Java基础",
-                "title": "今天补充一下Java基础内容--了解Java",
+                "title": "了解Java",
                 "url": "page/Java/4/"
             }, {
                 "label": "JavaScript脚本语言",
-                "title": "带你初步了解JavaScript脚本语言，go!",
+                "title": "初步了解JavaScript脚本语言",
                 "url": "page/JavaScript/1/"
             }, {
                 "label": "JavaScript题目",
-                "title": "JavaScript经典题目集合啦~",
+                "title": "JavaScript经典题目集合~",
                 "url": "page/JavaScript/2/"
             }, {
                 "label": "Linux认识，了解Linux",
-                "title": "Linux第一篇---了解Linux~",
+                "title": "了解Linux",
                 "url": "page/Linux/1/"
             }, {
                 "label": "虚拟机上安装Linux",
-                "title": "Linux第二篇---在虚拟机上安装Linux",
+                "title": "在虚拟机上安装Linux",
                 "url": "page/Linux/2/"
             }, {
                 "label": "学习Linux学习什么",
-                "title": "Linux到底学什么？讲完下节课开始命令操作！",
+                "title": "Linux到底学什么？",
                 "url": "page/Linux/3/"
             }, {
                 "label": "软件推荐，一个木函",
@@ -192,11 +192,11 @@ function search() {
                 "url": "page/travel/4/"
             }, {
                 "label": "web基础，了解web",
-                "title": "Web第一课--风里雨里，我在前端战场等你！",
+                "title": "风里雨里，我在前端战场等你！",
                 "url": "page/Web/1/"
             }, {
                 "label": "web基础，HTML5",
-                "title": "Web基础第二课---HTML/HTML5",
+                "title": "初识HTML/HTML5",
                 "url": "page/Web/2/"
             }, {
                 "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
@@ -299,11 +299,11 @@ function searchSM() {
                 "url": "page/C/4/"
             }, {
                 "label": "Java入门常见问题",
-                "title": "Java中常见基本问题集合...",
+                "title": "Java中常见基本问题集合",
                 "url": "page/Java/1/"
             }, {
-                "label": "Java晋级篇",
-                "title": "Java第二课---晋级篇",
+                "label": "了解Java晋级篇",
+                "title": "了解Java---晋级篇",
                 "url": "page/Java/2/"
             }, {
                 "label": "Java new对象",
@@ -311,27 +311,27 @@ function searchSM() {
                 "url": "page/Java/3/"
             }, {
                 "label": "了解Java，Java基础",
-                "title": "今天补充一下Java基础内容--了解Java",
+                "title": "了解Java",
                 "url": "page/Java/4/"
             }, {
                 "label": "JavaScript脚本语言",
-                "title": "带你初步了解JavaScript脚本语言，go!",
+                "title": "初步了解JavaScript脚本语言",
                 "url": "page/JavaScript/1/"
             }, {
                 "label": "JavaScript题目",
-                "title": "JavaScript经典题目集合啦~",
+                "title": "JavaScript经典题目集合~",
                 "url": "page/JavaScript/2/"
             }, {
                 "label": "Linux认识，了解Linux",
-                "title": "Linux第一篇---了解Linux~",
+                "title": "了解Linux",
                 "url": "page/Linux/1/"
             }, {
                 "label": "虚拟机上安装Linux",
-                "title": "Linux第二篇---在虚拟机上安装Linux",
+                "title": "在虚拟机上安装Linux",
                 "url": "page/Linux/2/"
             }, {
                 "label": "学习Linux学习什么",
-                "title": "Linux到底学什么？讲完下节课开始命令操作！",
+                "title": "Linux到底学什么？",
                 "url": "page/Linux/3/"
             }, {
                 "label": "软件推荐，一个木函",
@@ -363,11 +363,11 @@ function searchSM() {
                 "url": "page/travel/4/"
             }, {
                 "label": "web基础，了解web",
-                "title": "Web第一课--风里雨里，我在前端战场等你！",
+                "title": "风里雨里，我在前端战场等你！",
                 "url": "page/Web/1/"
             }, {
                 "label": "web基础，HTML5",
-                "title": "Web基础第二课---HTML/HTML5",
+                "title": "初识HTML/HTML5",
                 "url": "page/Web/2/"
             }, {
                 "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
@@ -501,4 +501,8 @@ function mouseUp(event) {
     var obj = e.srcElement;
     obj.style.color = '#4876FF';
 }
-  
+  //页面导航栏引用
+  var language_index=document.getElementById('language-index').innerHTML();
+  var language_index_string=language_index.toString();
+  var language_index_other=document.getElementById('language-index-other');
+	language_index_other.innerHTML=language_index_string;	
