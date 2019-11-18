@@ -23,7 +23,7 @@
 	</head>
 	
 	<body id="body" onload="randomApi()">
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="language-index">
         <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/logo.png"></a>
@@ -34,10 +34,10 @@
             </button>
         </div>
         
-		<ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
+        <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
             <li><a href="../../page/orgLoft.html">orgLoft头条</a></li>
             <li>
-                <a class="dropdown" data-toggle="dropdown" href="">编程学习<span class="caret"></span></a>
+                <a class="dropdown" data-toggle="dropdown" href="">学习笔记<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="../../page/C/">C</a></li>
                     <li><a href="../../page/Java/">Java</a></li>
@@ -54,7 +54,7 @@
     </ul>
         </div>
         </div>
-
+        
     	<div class="text-motto hidden-xs">
 			<p><a href="index.html">Java专区</a></p>
 		</div>
@@ -65,7 +65,7 @@
     				<div class="container-fluid">
     					<a class="col-md-5 col-sm-12 col-xs-12" href="1/"><img class="blockPho" src="../../images/Java1/1.jpg"></a>
     					<div class="text col-md-7 col-sm-12 col-xs-12">
-    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="1/"><p><img class="sprite" src="../../images/program.png" alt="">Java中常见基本问题集合...</p></a>
+    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="1/"><p><img class="sprite" src="../../images/program.png" alt="">Java中常见基本问题集合</p></a>
 							<span class="qianyan">一、什么是Java虚拟机？为什么Java被称作是“平台无关的编程语言”？答：Java虚拟机是一个可以执行Java字节码的虚拟机进程。Java源文件被编译成能被Java虚拟机执行的字节码文件。Java被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。
 							</span>
     					</div>
@@ -80,7 +80,7 @@
     				<div class="container-fluid">
     					<a class="col-md-5 col-sm-12 col-xs-12" href="2/"><img class="blockPho" src="../../images/Java1/2.png"></a>
     					<div class="text col-md-7 col-sm-12 col-xs-12">
-    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="2/"><p><img class="sprite" src="../../images/program.png" alt="">Java第二课---晋级篇</p></a>
+    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="2/"><p><img class="sprite" src="../../images/program.png" alt="">了解Java---晋级篇</p></a>
 							<span class="qianyan">关键字：接口、抽象类、值传递、引用传递、进程、线程
 							</span>
     					</div>
@@ -96,7 +96,7 @@
     					<a class="col-md-5 col-sm-12 col-xs-12" href="3/"><img class="blockPho" src="../../images/Java1/2.jpg"></a>
     					<div class="text col-md-7 col-sm-12 col-xs-12">
     						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="3/"><p><img class="sprite" src="../../images/program.png" alt="">Java:new一个对象的过程中发生了什么？</p></a>
-							<span class="qianyan">关键字：接口、抽象类、值传递、引用传递、进程、线程
+							<span class="qianyan">java在new一个对象的时候，会先查看对象所属的类有没有被加载到内存，如果没有的话，就会先通过类的全限定名来加载。加载并初始化类完成后，再进行对象的创建工作
 							</span>
     					</div>
     				</div>
@@ -110,7 +110,7 @@
     				<div class="container-fluid">
     					<a class="col-md-5 col-sm-12 col-xs-12" href="4/"><img class="blockPho" src="../../images/Java1/3.jpg"></a>
     					<div class="text col-md-7 col-sm-12 col-xs-12">
-    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="4/"><p><img class="sprite" src="../../images/program.png" alt="">今天补充一下Java基础内容--了解Java</p></a>
+    						<a onmousedown="mouseDown()" onmouseup="mouseUp()" href="4/"><p><img class="sprite" src="../../images/program.png" alt="">了解Java</p></a>
 							<span class="qianyan">前几篇内容直接讲了一些Java知识，忘记了给小萌新们讲解Java的基础内容了，今天来带领大家了解一下Java~
 							</span>
     					</div>
