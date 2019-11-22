@@ -52,6 +52,10 @@ function randomApi() {
         ,arrow: 'always'
         ,anim: 'default' 
         });
+        layui.use('element', function(){
+            var element = layui.element;
+            element.render('nav');
+          });
     });
 }
 
@@ -505,4 +509,18 @@ function mouseUp(event) {
   var language_index=document.getElementById('language-index').innerHTML();
   var language_index_string=language_index.toString();
   var language_index_other=document.getElementById('language-index-other');
-	language_index_other.innerHTML=language_index_string;	
+    language_index_other.innerHTML=language_index_string;	
+    
+/*打开侧栏，修改侧栏宽度，主体左跨度、背景透明度*/
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("mySidenav").style.marginTop="67px";
+}
+/*关闭侧栏，恢复原始侧栏宽度，主体左跨度、背景透明度*/
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
