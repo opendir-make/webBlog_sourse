@@ -22,36 +22,46 @@
 	</head>
 	
 	<body id="body" onload="randomApi()">
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="../../../index.html"><img class="logo" src="../../../images/logo.png"></a>
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <ul id="shownav" class="ullist nav navbar-nav collapse navbar-collapse">
-            <li><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
-            <li>
-                <a class="dropdown" data-toggle="dropdown" href="">学习笔记<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../page/C/">C</a></li>
-                    <li><a href="../../../page/Java/">Java</a></li>
-                    <li><a href="../../../page/Python/">Python</a></li>
-                    <li><a href="../../../page/JavaScript/">JavaScript</a></li>
-                    <li><a href="../../../page/Web/">Web</a></li>
-                </ul>
-            </li>
-            <li><a href="../../../page/Linux/">Linux系统</a></li>
-            <li><a href="../../../page/software/">好软推荐</a></li>
-            <li><a href="../../../page/photograph.html">摄影修炼</a></li>
-            <li><a href="../../../page/travel/">云旅游</a></li>
-        <li class=" hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤</a></li>
-    </ul>
-        </div>
-        </div>
+            <div class="navbarul navbar-fixed-top">
+					<ul class="layui-nav navbar" lay-filter="">
+							<a href="../../../index.html"><div class="logo layui-col-md-offset1"><img src="../../../images/logo.png" alt=""></div></a>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../index.html">本尊</a></li>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
+						<li class="layui-nav-item layui-hide-xs layui-this">
+							<a href="javascript:;">学习笔记</a>
+							<dl class="layui-nav-child"> <!-- 二级菜单 -->
+								<dd><a href="../../../page/C/">C</a></dd>
+								<dd><a href="../../../page/Java/">Java</a></dd>
+								<dd><a href="../../../page/Python/">Python</a></dd>
+								<dd><a href="../../../page/JavaScript/">JavaScript</a></dd>
+								<dd><a href="../../../page/Web/">Web</a></dd>
+							</dl>
+							</li>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/Linux/">Linux系统</a></li>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/software/">好软推荐</a></li>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/photograph.html">摄影修炼</a></li>
+						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/travel/">云旅游</a></li>
+						<li class="layui-nav-item hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤<span class="layui-badge-dot"></span></a></li>
+						<li class="layui-nav-item visible-xs" style="float: right;"><a href="javascript:openNav()">&#9776; 更多</a></li>
+					</ul>
+				</div>
+				<div id="mySidenav" class="sidenav visible-xs visible-sm">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="../../../page/orgLoft.html">orgLoft头条</a>
+					<blockquote class="layui-elem-quote">学习笔记</blockquote> 
+					<a href="../../../page/C/">C</a>
+					<a href="../../../page/Java/">Java</a>
+					<a href="../../../page/Python/">Python</a>
+					<a href="../../../page/JavaScript/">JavaScript</a>
+					<a href="../../../page/Web/">Web</a>
+					<blockquote class="layui-elem-quote">系统</blockquote>
+					<a href="../../../page/Linux/">Linux系统</a>
+					<blockquote class="layui-elem-quote">软件</blockquote>
+					<a href="../../../page/software/">好软推荐</a>
+					<blockquote class="layui-elem-quote">摄影旅游</blockquote>
+					<a href="../../../page/photograph.html">摄影修炼</a>
+					<a href="../../../page/travel/">云旅游</a>
+				</div>
 
     	<div class="text-motto hidden-xs">
 			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>

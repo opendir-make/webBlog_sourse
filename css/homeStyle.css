@@ -14,10 +14,18 @@ fieldset, img { border:0; }
 button, input, select, textarea { font-size:100%; }
 table { border-collapse:collapse; border-spacing:0; }
 
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}  
 @media screen and (max-width:767px){
 	#body{
 		background-color: lightgray!important;
 		background-image: none!important;
+	}
+	.logo img{
+		width: 180px!important;
+		float: left;
 	}
 	.article{
 		margin-bottom: 15px!important;
@@ -33,6 +41,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	.searchBlockSM {
 		border-top-left-radius: 0!important;
 		border-top-right-radius: 0!important;
+		margin-top: 80px!important;
 	}
 	.searchBoxSM p{
 		border-bottom-left-radius: 0!important;
@@ -75,6 +84,8 @@ table { border-collapse:collapse; border-spacing:0; }
 	animation: fade-in;
 	animation-duration: 1s;
 	-webkit-animation:fade-in 1s;
+	font-family: "Lato", sans-serif;
+    transition: background-color .5s;
 }
 /*导航栏*/
 .logo{
@@ -82,39 +93,66 @@ table { border-collapse:collapse; border-spacing:0; }
     top: 10%;
 	display: block;*/
 	margin-top: 5px;
-	width: 180px;
 }
 .navbar{
-	background-color: rgba(0,0,0,0.5);
-	border:transparent;
-	border-radius: 0px;
-}
-.navbar-brand{
-	padding: 0;
-}
-.dropdown-menu{
-	background-color: rgba(0,0,0,0.5);
-	border-radius: 10px;
-}
-.dropdown-menu li a{
-	color: white;
 	text-align: center;
+	background-color: rgba(0,0,0,0.4)!important;
 }
-.dropdown-menu li a:hover{
-	background-color: rgba(0,0,0,0.2);
-	color: skyblue;
+.navbarul{
+	width: 100%!important;
+	/* position: fixed; */
+	z-index: 999999999999999999;
 }
-.ullist{
-	float: right;
-	margin-right: 60px;
+.navbarul ul li dl dd{
+	height: 40px;
+	line-height: 40px;
 }
-.ullist li a{
-	color: white!important;
+.logo img{
+	width: 200px;
+	float: left;
 }
-.ullist li a:hover{
-	color: skyblue!important;
+.navbar li a{
+	text-decoration: none;
 }
 
+/*侧边栏选择器*/
+.sidenav {
+    height: 100%;
+    width: 0; /*原始宽度*/
+    position: fixed;
+    /*z-index、top、left共同控制侧栏的悬浮（上方1，下方-1）*/
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s; /*侧栏延迟0.5s显示*/
+	padding-top: 60px;
+ 	background-color: lightgrey;
+}
+/*侧边栏标签选择器*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.3s; /*标签延迟0.3s显示*/
+}
+ 
+/*侧栏标签和关闭按钮光标的效果*/
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+ 
+/*侧栏和关闭按钮的位置选择器*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 /*格言*/
 .text-motto{
 	height: 80px;
@@ -206,7 +244,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .left{
  	padding: 0;
-	 margin-top: 60px;
+	 margin-top: 80px;
 }
 .left .left-block{
 	background-color: hsla(0,0%,100%,.9);
