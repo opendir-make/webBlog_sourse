@@ -19,6 +19,13 @@
         <script type="text/javascript" src="../js/function.js"></script>
         <link rel="stylesheet" href="../layui/css/layui.css">
         <script src="../layui/layui.all.js"></script>
+        <script src="../layui/layui.js"></script>
+        <script>
+        layui.use(['element', 'layer'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+            });
+        </script>
         <style type="text/css">
             .innerPh{
                 border-radius: 10px;
@@ -35,7 +42,7 @@
                     <ul class="layui-nav navbar" lay-filter="">
                             <a href="../index.html"><div class="logo layui-col-md-offset1"><img src="../images/logo.png" alt=""></div></a>
                         <li class="layui-nav-item layui-hide-xs"><a href="../index.html">本尊</a></li>
-                        <li class="layui-nav-item layui-hide-xs layui-this"><a href="../page/orgLoft.html">orgLoft头条</a></li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../page/orgLoft.html">orgLoft头条</a></li>
                         <li class="layui-nav-item layui-hide-xs">
                             <a href="javascript:;">学习笔记</a>
                             <dl class="layui-nav-child"> <!-- 二级菜单 -->

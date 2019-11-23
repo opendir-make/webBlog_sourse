@@ -19,6 +19,7 @@
 		<script type="text/javascript" src="../js/function.js"></script>
         <link rel="stylesheet" href="../layui/css/layui.css">
         <script src="../layui/layui.all.js"></script>
+        <script src="../layui/layui.js"></script>
         <script>
             function showImg(){
                 layer.photos({
@@ -46,6 +47,10 @@
                 anim: 5
                 }); 
             }
+            layui.use(['element', 'layer'], function(){
+                var element = layui.element;
+                var layer = layui.layer;
+                });
         </script>
 	</head>
 	<body id="body" onload="randomApi()">
@@ -95,7 +100,6 @@
         
     	<div class="article container">
             <ul class="layui-timeline">
-
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                     <div class="layui-timeline-content layui-text">

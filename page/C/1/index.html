@@ -19,11 +19,12 @@
         <script type="text/javascript" src="../../../js/function.js"></script>
         <link rel="stylesheet" href="../../../layui/css/layui.css">
         <script src="../../../layui/layui.all.js"></script>
+        <script src="../../../layui/layui.js"></script>
         <script>
-            layui.use('element', function(){
+        layui.use(['element', 'layer'], function(){
             var element = layui.element;
-            element.render('nav');
-          });
+            var layer = layui.layer;
+            });
         </script>
 	</head>
 	
