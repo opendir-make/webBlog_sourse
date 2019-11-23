@@ -35,27 +35,23 @@ function randomApi() {
     omit_text();
     getTime();
     //轮播图
-    layui.use('carousel', function(){
+    layui.use('carousel', function() {
         var carousel = layui.carousel;
         carousel.render({
-        elem: '#slideshow'
-        ,width: '100%' 
-        ,arrow: 'always'
-        ,anim: 'default' 
+            elem: '#slideshow',
+            width: '100%',
+            arrow: 'always',
+            anim: 'default'
         });
     });
-    layui.use('carousel', function(){
+    layui.use('carousel', function() {
         var carousel2 = layui.carousel;
         carousel2.render({
-        elem: '#slideshow2'
-        ,width: '100%' 
-        ,arrow: 'always'
-        ,anim: 'default' 
+            elem: '#slideshow2',
+            width: '100%',
+            arrow: 'always',
+            anim: 'default'
         });
-        layui.use('element', function(){
-            var element = layui.element;
-            element.render('nav');
-          });
     });
 }
 
@@ -218,11 +214,11 @@ function search() {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
                 "url": "page/luckyDraw.html"
-            },{
+            }, {
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
                 "url": "page/technology/"
-            },{
+            }, {
                 "label": "双11 老板 加班",
                 "title": "双十一，老板的电话该不该接？",
                 "url": "page/technology/1/"
@@ -389,11 +385,11 @@ function searchSM() {
                 "label": "幸运抽奖 luckydraw",
                 "title": "幸运抽奖系统",
                 "url": "page/luckyDraw.html"
-            },{
+            }, {
                 "label": "科技 现代5G",
                 "title": "台前与幕后的5G战争",
                 "url": "page/technology/"
-            },{
+            }, {
                 "label": "双11 老板 加班",
                 "title": "双十一，老板的电话该不该接？",
                 "url": "page/technology/1/"
@@ -505,22 +501,22 @@ function mouseUp(event) {
     var obj = e.srcElement;
     obj.style.color = '#4876FF';
 }
-  //页面导航栏引用
-  var language_index=document.getElementById('language-index').innerHTML();
-  var language_index_string=language_index.toString();
-  var language_index_other=document.getElementById('language-index-other');
-    language_index_other.innerHTML=language_index_string;	
-    
+//页面导航栏引用
+var language_index = document.getElementById('language-index').innerHTML();
+var language_index_string = language_index.toString();
+var language_index_other = document.getElementById('language-index-other');
+language_index_other.innerHTML = language_index_string;
+
 /*打开侧栏，修改侧栏宽度，主体左跨度、背景透明度*/
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("mySidenav").style.marginTop="67px";
+    // document.getElementById("mySidenav").style.marginTop = "67px";
 }
 /*关闭侧栏，恢复原始侧栏宽度，主体左跨度、背景透明度*/
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
 }

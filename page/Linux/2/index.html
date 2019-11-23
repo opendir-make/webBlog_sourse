@@ -19,6 +19,13 @@
 		<script type="text/javascript" src="../../../js/function.js"></script>
 		<link rel="stylesheet" href="../../../layui/css/layui.css">
         <script src="../../../layui/layui.all.js"></script>
+        <script src="../../../layui/layui.js"></script>
+        <script>
+        layui.use(['element', 'layer'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+            });
+        </script>
 	</head>
 	
 	<body id="body" onload="randomApi()">
@@ -27,7 +34,7 @@
 							<a href="../../../index.html"><div class="logo layui-col-md-offset1"><img src="../../../images/logo.png" alt=""></div></a>
 						<li class="layui-nav-item layui-hide-xs"><a href="../../../index.html">本尊</a></li>
 						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
-						<li class="layui-nav-item layui-hide-xs layui-this">
+						<li class="layui-nav-item layui-hide-xs">
 							<a href="javascript:;">学习笔记</a>
 							<dl class="layui-nav-child"> <!-- 二级菜单 -->
 								<dd><a href="../../../page/C/">C</a></dd>
@@ -37,7 +44,7 @@
 								<dd><a href="../../../page/Web/">Web</a></dd>
 							</dl>
 							</li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/Linux/">Linux系统</a></li>
+						<li class="layui-nav-item layui-hide-xs layui-this"><a href="../../../page/Linux/">Linux系统</a></li>
 						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/software/">好软推荐</a></li>
 						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/photograph.html">摄影修炼</a></li>
 						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/travel/">云旅游</a></li>

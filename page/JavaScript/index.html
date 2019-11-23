@@ -20,6 +20,13 @@
 		<script type="text/javascript" src="https://api.ooopn.com/history/api.php?type=js"></script>
 		<link rel="stylesheet" href="../../layui/css/layui.css">
         <script src="../../layui/layui.all.js"></script>
+		<script src="../../layui/layui.js"></script>
+        <script>
+        layui.use(['element', 'layer'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+            });
+        </script>
 	</head>
 	
 	<body id="body" onload="randomApi()">

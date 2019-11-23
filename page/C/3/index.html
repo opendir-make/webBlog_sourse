@@ -19,6 +19,7 @@
         <script type="text/javascript" src="../../../js/function.js"></script>
         <link rel="stylesheet" href="../../../layui/css/layui.css">
         <script src="../../../layui/layui.all.js"></script>
+        <script src="../../../layui/layui.js"></script>
         <style>
             .Fibonacci{
                 height: 620px;
@@ -50,6 +51,10 @@
             function four(n){
                document.getElementById("AB").style.display=n?'block':'none';
             }
+            layui.use(['element', 'layer'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+            });            
         </script>
 	</head>
 	

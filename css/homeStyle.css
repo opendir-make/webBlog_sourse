@@ -30,6 +30,9 @@ table { border-collapse:collapse; border-spacing:0; }
 	.article{
 		margin-bottom: 15px!important;
 	}
+	.left{
+		margin-top: 80px!important;
+	}
 	.container-fluid a{
 		padding: 0!important;
 	}
@@ -110,10 +113,15 @@ table { border-collapse:collapse; border-spacing:0; }
 .logo img{
 	width: 200px;
 	float: left;
+	margin-top: 5px;
 }
 .navbar li a{
 	text-decoration: none;
 }
+blockquote{
+	font-weight: bold;
+}
+
 
 /*侧边栏选择器*/
 .sidenav {
@@ -121,7 +129,7 @@ table { border-collapse:collapse; border-spacing:0; }
     width: 0; /*原始宽度*/
     position: fixed;
     /*z-index、top、left共同控制侧栏的悬浮（上方1，下方-1）*/
-    z-index: 1;
+    z-index: 999999999999999999999;
     top: 0;
     left: 0;
     background-color: #111;
@@ -153,6 +161,7 @@ table { border-collapse:collapse; border-spacing:0; }
     font-size: 36px;
     margin-left: 50px;
 }
+
 /*格言*/
 .text-motto{
 	height: 80px;
@@ -244,7 +253,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .left{
  	padding: 0;
-	 margin-top: 80px;
+ 	margin-top: 60px;
 }
 .left .left-block{
 	background-color: hsla(0,0%,100%,.9);

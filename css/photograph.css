@@ -16,8 +16,9 @@ table { border-collapse:collapse; border-spacing:0; }
 
 @media screen and (max-width:768px){
 	#body{
-		background-color: #9dbac7!important;
 		background-image: url(../images/photograph/black-linen.png)!important;
+		background-attachment:fixed!important;
+        background-size:cover!important;		
 	}
 	.inner{
 		width: 100%!important;
@@ -29,10 +30,10 @@ table { border-collapse:collapse; border-spacing:0; }
 		white-space: nowrap;
 		}
 	.layui-p{
-			font-size: 15px!important;
+		font-size: 15px!important;
 		}
 	.article{
-		margin-top: 60px!important;
+		margin-top: 80px!important;
 		margin-right:40px!important;
 	}
 	.container{
@@ -99,6 +100,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .logo img{
 	width: 200px;
 	float: left;
+	margin-top: 5px;
 }
 .navbar li a{
 	text-decoration: none;
@@ -110,7 +112,7 @@ table { border-collapse:collapse; border-spacing:0; }
     width: 0; /*原始宽度*/
     position: fixed;
     /*z-index、top、left共同控制侧栏的悬浮（上方1，下方-1）*/
-    z-index: 1;
+    z-index: 999999999999999999999;
     top: 0;
     left: 0;
     background-color: #111;
@@ -124,7 +126,7 @@ table { border-collapse:collapse; border-spacing:0; }
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 16px;
-    color: #f5f5f5;
+    color: black;
     display: block;
     transition: 0.3s; /*标签延迟0.3s显示*/
 }
@@ -142,11 +144,10 @@ table { border-collapse:collapse; border-spacing:0; }
     font-size: 36px;
     margin-left: 50px;
 }
-
-#main {
-    transition: margin-left .5s;/*主体内容延迟0.5s整体y右移动*/
-    padding: 16px;
+blockquote{
+	font-weight: bold;
 }
+
 /*格言*/
 .text-motto{
 	height: 50px;
