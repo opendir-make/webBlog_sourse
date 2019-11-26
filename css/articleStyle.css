@@ -16,7 +16,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 @media screen and (max-width:767px){
 	#body{
-		background-color: lightgray!important;
+		background-color: #e6e8e7!important;
 		background-image: none!important;
 	}
 	.article{

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=5">
-		<meta http-equiv="X-UA-Compatible" content="IE=7">
-		<meta http-equiv="X-UA-Compatible" content="IE=8">
-		<meta name="keywords" content="编程,学习,旅游,摄影,每天好图,软件推荐">
-		<meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
-		<title>Web第二课--风里雨里，我在前端战场等你！</title>
-		<link rel="stylesheet icon" href="../../../images/d.ico"/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../../../css/articleStyle.css" />
-	    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=5">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="IE=8">
+        <meta name="keywords" content="Open Source！教你用js做一个简单的抽奖系统~ JavaScript">
+        <meta name="description" content="编程学习无忧,旅行达人分享生活,记录生活的美好时光">
+        <title>Open Source！教你用js做一个简单的抽奖系统~</title>
+        <link rel="stylesheet icon" href="../../../images/d.ico"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../../../css/articleStyle.css" />
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../../../js/function.js"></script>
         <link rel="stylesheet" href="../../../layui/css/layui.css">
         <script src="../../../layui/layui.all.js"></script>
@@ -26,52 +26,52 @@
             var layer = layui.layer;
             });
         </script>
-	</head>
-	
-	<body id="body" onload="randomApi()">
+    </head>
+    
+    <body id="body" onload="randomApi()">
             <div class="navbarul navbar-fixed-top">
-					<ul class="layui-nav navbar" lay-filter="">
-							<a href="../../../index.html"><div class="logo layui-col-md-offset1"><img src="../../../images/logo.png" alt=""></div></a>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../index.html">本尊</a></li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
-						<li class="layui-nav-item layui-hide-xs layui-this">
-							<a href="javascript:;">学习笔记</a>
-							<dl class="layui-nav-child"> <!-- 二级菜单 -->
-								<dd><a href="../../../page/C/">C</a></dd>
-								<dd><a href="../../../page/Java/">Java</a></dd>
-								<dd><a href="../../../page/Python/">Python</a></dd>
-								<dd><a href="../../../page/JavaScript/">JavaScript</a></dd>
-								<dd><a href="../../../page/Web/">Web</a></dd>
-							</dl>
-							</li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/Linux/">Linux系统</a></li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/software/">好软推荐</a></li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/photograph.html">摄影修炼</a></li>
-						<li class="layui-nav-item layui-hide-xs"><a href="../../../page/travel/">云旅游</a></li>
-						<li class="layui-nav-item hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤<span class="layui-badge-dot"></span></a></li>
-						<li class="layui-nav-item visible-xs" style="float: right;"><a href="javascript:openNav()">&#9776; 更多</a></li>
-					</ul>
-				</div>
-				<div id="mySidenav" class="sidenav visible-xs visible-sm">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="../../../page/orgLoft.html">orgLoft头条</a>
-					<blockquote class="layui-elem-quote">学习笔记</blockquote> 
-					<a href="../../../page/C/">C</a>
-					<a href="../../../page/Java/">Java</a>
-					<a href="../../../page/Python/">Python</a>
-					<a href="../../../page/JavaScript/">JavaScript</a>
-					<a href="../../../page/Web/">Web</a>
-					<blockquote class="layui-elem-quote">系统</blockquote>
-					<a href="../../../page/Linux/">Linux系统</a>
-					<blockquote class="layui-elem-quote">软件</blockquote>
-					<a href="../../../page/software/">好软推荐</a>
-					<blockquote class="layui-elem-quote">摄影旅游</blockquote>
-					<a href="../../../page/photograph.html">摄影修炼</a>
-					<a href="../../../page/travel/">云旅游</a>
-				</div>
+                    <ul class="layui-nav navbar" lay-filter="">
+                            <a href="../../../index.html"><div class="logo layui-col-md-offset1"><img src="../../../images/logo.png" alt=""></div></a>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../index.html">本尊</a></li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../page/orgLoft.html">orgLoft头条</a></li>
+                        <li class="layui-nav-item layui-hide-xs layui-this">
+                            <a href="javascript:;">学习笔记</a>
+                            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                                <dd><a href="../../../page/C/">C</a></dd>
+                                <dd><a href="../../../page/Java/">Java</a></dd>
+                                <dd><a href="../../../page/Python/">Python</a></dd>
+                                <dd><a href="../../../page/JavaScript/">JavaScript</a></dd>
+                                <dd><a href="../../../page/Web/">Web</a></dd>
+                            </dl>
+                            </li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../page/Linux/">Linux系统</a></li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../page/software/">好软推荐</a></li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../page/photograph.html">摄影修炼</a></li>
+                        <li class="layui-nav-item layui-hide-xs"><a href="../../../page/travel/">云旅游</a></li>
+                        <li class="layui-nav-item hidden-xs hidden-sm"><a href="javascript:changeimg()">换肤<span class="layui-badge-dot"></span></a></li>
+                        <li class="layui-nav-item visible-xs" style="float: right;"><a href="javascript:openNav()">&#9776; 更多</a></li>
+                    </ul>
+                </div>
+                <div id="mySidenav" class="sidenav visible-xs visible-sm">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../../../page/orgLoft.html">orgLoft头条</a>
+                    <blockquote class="layui-elem-quote">学习笔记</blockquote> 
+                    <a href="../../../page/C/">C</a>
+                    <a href="../../../page/Java/">Java</a>
+                    <a href="../../../page/Python/">Python</a>
+                    <a href="../../../page/JavaScript/">JavaScript</a>
+                    <a href="../../../page/Web/">Web</a>
+                    <blockquote class="layui-elem-quote">系统</blockquote>
+                    <a href="../../../page/Linux/">Linux系统</a>
+                    <blockquote class="layui-elem-quote">软件</blockquote>
+                    <a href="../../../page/software/">好软推荐</a>
+                    <blockquote class="layui-elem-quote">摄影旅游</blockquote>
+                    <a href="../../../page/photograph.html">摄影修炼</a>
+                    <a href="../../../page/travel/">云旅游</a>
+                </div>
 
-    	<div class="text-motto hidden-xs">
-			<p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
+        <div class="text-motto hidden-xs">
+            <p>倘只看书，便变成书橱。</p><sub>— —鲁迅</sub>
         </div>
         <a class="changepage hidden-xs" href="../1/">
                 <img src="../../../images/cp.png">
@@ -79,97 +79,74 @@
         <a class="changepagenext hidden-xs" href="../3/">
                 <img src="../../../images/cp.png">
         </a>
-    	<div class="container">
+        <div class="container">
          <div class="row">
              <div class="article col-md-10 col-md-offset-1">
-            <div class="article-title">Web第一课--风里雨里，我在前端战场等你！<div class="author"></br>作者：DD_fighter    发表日期：2019.10.05</br></div>
+            <div class="article-title">Open Source！教你用js做一个简单的抽奖系统~<div class="author"></br>作者：@_小K同學    发表日期：2019.11.25</br></div>
             </div>
-            <div class="article-body"><div class="innerPho"><img src="../../../images/Web/1.jpg"></div>
-               <p>Hello,大家好！欢迎来到前端战场，在这里我们将一起在前端战场，奋勇前进，砥砺前行！</p><br>
-               <h2>一、Web常用文本语言和高级语言组成</h2><br>
-                <p>1、HTML/HTML5</p>
-                <p>2、CSS/CSS3</p>
-                <p>3、JavaScript</p>
-                <p>4、jQuery</p>
-                <p>5、AJAX</p>
-                <p>6、PHP</p>
-                <h2>二、常用知识简介</h2><br>
-                <h3 style="float: left">HTML 指超文本标签语言:</h3><br>
-                <p>HTML 是通向 WEB 技术世界的钥匙。 在这里，你将学习如何使用 HTML 来创建站点。 HTML 非常容易学习！你会喜欢它的！</p>
-                <p>HTML是现在世界通用的超文本标记语言，通过它，可以实现图片、链接、音乐以及程序等等多种元素。现如今，HTML已经是程序员必须掌握的一项基本功。</p><br>
-                <p>HTML的结构一般包括< head >标签和< body >标签，< head >和< body >这2个标记符分别表示网页的头部和正文。头部中可包含页面的标题、关键词、描述说明等内容，它本身不作为内容来显示，但影响网页显示的效果。< body >< /body >当中是网页实际显示的内容，正文标记符又被称为实体标记。页面当中通常包含有很多指向其他相关页面或其他节点的指针，通过点击，可以很方便地获取新的网页，这是HTML获得广泛推广运用最重要的原因之一，而由这些相互之间存在关联的页面组成的有机集合便是网站。</p>
-                <p>究竟HTML为什么会被普及?这就要归功于互联网的高速发展，对于编程语言的需求直线上升。而HTML5具有超集方式的简易性、运用广泛的可拓展性、灵活应变的平台适应性以及简单的通用性。凭借着这些特性，HTML越来越受到人们的喜爱。</p><br>
-                <h3 style="float: left">HTML5编辑规范：</h3><br>
-                <p>1、文件拓展名默认使用htm或者html，便于操作系统或者程序辨认文件，而图片则基本上存为gif或jpg。</p>
-                <p>2、浏览器默认忽视回车符，不过为了方便阅览，人们还是会习惯地在写完一段代码后进行回车。</p>
-                <p>3、标记符号用尖括号括起来，带斜杠的元素表示该标记说明结束，大多数标记符必须成对使用，用以说明起始和结束。</p>
-                <p>4、必须使用半角而不是全角字符。</p>
-                <p>5、HTML注释 < ! --注释内容 -- >的内容不给予显示。</p><br>
-                <h3 style="float: left">什么是CSS?</h3><br>
-                <p>1. CSS 是层叠样式表 ( Cascading Style Sheets ) 的简称。</p>
-                <p>2. CSS 是一种标记语言，属于浏览器解释型语言，可以直接由浏览器执行，不需要编译。</p>
-                <p>3. CSS 是用来表现HTML或XML的标记语言。</p>
-                <p>4. CSS 是由W3C的CSS工作组发布推荐和维护的。</p>
-                <p>5. CSS 是编程入门人员的必修课，运用CSS样式可以让页面变得美观。</p>
-                <p>6. CSS语法由三部分构成：选择器、属性和值： selector {property: value}</p><br>
-                <h3 style="float: left">使用CSS的优势:</h3><br>
-                <p>内容与表现分离，有了CSS，网页的内容(XHMTL)与表现就可以分开了。</p>
-                <p>使用CSS可以减少网页的代码量，增加网页的浏览速度。</p><br>
-                <h3 style="float: left">如何使用CSS？</h3><br>
-                <p>有三种方法可以在站点网页上使用样式表：</p>
-                <p>1. 外联式Linking（也叫外部样式）：将网页链接到外部样式表。</p>
-                <p>2. 嵌入式Embedding（也叫内页样式）：在网页上创建嵌入的样式表。</p>
-                <p>3. 内联式Inline（也叫行内样式）：应用内嵌样式到各个网页元素。</p>
-                <p>其中，优先级：内联式 > 嵌入式 > 外联式</p><br>
-                <h3 style="float: left">CSS3的功效：</h3><br>
-                <p>CSS3使用了层叠样式表技术，可以对网页布局、字体、颜色、背景灯效果做出控制。css3作为css的进阶版，拆分和增加了盒子模型、列表模块、语言模块 、背景边框 、文字特效 、多栏布局等等。</p>
-                <p>CSS3的改变有很多，增加了文字特效，丰富了下划线样式，加入了圈重点的功能。在边框方面，有了更多的灵活性，可以更加轻松地操控渐变效果和动态效果等等。在文字效果方面，特意增加了投影。</p>
-                <p>CSS3在兼容上做了很大的功夫，并且网络浏览器也还将继续支持CSS2，因此原来的代码不需要做太多的改变，只会变得更加地轻松。</p><br>
-                <h3 style="float: left">JavaScript简介：</h3><br>
-                <p>JavaScript 是世界上最流行的脚本语言。 JavaScript 是属于 web 的语言，它适用于 PC、笔记本电脑、平板电脑和移动电话。 JavaScript 被设计为向 HTML 页面增加交互性。 许多 HTML 开发者都不是程序员，但是 JavaScript 却拥有非常简单的语法。几乎每个人都有能力将小的 JavaScript 片段添加到网页中。</p>
-                <p>Javascript，从“最被误解的语言”，最后神奇地转变成为“最流行的语言”，证明它经受得起时间的考验。虽然单独来看，它的交互设计有些失败，但是加上Ajax的完美配合，javascript就成了一款轻便并且又实用的好语法。</p>
-                <p>想了解更多js，请前往:<a href="../../../page/Javascript.html" style="text-decoration: none;color: #333;">JavaScript专区</a></p><br>
-                <h3 style="float:left">认识jQuery:</h3><br>
-                <p>jQuery的字面意思其实就是JavaScript和查询（Query），即用于辅助开发JavaScript的库。jQuery是继prototype之后的又一个优质的Javascript库，属于开源编程语言。</p>
-                <p>jQuery使用户可以更加方便地处理HTML（标准通用标记语言下的一个应用）、events、实现动画效果，而且方便地为网站提供AJAX交互。jQuery还有一个比较大的优势是，它的文档说明很全，而且各种应用也说得很详尽，同时还有很多成熟的插件可供选择。jQuery可以使用户的html页面保持代码和html的内容分离，也就是说，不需要再在html里面插入一堆js来调用命令了，只需要定义id即可。</p>
-                <p>jQuery是免费、开源的，使用MIT许可协议。jQuery的语法设计可以使开发更加便捷，例如操作文档对象、选择DOM元素、制作动画效果、事件处理、使用Ajax以及其他功能。除此之外，jQuery提供API让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。</p><br>
-                <h3 style="float: left">jQuery的缺点：</h3><br>
-                <p>1、不能向后兼容。每一个新版本不能兼容早期的版本。 </p>
-                <p>2、插件兼容性不是太好，与上一点类似。 </p>
-                <p>3、在同一页面上使用多个插件时，很容易碰到冲突现象，尤其是这些插件依赖相同事件或selector时最为明显。 </p>
-                <p>4、在大型框架中，jQuery核心代码库对动画和特效的支持相对较差。但是实际上这不是一个问题。目前在这方面有一个单独的jQuery UI项目和众多插件来弥补此点。 </p><br>
-                <h3 style="float: left">jQurey的安装：</h3><br>
-                <p>你可以从网页中添加jQuery。</p>
-                <p>①从官网<a href="https://jquery.com/" target="_black">jquery.com</a>下载jQuery库</p>
-                <p>②从CDN中载入jQuery</p><br>
-                <h3 style="float: left">了解AJAX：</h3><br>
-                <p>AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。 AJAX 不是新的编程语言，而是一种使用现有标准的新方法。 AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。</p>
-                <p>AJAX是指一种创建交互式网页应用的网页开发技术。</p>
-                <p>AJAX = 异步 JavaScript和XML（标准通用标记语言的子集）。</p>
-                <p>AJAX 是一种用于创建快速动态网页的技术。</p>
-                <p>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
-                <p>传统的网页（不使用 AJAX）如果需要更新内容，必须重载整个网页页面。</p>
-                <p>Ajax 的核心是 JavaScript 对象 XMLHttpRequest。该对象在 Internet Explorer 5 中首次引入，它是一种支持异步请求的技术。简而言之，XMLHttpRequest使您可以使用 JavaScript 向服务器提出请求并处理响应，而不阻塞用户。</p><br>
-                <h3 style="float: left">什么是PHP?</h3><br>
-                <p>PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种开源的通用计算机脚本语言，尤其适用于网络开发并可嵌入HTML中使用。PHP的语法借鉴吸收C语言、Java和Perl等流行计算机语言的特点，易于一般程序员学习。PHP的主要目标是允许网络开发人员快速编写动态页面，但PHP也被用于其他很多领域。</p>
-                <p>PHP最初是由勒多夫在1995年开始开发的；现在PHP的标准由the PHP Group维护。PHP以PHP License作为许可协议，不过因为这个协议限制了PHP名称的使用，所以和开放源代码许可协议GPL不兼容。</p>
-                <p>PHP的应用范围相当广泛，尤其是在网页程序的开发上。一般来说PHP大多运行在网页服务器上，通过运行PHP代码来产生用户浏览的网页。PHP可以在多数的服务器和操作系统上运行，而且使用PHP完全是免费的。根据2013年4月的统计数据，PHP已经被安装在超过2亿4400万个网站和210万台服务器上。</p><br>
-                <h3 style="float: left">PHP能做什么？</h3><br>
-                <p>1、网站开发。</p>
-                <p>2、创建数据库访问。</p>
-                <p>3、WordPress插件开发。</p><br>
-                <h3 style="float: left">PHP有什么优点？</h3><br>
-                <p>1.容易上手:PHP是一门快速并且容易上手的服务器脚本语言,也是许多人入门编程的首选。</p>
-                <p>2.社群强大:拥有庞大的活跃社群,开发者遇到的大多数问题,基本都能找到解决方案。</p>
-                <p>3.对数据库友好:简单容易记得，不需要声明太多的类型，直接调用。</p><br>
-                <h3 style="float: left">PHP有什么缺点？</h3><br>
-                <p>1.速度慢:PHP相对其他开发语言,编译速度上并不占优势,弱变量也是其中的原因之一。</p>
-                <p>2.错误处理机制不完善:和其他的语言相比,PHP的错误处理考虑得不够周全,其中有很大一部分原因是因为历史版本导致的问题,PHP开发的Web站点非常多,新版本必须考虑老版本的兼容性,导致很多历史遗留问题无法被解决。</p><br>
-                <h3 style="float: left">哪些知名网站应用了PHP？</h3><br>
-                <p>1、Facebook</p>
-                <p>2、WordPress</p>
-                <p>3、维基百科</p>
-            </div>
+                <div class="article-body"><div class="innerPho"><img src="../../../images/Web2/1.jpg"></div>
+                    <p>很奇怪，可能你们都会问为什么我会突然写一个抽奖系统呢？<br><br></p>
+
+                    <p>其实起因是最近我协会招新，动员大会前一晚突然收到会长信息(晚上11点了),说想在新生会员动员大会上搞个自动抽奖的东东，最好酷炫点的。第二天就要用了，因为太急我就想到了用我最擅长的js做个简单的出来。</p>
+                    <p>其实做个抽奖系统很简单，里面只要一个随机函数就可以了。<br><br></p>
+
+                    <p>前提：我协会的动员大会上是每人都有一个签的，签上有号码，共389人。<br><br></p>
+
+                    <p>按照惯例，先给大伙看看样子~</p><div class="innerPho"><img src="../../../images/Web2/2.jpg"></div>
+                    <p>两行文字，两个按钮，一个随机数，足矣。</p>
+                    <p>[界面还行吧！调文字颜色调了好久]<br><br></p>
+
+                    <p>这个界面的html非常简单，总共就21行代码，body标签里面就只剩8行了~一起来看看吧。CSS样式还是由你们自行想象</p><div class="innerPho"><img src="../../../images/Web2/3.jpg"></div>
+                    <p>我来解释一下，因为时间比较紧迫(赶着睡觉[滑稽])，我引入了Bootstrap框架用于主容器的布局(container)和button的外观(class里面的btn-primary和btn-danger)。简单快捷又好看<br><br></p>
+
+                    <p>布局完界面后，重头戏当然还是js文件，里面写着随机数函数嘛<br><br></p>
+
+                    <p>在下图可以看到，我是先定义了一个空数组装随机数的，getRandom()函数就是圈定随机数的范围。</p>
+                    <p>获取完随机数后用push方法把得到的随机数传到array数组。</p>
+                    <p>最后再把数组输出在id为one的div里就可以咯。</p><div class="innerPho"><img src="../../../images/Web2/4.jpg"></div>
+                    <h2 style="float: left;">插播一个科普：</h2>
+                    <p>push()方法其实就是向数组的末尾添加一个或多个新元素，看一下w3school的实例就明了啦</p>
+                    <p>因为我的先前定义的array数组是空的，所以加一个元素进去也就只显示那个元素</p><div class="innerPho"><img src="../../../images/Web2/5.jpg"></div>
+                    <p>到这里随机数就已经搞定了。<br><br></p>
+
+                    <p>我的想法是什么呢？当然是点击START就开始，点击STOP就结束啊！不然要那两个按钮还搞得这么漂亮干什么<br><br></p>
+
+                    <p>继续写函数！这两个函数就是控制开始停止的，看我注释应该看得懂，不多说了</p><div class="innerPho"><img src="../../../images/Web2/6.jpg"></div>
+                    <P>最后！在html页面设置一个js DOM的０级事件(onclick)，大功告成！</P>
+                    <p>看到下面那个value="stop"了吗？就是和上图函数写的判断if(mark=='stop')有关联。</p><div class="innerPho"><img src="../../../images/Web2/7.jpg"></div>
+                    <p>第二天彩排，会长说有一共30份礼物，一个一个抽太慢了...他想一抽就是30个，好吧！然后我又临时改了一波～<br><br></p>
+
+                    <p>就改了下面两个地方，html页面加多两个div就行了</p><div class="innerPho"><img src="../../../images/Web2/8.jpg"></div>
+                    <p>js函数改动如下，把Array.push()放在一个循环30次的for循环里，表示生成30个存随机数的数组。</p>
+                    <p>然后用innerHTML把30个数组分别十个十个地放在3个div里。</p><div class="innerPho"><img src="../../../images/Web2/9.jpg"></div><br>
+                    <h2>最终效果就是酱紫：</h2><div class="innerPho"><img src="../../../images/Web2/10.jpg"></div><br>
+
+                    <p>----------------------进阶版本-------------------------<br><br></p>
+
+                    <p>有些酷友可能会说上面的只能在代码里改范围，不方便。ok，那进阶版本就来做个可以自定义输入范围的吧~</p>
+                    <p>其实这个也很简单，只需要改下html布局和js的函数就可以了。<br><br></p>
+
+                    <p>说下思路：设置两个搜索框用于用户输入范围，然后用js获取输入框里面的数值丢到random函数里就ok<br><br></p>
+
+                    <p>首先在html文件中写两个输入框(input)，下面红色框中就是新增的部分</p><div class="innerPho"><img src="../../../images/Web2/11.jpg"></div>
+                    <p>然后改下js的函数，因为我们先要获取到输入框的数值才能进行下面的步骤，所以在函数开头我们先定义两个变量mini和maxi，分别用于储存在input1和input2获取的内容。</p><div class="innerPho"><img src="../../../images/Web2/12.jpg"></div>
+                    <p>强调一下，这里细心的酷友应该会发现下面我把获取到的value转换成数字(number)类型了，其实是因为getElementById获取到的是字符串(string)。那为什么我要保留两个字符串类型的呢？请看下面解释~<br><br></p>
+
+                    <p>接下来再加个判断就ok啦！加判断的原因是：因为用户有时候会手误输入了一些不正确的数字导致运行错误，所以我设置把min == max、min > max的情况和是否有输入都输出一个提示，其他情况就正常运行。</p><div class="innerPho"><img src="../../../images/Web2/13.jpg"></div>
+                    <p>红色框里是判断部分。黄色框里是判断用户是否有输入(判断长度只能在字符串使用，所以要保留字符串类型)；蓝色框是判断min和max是否相等，和min是否大于max。绿色框就是把min和max丢进getRandom函数里面。<br><br></p>
+
+                    <p>看看最终的效果吧 <a target="_blank" style="color: coral" href="http://www.orgloft.com/page/luckyDraw.html">www.orgloft.com/page/luckyDraw.html</a></p><div class="innerPho"><img src="../../../images/Web2/14.jpg"></div>
+                    <p>-------------------------昏割线-----------------------<br><br></p>
+
+                    <p>插播：至于我的getRandom函数为什么要那样写，大家可以参考下这篇文章，有关js中random函数的运行原理 <a target="_blank" style="color: coral" href="https://www.cnblogs.com/mq0036/p/9139231.html">点击查看</a><br><br></p>
+
+                    <p>想要源码的盆友看过原来呀！ #爱编程# </p>
+                    <p>源码在此：(提取码: chdr) <a target="_blank" style="color: coral" href="https://pan.baidu.com/s/1_8can3oRonYDLb3vHR2XKw">点击下载</a></p>
+                    <p>(这个是每次抽一个的源码，有需要抽多个的自己改装呀)<br><br></p>
+
+                    <p>上期回顾：<a style="color: coral" href="http://www.orgloft.com/page/Web/3/">www.orgloft.com/page/Web/3/</a><br><br></p>
+
+                    <p>又氵了一篇，氵完就溜，拜拜～</p>
                 <div class="article-footer"></div>
             </div>
         </div>
@@ -178,10 +155,10 @@
          </div>   
         </div>
 
-    	<a class="returnTop hidden-xs" href="javascript:returnTop()">
-			<img src="../../../images/returnTop.png">
-		</a>
-    	<div class="container-fluid">
+        <a class="returnTop hidden-xs" href="javascript:returnTop()">
+            <img src="../../../images/returnTop.png">
+        </a>
+        <div class="container-fluid">
             <div class="bottom">
                 <p class="bold">！！本页内容如需转载请经过站主许可，转载请注明出处！！</p></br>
                 <p>COPYRIGHT © 2019 ORGLOFT.COM ALL RIGHTS RESERVED</p></br>
@@ -190,5 +167,5 @@
             </div>
         </div>
 
-	</body>
+    </body>
 </html>

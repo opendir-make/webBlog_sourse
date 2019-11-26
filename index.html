@@ -67,7 +67,7 @@
 	<body id="body" onload="randomApi()">
             <div class="navbarul navbar-fixed-top">
                 <ul class="layui-nav navbar" lay-filter="">
-                        <div class="logo layui-col-md-offset1"><img src="images/logo.png" alt=""></div>
+                    <a href="index.html"><div class="logo layui-col-md-offset1"><img src="images/logo.png" alt=""></div></a>
                     <li class="layui-nav-item layui-this layui-hide-xs"><a href="index.html">本尊</a></li>
                     <li class="layui-nav-item layui-hide-xs"><a href="page/orgLoft.html">orgLoft头条</a></li>
                     <li class="layui-nav-item layui-hide-xs">
@@ -659,9 +659,24 @@
                             <a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/technology/1/">阅读全文</a>
                         </div> 
                     </div>
-
+                <div class="left-block" id="movie32">
+                    <div class="container-fluid">
+                        <a class="col-md-5 col-sm-12 col-xs-12" href="page/Web/2/"><img class="blockPho" src="images/Web2/1.jpg"></a>
+                        <div class="text col-md-7 col-sm-12 col-xs-12">
+                            <a onmousedown="mouseDown()" onmouseup="mouseUp()" href="page/Web/2/"><p><img class="sprite" src="images/hot.png" alt=""><img class="sprite" src="images/program.png" alt="">Open Source！教你用js做一个简单的抽奖系统~</p></a>
+                            <span class="qianyan">很奇怪，可能你们都会问为什么我会突然写一个抽奖系统呢？其实起因是最近我协会招新，动员大会前一晚突然收到会长信息(晚上11点了),说想在新生会员动员大会上搞个自动抽奖的东东，最好酷炫点的。第二天就要用了，因为太急我就想到了用我最擅长的js做个简单的出来。其实做个抽奖系统很简单，里面只要一个随机函数就可以了。
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-calendar">2019-11-25</p>
+                        <p class="col-md-2 col-sm-2 glyphicon glyphicon-eye-open hidden-xs">59浏览量</p>
+                        <a class="col-md-2 col-sm-2 col-xs-2 glyphicon glyphicon-chevron-right" href="page/Web/2/">阅读全文</a>
+                    </div> 
+                </div>                     
 				<script>indexRefreshment()</script>
 			</div>
+                   
 
     		<div class="right col-md-4 hidden-xs hidden-sm" id="right">
                 <div class="searchBlock">
@@ -752,6 +767,5 @@
 				</div>
 			</div>
 		</div>
-
 	</body>
 </html>
