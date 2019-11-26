@@ -60,7 +60,7 @@ function omit_text() {
     var list = document.getElementsByClassName("qianyan");
     for (var i = 0; i < list.length; i++) {
         var oBox = document.getElementsByClassName("qianyan")[i];
-        var demoHtml = oBox.innerHTML.slice(0, 80) + '......';
+        var demoHtml = oBox.innerHTML.slice(0, 60) + '......';
         oBox.innerHTML = demoHtml;
     }
 }
@@ -139,19 +139,19 @@ function search() {
                 "title": "Java:new一个对象的过程中发生了什么？",
                 "url": "page/Java/3/"
             }, {
-                "label": "了解Java，Java基础",
+                "label": "了解Java Java基础",
                 "title": "了解Java",
                 "url": "page/Java/4/"
             }, {
-                "label": "JavaScript脚本语言",
+                "label": "JavaScript脚本语言 js",
                 "title": "初步了解JavaScript脚本语言",
                 "url": "page/JavaScript/1/"
             }, {
-                "label": "JavaScript题目",
+                "label": "JavaScript题目 js",
                 "title": "JavaScript经典题目集合~",
                 "url": "page/JavaScript/2/"
             }, {
-                "label": "Linux认识，了解Linux",
+                "label": "Linux认识 了解Linux",
                 "title": "了解Linux",
                 "url": "page/Linux/1/"
             }, {
@@ -163,51 +163,47 @@ function search() {
                 "title": "Linux到底学什么？",
                 "url": "page/Linux/3/"
             }, {
-                "label": "软件推荐，一个木函",
+                "label": "好软 软件推荐 一个木函",
                 "title": "好软推荐第一期---一个木函",
                 "url": "page/software/1/"
             }, {
-                "label": "软件推荐，via浏览器",
+                "label": "好软 软件推荐 via浏览器",
                 "title": "好软推荐第二期---Via浏览器",
                 "url": "page/software/2/"
             }, {
-                "label": "软件推荐Geek Uninstaller",
+                "label": "好软 软件推荐 Geek Uninstaller",
                 "title": "好软推荐第三期---Geek Uninstaller",
                 "url": "page/software/3/"
             }, {
-                "label": "旅游，旅行，日本，大学生",
+                "label": "旅游 旅行 日本 大学生",
                 "title": "一人の体験2.0（一）--大学生穷游日本2019",
                 "url": "page/travel/1/"
             }, {
-                "label": "旅游，旅行，日本，大学生",
+                "label": "旅游 旅行 日本 大学生",
                 "title": "一人の体験2.0（二）--大学生穷游日本2019",
                 "url": "page/travel/2/"
             }, {
-                "label": "旅游，旅行，香港",
+                "label": "旅游 旅行 香港",
                 "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
                 "url": "page/travel/3/"
             }, {
-                "label": "旅游，旅行，马来西亚，多元文化",
+                "label": "旅游 旅行 马来西亚 多元文化",
                 "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
                 "url": "page/travel/4/"
             }, {
-                "label": "web基础，了解web",
+                "label": "web基础 了解web",
                 "title": "风里雨里，我在前端战场等你！",
                 "url": "page/Web/1/"
             }, {
-                "label": "web基础，HTML5",
-                "title": "初识HTML/HTML5",
-                "url": "page/Web/2/"
-            }, {
-                "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
+                "label": "电子协会程序部 程序设计部 电协程序设计部 电子协会 电协 广工华立",
                 "title": "电协各部门介绍~join us！",
                 "url": "https://mp.weixin.qq.com/s/iwPRSkQYAzLtgxWbohABGQ"
             }, {
-                "label": "电子协会程序部，程序设计部，电协程序设计部",
+                "label": "电子协会程序部 程序设计部 电协程序设计部",
                 "title": "电协程序设计部牛逼逼！",
                 "url": "https://u.eqxiu.com/s/JfuKBIyf"
             }, {
-                "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
+                "label": "开源 Open Source 关于本网站简单站内搜索功能的实现 js javascript",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web/3/"
             }, {
@@ -222,6 +218,10 @@ function search() {
                 "label": "双11 老板 加班",
                 "title": "双十一，老板的电话该不该接？",
                 "url": "page/technology/1/"
+            }, {
+                "label": "开源 Open Source 教你用js做一个简单的抽奖系统 javascript",
+                "title": "Open Source！教你用js做一个简单的抽奖系统~",
+                "url": "page/Web/2/"
             }]
         },
         computed: {
@@ -310,19 +310,19 @@ function searchSM() {
                 "title": "Java:new一个对象的过程中发生了什么？",
                 "url": "page/Java/3/"
             }, {
-                "label": "了解Java，Java基础",
+                "label": "了解Java Java基础",
                 "title": "了解Java",
                 "url": "page/Java/4/"
             }, {
-                "label": "JavaScript脚本语言",
+                "label": "JavaScript脚本语言 js",
                 "title": "初步了解JavaScript脚本语言",
                 "url": "page/JavaScript/1/"
             }, {
-                "label": "JavaScript题目",
+                "label": "JavaScript题目 js",
                 "title": "JavaScript经典题目集合~",
                 "url": "page/JavaScript/2/"
             }, {
-                "label": "Linux认识，了解Linux",
+                "label": "Linux认识 了解Linux",
                 "title": "了解Linux",
                 "url": "page/Linux/1/"
             }, {
@@ -334,51 +334,47 @@ function searchSM() {
                 "title": "Linux到底学什么？",
                 "url": "page/Linux/3/"
             }, {
-                "label": "软件推荐，一个木函",
+                "label": "好软 软件推荐 一个木函",
                 "title": "好软推荐第一期---一个木函",
                 "url": "page/software/1/"
             }, {
-                "label": "软件推荐，via浏览器",
+                "label": "好软 软件推荐 via浏览器",
                 "title": "好软推荐第二期---Via浏览器",
                 "url": "page/software/2/"
             }, {
-                "label": "软件推荐Geek Uninstaller",
+                "label": "好软 软件推荐Geek Uninstaller",
                 "title": "好软推荐第三期---Geek Uninstaller",
                 "url": "page/software/3/"
             }, {
-                "label": "旅游，旅行，日本，大学生",
+                "label": "旅游 旅行 日本 大学生",
                 "title": "一人の体験2.0（一）--大学生穷游日本2019",
                 "url": "page/travel/1/"
             }, {
-                "label": "旅游，旅行，日本，大学生",
+                "label": "旅游 旅行 日本 大学生",
                 "title": "一人の体験2.0（二）--大学生穷游日本2019",
                 "url": "page/travel/2/"
             }, {
-                "label": "旅游，旅行，香港",
+                "label": "旅游 旅行 香港",
                 "title": "[小K周围走] 唔同角度睇香港（一）--港岛北",
                 "url": "page/travel/3/"
             }, {
-                "label": "旅游，旅行，马来西亚，多元文化",
+                "label": "旅游 旅行 马来西亚 多元文化",
                 "title": "多元文化交融的国度，马来西亚了解一下（一）--“垮拉隆坡”初印象",
                 "url": "page/travel/4/"
             }, {
-                "label": "web基础，了解web",
+                "label": "web基础 了解web",
                 "title": "风里雨里，我在前端战场等你！",
                 "url": "page/Web/1/"
             }, {
-                "label": "web基础，HTML5",
-                "title": "初识HTML/HTML5",
-                "url": "page/Web/2/"
-            }, {
-                "label": "电子协会程序部，程序设计部，电协程序设计部 电子协会 电协 广工华立",
+                "label": "电子协会程序部 程序设计部 电协程序设计部 电子协会 电协 广工华立",
                 "title": "电协各部门介绍~join us！",
                 "url": "https://mp.weixin.qq.com/s/iwPRSkQYAzLtgxWbohABGQ"
             }, {
-                "label": "电子协会程序部，程序设计部，电协程序设计部",
+                "label": "电子协会程序部 程序设计部 电协程序设计部",
                 "title": "电协程序设计部牛逼逼！",
                 "url": "https://u.eqxiu.com/s/JfuKBIyf"
             }, {
-                "label": "开源 Open Source 关于本网站简单站内搜索功能的实现",
+                "label": "开源 Open Source 关于本网站简单站内搜索功能的实现 js javascript",
                 "title": "Open Source！关于本网站简单站内搜索功能的实现",
                 "url": "page/Web/3/"
             }, {
@@ -393,6 +389,10 @@ function searchSM() {
                 "label": "双11 老板 加班",
                 "title": "双十一，老板的电话该不该接？",
                 "url": "page/technology/1/"
+            }, {
+                "label": "开源 Open Source 教你用js做一个简单的抽奖系统 javascript",
+                "title": "Open Source！教你用js做一个简单的抽奖系统~",
+                "url": "page/Web/2/"
             }]
         },
         computed: {
@@ -447,7 +447,7 @@ function searchEnterSM(event) {
 
 // 首页文章排序
 function indexRefreshment() {
-    var l = 31,
+    var l = 32,
         s = 9,
         show = ',',
         list = ',';
