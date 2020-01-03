@@ -2,4 +2,4 @@
 
 ## A personal web blog
 
-## Website [orgLoft-源阁](www.orgloft.com)
+## Website [orgLoft-源阁](http://www.orgloft.com)
